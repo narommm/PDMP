@@ -10,4 +10,5 @@
     <string name="txt_operaciones">OPERACIONES</string>
     <string name="txt_misiones">MISIONES</string>
     <string name="txt_cuadro_dialogo_1">¿Qué quieres aprender hoy?</string>
+    <string name="resta_title">Resta</string>
 </resources>
