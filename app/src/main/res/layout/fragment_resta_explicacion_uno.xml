@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".resta_explicacion_uno">
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/constraint_layout"
+        android:background="@drawable/fondo_principal">
+
+
+        <ImageView
+            android:paddingTop="-244dp"
+            android:id="@+id/imageView5"
+            android:layout_width="150dp"
+            android:layout_height="165dp"
+            android:src="@drawable/signo_resta"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/resta_title"
+            android:textColor="@color/blanco"
+            android:textSize="50sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textColor="@color/blanco"
+            tools:layout_editor_absoluteX="50dp"
+            tools:layout_editor_absoluteY="288dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textColor="@color/blanco"
+            tools:layout_editor_absoluteX="280dp"
+            tools:layout_editor_absoluteY="283dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</layout>
