@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="medium_35_sp">35sp</dimen>
+    <dimen name="large_margin">76dp</dimen>
+    <dimen name="login_top_image_margin">148dp</dimen>
 </resources>
