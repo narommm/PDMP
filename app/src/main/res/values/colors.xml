@@ -3,4 +3,15 @@
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
+    <color name="verdeBotones">#6FBA32</color>
+    <color name="naranjaBotones">#EF961A</color>
+    <color name="celesteText">#C9FFF3</color>
+    <color name="moradoRelleno">#220842</color>
+    <color name="amarilloRelleno">#F5EB33</color>
+    <color name="celesteORelleno">#1691DD</color>
+    <color name="rojoRelleno">#F41A22</color>
+    <color name="blanco">#FDFDFD</color>
+
+
+
 </resources>

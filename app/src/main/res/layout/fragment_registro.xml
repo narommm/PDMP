@@ -1,14 +1,122 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".Registro">
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Login">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:id="@+id/constraint_layout"
+        android:background="@drawable/fondo_principal">
 
-</FrameLayout>
+        <EditText
+            android:id="@+id/etxt_apellido3"
+            style="@style/textGame"
+            android:layout_width="252dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="24dp"
+            android:background="@color/moradoRelleno"
+            android:hint="Apellido"
+            android:textColor="@color/blanco"
+            android:textSize="@dimen/medium_35_sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.471"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etxt_nickname" />
+
+        <ImageView
+            android:id="@+id/personaje_principal_view"
+            android:layout_width="290dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="88dp"
+            android:src="@drawable/personaje_principal"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="60dp" />
+
+        <TextView
+            android:id="@+id/text_name_aplication"
+            style="@style/textGame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunito_sans_extrabold"
+            android:text="@string/name_game"
+            android:textColor="@android:color/background_light"
+            android:textSize="@dimen/medium_35_sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/personaje_principal_view" />
+
+        <EditText
+            android:id="@+id/etxt_name"
+            style="@style/textGame"
+            android:layout_width="259dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="32dp"
+            android:background="@color/moradoRelleno"
+            android:hint="Nombre"
+            android:textColor="@color/blanco"
+            android:textSize="@dimen/medium_35_sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_name_aplication" />
+
+        <EditText
+            android:id="@+id/etxt_apellido"
+            style="@style/textGame"
+            android:layout_width="259dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/moradoRelleno"
+            android:hint="Apellido"
+            android:textColor="@color/blanco"
+            android:textSize="@dimen/medium_35_sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etxt_name" />
+
+        <EditText
+            android:id="@+id/etxt_nickname"
+            style="@style/textGame"
+            android:layout_width="259dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/moradoRelleno"
+            android:hint="Nickname"
+            android:textColor="@color/blanco"
+            android:textSize="@dimen/medium_35_sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etxt_apellido" />
+
+        <Button
+            android:id="@+id/btn_registrarse_action"
+            style="@style/textGame"
+            android:layout_width="237dp"
+            android:layout_height="54dp"
+            android:text="@string/txt_registrarse"
+            android:background="@color/verdeBotones"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etxt_apellido3"
+            app:layout_constraintVertical_bias="0.577" />
+
+        <ImageView
+            android:id="@+id/imagePlanet1"
+            android:layout_width="79dp"
+            android:layout_height="69dp"
+            android:src="@drawable/planeta_tierra_boton"
+            tools:layout_editor_absoluteX="27dp"
+            tools:layout_editor_absoluteY="635dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</layout>

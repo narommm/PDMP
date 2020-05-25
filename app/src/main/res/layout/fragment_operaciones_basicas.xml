@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_principal"
+    tools:context=".operaciones_basicas">
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="127dp"
+        android:layout_height="144dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="133dp"
+        android:layout_marginTop="136dp"
+        android:layout_marginEnd="152dp"
+        android:src="@drawable/personaje_cabeza"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="154dp"
+        android:layout_height="213dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="233dp"
+        android:src="@drawable/cuadro_dialogo_2"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="-16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txt_dialogo_1"
+            android:layout_width="134dp"
+            android:layout_height="101dp"
+            android:layout_alignBottom="@+id/imageView8"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="249dp"
+            android:layout_marginBottom="86dp"
+            android:fontFamily="@font/chelsea_market"
+            android:scaleType="fitXY"
+            android:text="@string/txt_cuadro_dialogo_1"
+            tools:layout_editor_absoluteX="27dp"
+            tools:layout_editor_absoluteY="49dp" />
+    </LinearLayout>
+</RelativeLayout>

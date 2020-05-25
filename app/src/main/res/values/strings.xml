@@ -3,4 +3,11 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="txt_inicio_sesion">Inicio Sesión</string>
+    <string name="name_game">FUNMATHHELPER</string>
+    <string name="txt_registrarse">REGISTRARSE</string>
+    <string name="btn_txt_registro">REGISTRO</string>
+    <string name="txt_operaciones">OPERACIONES</string>
+    <string name="txt_misiones">MISIONES</string>
+    <string name="txt_cuadro_dialogo_1">¿Qué quieres aprender hoy?</string>
 </resources>
