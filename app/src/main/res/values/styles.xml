@@ -12,9 +12,13 @@
     <item name="android:textAlignment">center</item>
     <item name="android:fontFamily">@font/nunito_sans_extrabold</item>
         <item name="android:color">@color/blanco</item>
+    </style>
 
-
-
+    <style name="textMedidas">
+        <item name="android:textAlignment">center</item>
+        <item name="android:fontFamily">@font/bungee_inline</item>
+        <item name="android:color">@color/naranjaBotones</item>
+        <item name="android:textSize">@dimen/medium_35_sp</item>
     </style>
 
 
