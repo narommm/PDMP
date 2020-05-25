@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Login">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/constraint_layout"
+        android:background="@drawable/fondo_principal">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="291dp"
+            android:layout_height="316dp"
+            android:layout_marginTop="44dp"
+            android:src="@drawable/personaje_principal"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="60dp" />
+
+        <TextView
+            android:id="@+id/text_name_aplication"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FUNMATHHELPER"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</layout>
