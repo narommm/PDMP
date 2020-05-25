@@ -45,6 +45,16 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/text_name_aplication" />
 
+
+        <ImageView
+            android:id="@+id/imagePlanet1"
+            android:layout_width="73dp"
+            android:layout_height="68dp"
+            android:layout_marginStart="40dp"
+            android:src="@drawable/planeta_tierra_boton"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="521dp" />
+
         <Button
             android:id="@+id/bt_registro_actividad"
             android:layout_width="230dp"
@@ -60,14 +70,7 @@
             app:layout_constraintTop_toBottomOf="@+id/bt_misiones"
             app:layout_constraintVertical_bias="0.058" />
 
-        <ImageView
-            android:id="@+id/imagePlanet1"
-            android:layout_width="73dp"
-            android:layout_height="68dp"
-            android:layout_marginStart="40dp"
-            android:src="@drawable/planeta_tierra_boton"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="521dp" />
+
 
         <ImageView
             android:id="@+id/imagePlanet2"

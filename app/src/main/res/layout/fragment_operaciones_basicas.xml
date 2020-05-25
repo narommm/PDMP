@@ -8,7 +8,7 @@
     tools:context=".operaciones_basicas">
 
     <ImageView
-        android:id="@+id/imageView7"
+        android:id="@+id/view_mascota1"
         android:layout_width="127dp"
         android:layout_height="144dp"
         android:layout_alignParentStart="true"
@@ -22,32 +22,30 @@
         app:layout_constraintTop_toTopOf="parent" />
 
 
+    <LinearLayout
+        android:layout_width="158dp"
+        android:layout_height="99dp"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
     <ImageView
-        android:id="@+id/imageView8"
+        android:id="@+id/cuadro_dialogo_1"
         android:layout_width="154dp"
         android:layout_height="213dp"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="233dp"
         android:src="@drawable/cuadro_dialogo_2"
         tools:layout_editor_absoluteX="27dp"
         tools:layout_editor_absoluteY="-16dp" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/txt_cuadro_dialogo_2"
+        style="@style/textGame"
+        android:layout_width="117dp"
+        android:layout_height="131dp"
+        android:layout_alignEnd="@+id/cuadro_dialogo_1"
+        android:layout_alignBottom="@+id/cuadro_dialogo_1"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="24dp"
+        android:text="@string/txt_cuadro_dialogo_1" />
 
-        <TextView
-            android:id="@+id/txt_dialogo_1"
-            android:layout_width="134dp"
-            android:layout_height="101dp"
-            android:layout_alignBottom="@+id/imageView8"
-            android:layout_alignParentEnd="true"
-            android:layout_marginEnd="249dp"
-            android:layout_marginBottom="86dp"
-            android:fontFamily="@font/chelsea_market"
-            android:scaleType="fitXY"
-            android:text="@string/txt_cuadro_dialogo_1"
-            tools:layout_editor_absoluteX="27dp"
-            tools:layout_editor_absoluteY="49dp" />
-    </LinearLayout>
 </RelativeLayout>
