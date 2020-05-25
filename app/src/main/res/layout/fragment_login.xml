@@ -17,8 +17,9 @@
           android:layout_height="160dp"
           android:layout_marginTop="176dp"
           android:src="@drawable/personaje_principal"
-          app:layout_constraintTop_toTopOf="parent"
-          tools:layout_editor_absoluteX="60dp" />
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent" />
 
       <TextView
           android:id="@+id/text_name_aplication"
@@ -58,9 +59,10 @@
           android:textColor="@color/blanco"
           android:textSize="@dimen/medium_35_sp"
           app:layout_constraintBottom_toTopOf="@+id/btn_registrarse_action"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
           app:layout_constraintTop_toBottomOf="@+id/etxt_nickname"
-          app:layout_constraintVertical_bias="0.365"
-          tools:layout_editor_absoluteX="76dp" />
+          app:layout_constraintVertical_bias="0.365" />
 
       <Button
           android:id="@+id/btn_registrarse_action"
@@ -79,8 +81,9 @@
           android:layout_width="79dp"
           android:layout_height="69dp"
           android:src="@drawable/planeta_tierra_boton"
-          tools:layout_editor_absoluteX="27dp"
-          tools:layout_editor_absoluteY="635dp" />
+          app:layout_constraintBottom_toBottomOf="@+id/btn_registrarse_action"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="@+id/btn_registrarse_action" />
 
    </androidx.constraintlayout.widget.ConstraintLayout>
 
