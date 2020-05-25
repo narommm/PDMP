@@ -10,5 +10,11 @@
     <string name="txt_operaciones">OPERACIONES</string>
     <string name="txt_misiones">MISIONES</string>
     <string name="txt_cuadro_dialogo_1">¿Qué quieres aprender hoy?</string>
+<<<<<<< HEAD
     <string name="resta_title">Resta</string>
+=======
+    <string name="txt_suma">Suma</string>
+    <string name="txt_decenas">Decenas</string>
+    <string name="txt_unidades">Unidades</string>
+>>>>>>> refs/remotes/origin/master
 </resources>
