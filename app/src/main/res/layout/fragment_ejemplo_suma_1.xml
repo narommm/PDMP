@@ -273,11 +273,23 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:fontFamily="@font/baloo_bhai"
-            android:text="Junta todas las manzanas y naranjas"
+            android:text="@string/indicaciones_1"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/naranja_7" />
+
+        <Button
+            android:id="@+id/btn_next_suma"
+            style="@style/botonMorado"
+            android:layout_width="235dp"
+            android:layout_height="43dp"
+            android:text="@string/btn_indicaciones_suma_1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/naranja_12"
+            app:layout_constraintVertical_bias="0.395" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 

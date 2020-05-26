@@ -18,7 +18,7 @@
         <item name="android:textAlignment">center</item>
         <item name="android:fontFamily">@font/bungee_inline</item>
         <item name="android:textColor">@color/naranjaBotones</item>
-        <item name="android:textSize">@dimen/medium_2_25dp</item>
+        <item name="android:textSize">@dimen/medium_3_35dp</item>
     </style>
 
     <style name="textTitle">
@@ -35,4 +35,11 @@
         <item name="android:textSize">@dimen/small_2_20dp</item>
     </style>
 
+    <style name="botonMorado">
+        <item name="android:textAlignment">center</item>
+        <item name="android:fontFamily">@font/nunito_sans_semibold</item>
+        <item name="android:textColor">@color/blanco</item>
+        <item name="android:textSize">@dimen/small_1_15dp</item>
+        <item name="android:background">@color/moradoRelleno</item>
+    </style>
 </resources>
