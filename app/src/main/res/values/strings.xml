@@ -16,6 +16,11 @@
     <string name="txt_suma">Suma</string>
     <string name="txt_decenas">Decenas</string>
     <string name="txt_unidades">Unidades</string>
+    <string name="indicaciones_1">Junta todas las manzanas y naranjas</string>
+    <string name="btn_indicaciones_suma_1">¿Ya las contaste?</string>
+    <string name="btn_indicaciones_suma_2">Descubrelo!!</string>
+
     <string name="txts">prueba</string>
+
 
 </resources>

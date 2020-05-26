@@ -17,9 +17,29 @@
     <style name="textMedidas">
         <item name="android:textAlignment">center</item>
         <item name="android:fontFamily">@font/bungee_inline</item>
-        <item name="android:color">@color/naranjaBotones</item>
-        <item name="android:textSize">@dimen/medium_35_sp</item>
+        <item name="android:textColor">@color/naranjaBotones</item>
+        <item name="android:textSize">@dimen/medium_3_35dp</item>
     </style>
 
+    <style name="textTitle">
+        <item name="android:textAlignment">center</item>
+        <item name="android:fontFamily">@font/pacifico</item>
+        <item name="android:textColor">@color/blanco</item>
+        <item name="android:textSize">@dimen/medium_1_50dp</item>
+    </style>
 
+    <style name="textIndicaciones">
+        <item name="android:textAlignment">center</item>
+        <item name="android:fontFamily">@font/baloo_bhai</item>
+        <item name="android:textColor">@color/blanco</item>
+        <item name="android:textSize">@dimen/small_2_20dp</item>
+    </style>
+
+    <style name="botonMorado">
+        <item name="android:textAlignment">center</item>
+        <item name="android:fontFamily">@font/nunito_sans_semibold</item>
+        <item name="android:textColor">@color/blanco</item>
+        <item name="android:textSize">@dimen/small_1_15dp</item>
+        <item name="android:background">@color/moradoRelleno</item>
+    </style>
 </resources>
