@@ -5,6 +5,7 @@
     <dimen name="login_top_image_margin">148dp</dimen>
     <dimen name="medium_1_50dp">50sp</dimen>
     <dimen name="medium_2_25dp">25sp</dimen>
+    <dimen name="medium_3_35dp">35sp</dimen>
     <dimen name="small_2_20dp">20sp</dimen>
     <dimen name="small_1_15dp">15sp</dimen>
 
