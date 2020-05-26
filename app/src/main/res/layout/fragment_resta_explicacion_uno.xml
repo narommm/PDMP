@@ -25,7 +25,7 @@
 
         <TextView
             android:id="@+id/textView"
-            android:layout_width="127dp"
+            android:layout_width="135dp"
             android:layout_height="80dp"
             android:fontFamily="@font/pacifico"
             android:text="@string/resta_title"
@@ -207,10 +207,10 @@
             android:layout_height="58dp"
             android:layout_alignLeft="@id/imageView7"
             android:layout_alignTop="@+id/imageView7"
-            android:layout_marginStart="92dp"
+            android:layout_marginStart="80dp"
             android:layout_marginBottom="84dp"
             android:lines="3"
-            android:text="Resta 12, una decena y dos unidades"
+            android:text="Resta 12,una decena y seis unidades"
             android:textColor="@android:color/black"
             android:textSize="16sp"
             android:textStyle="bold"

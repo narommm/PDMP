@@ -4,4 +4,5 @@
     <dimen name="large_margin">76dp</dimen>
     <dimen name="login_top_image_margin">148dp</dimen>
     <dimen name="medium_1_50dp">50sp</dimen>
+    <dimen name="number_size_large">140dp</dimen>
 </resources>

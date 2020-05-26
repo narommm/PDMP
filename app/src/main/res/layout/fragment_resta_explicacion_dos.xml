@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".resta_explicacion_uno">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/fondo_principal">
+
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="137dp"
+            android:layout_height="135dp"
+            android:layout_alignParentEnd="true"
+            android:paddingTop="-244dp"
+            android:src="@drawable/signo_resta"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="135dp"
+            android:layout_height="80dp"
+            android:fontFamily="@font/pacifico"
+            android:text="@string/resta_title"
+            android:textColor="@color/blanco"
+            android:textSize="50sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView18"
+            android:layout_width="@dimen/number_size_large"
+            android:layout_height="@dimen/number_size_large"
+            android:src="@drawable/naran_num_dos"
+            app:layout_constraintEnd_toStartOf="@+id/imageView19"
+            app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+        <ImageView
+            android:id="@+id/imageView19"
+            android:layout_width="@dimen/number_size_large"
+            android:layout_height="@dimen/number_size_large"
+            android:src="@drawable/naran_num_ocho"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+        <ImageView
+            android:id="@+id/imageView20"
+            android:layout_width="@dimen/number_size_large"
+            android:layout_height="@dimen/number_size_large"
+            android:src="@drawable/verde_num_uno"
+            app:layout_constraintEnd_toStartOf="@+id/imageView21"
+            app:layout_constraintTop_toBottomOf="@+id/imageView18" />
+
+        <ImageView
+            android:id="@+id/imageView21"
+            android:layout_width="@dimen/number_size_large"
+            android:layout_height="@dimen/number_size_large"
+            android:src="@drawable/verde_num_seis"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView19" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="50dp"
+            android:background="@color/blanco"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView20" />
+
+        <ImageView
+            android:id="@+id/imageView22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:src="@drawable/simbolo_menos"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView20"
+            app:layout_constraintEnd_toStartOf="@+id/imageView20"
+            app:layout_constraintTop_toBottomOf="@+id/imageView18"
+            app:layout_constraintVertical_bias="0.516" />
+
+        <ImageView
+            android:id="@+id/imageView23"
+            android:layout_width="99dp"
+            android:layout_height="90dp"
+            android:src="@drawable/uno_blanco"
+            tools:layout_editor_absoluteX="129dp"
+            tools:layout_editor_absoluteY="529dp" />
+
+        <ImageView
+            android:id="@+id/imageView24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dos_blanco"
+            tools:layout_editor_absoluteX="277dp"
+            tools:layout_editor_absoluteY="564dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</layout>
