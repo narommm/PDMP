@@ -1,92 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/fondo_principal"
+    xmlns:tools="http://schemas.android.com/tools"
     tools:context=".operaciones_basicas">
 
-    <ImageView
-        android:id="@+id/view_mascota1"
-        android:layout_width="127dp"
-        android:layout_height="144dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="133dp"
-        android:layout_marginTop="136dp"
-        android:layout_marginEnd="152dp"
-        android:src="@drawable/personaje_cabeza"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/constraint_layout"
+        android:background="@drawable/fondo_principal">
 
 
-    <ImageView
-        android:id="@+id/cuadro_dialogo_1"
-        android:layout_width="154dp"
-        android:layout_height="213dp"
-        android:src="@drawable/cuadro_dialogo_2"
-        tools:layout_editor_absoluteX="27dp"
-        tools:layout_editor_absoluteY="-16dp" />
+        <ImageView
+            android:id="@+id/opcion_suma"
+            android:layout_width="@dimen/size_signo_w"
+            android:layout_height="@dimen/size_signo_h"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="44dp"
+            android:src="@drawable/signo_suma"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView28" />
 
-    <TextView
-        android:id="@+id/txt_cuadro_dialogo_2"
-        style="@style/textGame"
-        android:layout_width="117dp"
-        android:layout_height="131dp"
-        android:layout_alignEnd="@+id/cuadro_dialogo_1"
-        android:layout_alignBottom="@+id/cuadro_dialogo_1"
-        android:layout_marginEnd="28dp"
-        android:layout_marginBottom="24dp"
-        android:text="@string/txt_cuadro_dialogo_1" />
+        <ImageView
+            android:id="@+id/imageView28"
+            android:layout_width="225dp"
+            android:layout_height="275dp"
+            android:src="@drawable/personaje_dialogo_5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/imview_signo_suma"
-        android:layout_width="190dp"
-        android:layout_height="200dp"
-        android:layout_below="@+id/view_mascota1"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="18dp"
-        android:layout_marginTop="34dp"
-        android:layout_marginEnd="203dp"
-        android:layout_marginBottom="268dp"
-        android:src="@drawable/signo_suma" />
+        <ImageView
+            android:id="@+id/opcion_resta"
+            android:layout_width="@dimen/size_signo_w"
+            android:layout_height="@dimen/size_signo_w"
+            android:layout_marginTop="32dp"
+            android:src="@drawable/signo_resta"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/opcion_suma"
+            app:layout_constraintTop_toBottomOf="@+id/imageView28" />
 
-    <ImageView
-        android:id="@+id/imview_signo_resta"
-        android:layout_width="185dp"
-        android:layout_height="200dp"
-        android:layout_below="@+id/view_mascota1"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginTop="11dp"
-        android:layout_marginEnd="29dp"
-        android:layout_marginBottom="248dp"
-        android:src="@drawable/signo_resta" />
+        <ImageView
+            android:id="@+id/opcion_multiplicacion"
+            android:layout_width="@dimen/size_signo_w"
+            android:layout_height="@dimen/size_signo_w"
+            android:layout_marginStart="36dp"
+            android:src="@drawable/signo_multiplicacion"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/opcion_suma"
+            app:layout_constraintVertical_bias="0.298" />
 
-    <ImageView
-        android:id="@+id/imview_signo_mult"
-        android:layout_width="182dp"
-        android:layout_height="156dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="24dp"
-        android:layout_marginEnd="205dp"
-        android:layout_marginBottom="82dp"
-        android:src="@drawable/signo_multiplicacion" />
+        <ImageView
+            android:id="@+id/opcion_division"
+            android:layout_width="@dimen/size_signo_w"
+            android:layout_height="@dimen/size_signo_h"
+            android:src="@drawable/signo_division"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/opcion_multiplicacion"
+            app:layout_constraintTop_toBottomOf="@+id/opcion_resta"
+            app:layout_constraintVertical_bias="0.252" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <ImageView
-        android:id="@+id/imview_signo_div"
-        android:layout_width="188dp"
-        android:layout_height="201dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="26dp"
-        android:layout_marginBottom="57dp"
-        android:src="@drawable/signo_division" />
 
-</RelativeLayout>
+</layout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/navigation"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/opciones_iniciales">
+    <fragment
+        android:id="@+id/opciones_iniciales"
+        android:name="com.example.pdmproyecto.opciones_iniciales"
+        android:label="opciones_iniciales"
+        tools:layout="@layout/fragment_opciones_iniciales">
+        <action
+            android:id="@+id/action_opciones_iniciales_to_operaciones_basicas"
+            app:destination="@id/operaciones_basicas" />
+        <action
+            android:id="@+id/action_opciones_iniciales_to_misiones_menu"
+            app:destination="@id/misiones_menu" />
+        <action
+            android:id="@+id/action_opciones_iniciales_to_registro_actividades"
+            app:destination="@id/registro_actividades" />
+    </fragment>
+    <fragment
+        android:id="@+id/operaciones_basicas"
+        android:name="com.example.pdmproyecto.operaciones_basicas"
+        android:label="fragment_operaciones_basicas"
+        tools:layout="@layout/fragment_operaciones_basicas" >
+        <action
+            android:id="@+id/action_operaciones_basicas_to_ejemplo_suma_1"
+            app:destination="@id/ejemplo_suma_1" />
+        <action
+            android:id="@+id/action_operaciones_basicas_to_resta_explicacion_uno"
+            app:destination="@id/resta_explicacion_uno" />
+    </fragment>
+    <fragment
+        android:id="@+id/ejemplo_suma_1"
+        android:name="com.example.pdmproyecto.ejemplo_suma_1"
+        android:label="ejemplo_suma_1"
+        tools:layout="@layout/fragment_ejemplo_suma_1">
+        <action
+            android:id="@+id/action_ejemplo_suma_1_to_ejemplo_suma_2"
+            app:destination="@id/ejemplo_suma_2" />
+    </fragment>
+    <fragment
+        android:id="@+id/resta_explicacion_uno"
+        android:name="com.example.pdmproyecto.resta_explicacion_uno"
+        android:label="resta_explicacion_uno"
+        tools:layout="@layout/fragment_resta_explicacion_uno">
+        <action
+            android:id="@+id/action_resta_explicacion_uno_to_resta_explicacion_dos2"
+            app:destination="@id/resta_explicacion_dos2" />
+    </fragment>
+    <fragment
+        android:id="@+id/misiones_menu"
+        android:name="com.example.pdmproyecto.misiones_menu"
+        android:label="fragment_misiones_menu"
+        tools:layout="@layout/fragment_misiones_menu" />
+    <fragment
+        android:id="@+id/registro_actividades"
+        android:name="com.example.pdmproyecto.registro_actividades"
+        android:label="fragment_registro_actividades"
+        tools:layout="@layout/fragment_registro_actividades" />
+    <fragment
+        android:id="@+id/ejemplo_suma_2"
+        android:name="com.example.pdmproyecto.ejemplo_suma_2"
+        android:label="ejemplo_suma_2"
+        tools:layout="@layout/fragment_ejemplo_suma_2">
+        <action
+            android:id="@+id/action_ejemplo_suma_2_to_ejemplo_suma_3"
+            app:destination="@id/ejemplo_suma_3" />
+    </fragment>
+    <fragment
+        android:id="@+id/ejemplo_suma_3"
+        android:name="com.example.pdmproyecto.ejemplo_suma_3"
+        android:label="ejemplo_suma_3"
+        tools:layout="@layout/fragment_ejemplo_suma_3"/>
+    <fragment
+        android:id="@+id/resta_explicacion_dos2"
+        android:name="com.example.pdmproyecto.resta_explicacion_dos"
+        android:label="resta_explicacion_dos"
+        tools:layout="@layout/fragment_resta_explicacion_dos"/>
+</navigation>
