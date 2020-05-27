@@ -27,7 +27,7 @@ class operaciones_basicas : Fragment() {
             it.findNavController().navigate(R.id.action_operaciones_basicas_to_resta_explicacion_uno)
         }
         binding.opcionMultiplicacion.setOnClickListener {
-            it.findNavController().navigate(R.id.action_opciones_iniciales_to_registro_actividades)
+            it.findNavController().navigate(R.id.action_operaciones_basicas_to_opcion_tablas_multiplicar)
         }
         binding.opcionDivision.setOnClickListener {
             it.findNavController().navigate(R.id.action_opciones_iniciales_to_registro_actividades)

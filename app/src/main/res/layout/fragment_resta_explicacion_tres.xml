@@ -37,16 +37,18 @@
 
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/btn_next_resta"
+            style="@style/botonMorado"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Button"
+            android:text="@string/sigue"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
             android:id="@+id/textView7"
+            style="@style/textIndicaciones"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Con llevar"
@@ -57,6 +59,7 @@
 
         <TextView
             android:id="@+id/textView8"
+            style="@style/textIndicaciones"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="21"
@@ -70,7 +73,7 @@
             android:id="@+id/imageView6"
             android:layout_width="112dp"
             android:layout_height="86dp"
-            android:layout_marginBottom="80dp"
+            android:layout_marginStart="24dp"
             android:src="@drawable/personaje_secundario"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
