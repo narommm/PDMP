@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".OpcionTablasMultiplicar">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/constraint_layout"
+        android:background="@drawable/fondo_principal">
+
+        <Button
+            android:id="@+id/btn_mult_tablas"
+            style="@style/botonAnaranjado"
+            android:layout_width="310dp"
+            android:layout_height="98dp"
+            android:text="@string/tablas_de_multiplicar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_mult_ejemplos2"
+            app:layout_constraintVertical_bias="0.168" />
+
+        <Button
+            android:id="@+id/btn_mult_ejemplos2"
+            style="@style/botonAnaranjado"
+            android:layout_width="311dp"
+            android:layout_height="81dp"
+            android:layout_marginTop="36dp"
+            android:text="@string/ejemplos"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView23" />
+
+        <ImageView
+            android:id="@+id/imageView23"
+            android:layout_width="239dp"
+            android:layout_height="243dp"
+            android:layout_marginTop="76dp"
+            android:src="@drawable/personaje_dialogo_4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.668"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</layout>

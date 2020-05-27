@@ -4,11 +4,17 @@
     <dimen name="large_margin">76dp</dimen>
     <dimen name="login_top_image_margin">148dp</dimen>
     <dimen name="medium_1_50dp">50sp</dimen>
+
+    <dimen name="number_size_large">140dp</dimen>
+
     <dimen name="medium_2_25dp">25sp</dimen>
     <dimen name="medium_3_35dp">35sp</dimen>
     <dimen name="small_2_20dp">20sp</dimen>
     <dimen name="small_1_15dp">15sp</dimen>
-
+    <dimen name="size_number_multi_w">122dp</dimen>
+    <dimen name="size_number_multi_h">99dp</dimen>
+    <dimen name="size_signo_w">175dp</dimen>
+    <dimen name="size_signo_h">150dp</dimen>
 
 
 </resources>

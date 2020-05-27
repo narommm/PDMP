@@ -5,6 +5,10 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.databinding.DataBindingUtil
+import androidx.navigation.findNavController
+import com.example.pdmproyecto.databinding.FragmentEjemploSuma2Binding
+import com.example.pdmproyecto.databinding.FragmentRestaExplicacionUnoBinding
 
 /**
  * A simple [Fragment] subclass.
@@ -15,8 +19,11 @@ class resta_explicacion_uno : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_resta_explicacion_uno, container, false)
+        var binding = DataBindingUtil.inflate<FragmentRestaExplicacionUnoBinding>(inflater, R.layout.fragment_resta_explicacion_uno, container,false)
+        binding.btnNextResta.setOnClickListener {
+            it.findNavController().navigate(R.id.action_resta_explicacion_uno_to_resta_explicacion_dos2)
+        }
+        return binding.root
     }
 
 }

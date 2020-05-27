@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/navigation"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/opciones_iniciales">
+    <fragment
+        android:id="@+id/opciones_iniciales"
+        android:name="com.example.pdmproyecto.opciones_iniciales"
+        android:label="opciones_iniciales"
+        tools:layout="@layout/fragment_opciones_iniciales">
+        <action
+            android:id="@+id/action_opciones_iniciales_to_operaciones_basicas"
+            app:destination="@id/operaciones_basicas" />
+        <action
+            android:id="@+id/action_opciones_iniciales_to_misiones_menu"
+            app:destination="@id/misiones_menu" />
+        <action
+            android:id="@+id/action_opciones_iniciales_to_registro_actividades"
+            app:destination="@id/registro_actividades" />
+    </fragment>
+    <fragment
+        android:id="@+id/operaciones_basicas"
+        android:name="com.example.pdmproyecto.operaciones_basicas"
+        android:label="fragment_operaciones_basicas"
+        tools:layout="@layout/fragment_operaciones_basicas" >
+        <action
+            android:id="@+id/action_operaciones_basicas_to_ejemplo_suma_1"
+            app:destination="@id/ejemplo_suma_1" />
+        <action
+            android:id="@+id/action_operaciones_basicas_to_resta_explicacion_uno"
+            app:destination="@id/resta_explicacion_uno" />
+        <action
+            android:id="@+id/action_operaciones_basicas_to_opcion_tablas_multiplicar"
+            app:destination="@id/opcion_tablas_multiplicar" />
+    </fragment>
+    <fragment
+        android:id="@+id/ejemplo_suma_1"
+        android:name="com.example.pdmproyecto.ejemplo_suma_1"
+        android:label="ejemplo_suma_1"
+        tools:layout="@layout/fragment_ejemplo_suma_1">
+        <action
+            android:id="@+id/action_ejemplo_suma_1_to_ejemplo_suma_2"
+            app:destination="@id/ejemplo_suma_2" />
+    </fragment>
+    <fragment
+        android:id="@+id/resta_explicacion_uno"
+        android:name="com.example.pdmproyecto.resta_explicacion_uno"
+        android:label="resta_explicacion_uno"
+        tools:layout="@layout/fragment_resta_explicacion_uno">
+        <action
+            android:id="@+id/action_resta_explicacion_uno_to_resta_explicacion_dos2"
+            app:destination="@id/resta_explicacion_dos2" />
+    </fragment>
+    <fragment
+        android:id="@+id/misiones_menu"
+        android:name="com.example.pdmproyecto.misiones_menu"
+        android:label="fragment_misiones_menu"
+        tools:layout="@layout/fragment_misiones_menu" />
+    <fragment
+        android:id="@+id/registro_actividades"
+        android:name="com.example.pdmproyecto.registro_actividades"
+        android:label="fragment_registro_actividades"
+        tools:layout="@layout/fragment_registro_actividades" />
+    <fragment
+        android:id="@+id/ejemplo_suma_2"
+        android:name="com.example.pdmproyecto.ejemplo_suma_2"
+        android:label="ejemplo_suma_2"
+        tools:layout="@layout/fragment_ejemplo_suma_2">
+        <action
+            android:id="@+id/action_ejemplo_suma_2_to_ejemplo_suma_3"
+            app:destination="@id/ejemplo_suma_3" />
+    </fragment>
+    <fragment
+        android:id="@+id/ejemplo_suma_3"
+        android:name="com.example.pdmproyecto.ejemplo_suma_3"
+        android:label="ejemplo_suma_3"
+        tools:layout="@layout/fragment_ejemplo_suma_3"/>
+    <fragment
+        android:id="@+id/resta_explicacion_dos2"
+        android:name="com.example.pdmproyecto.resta_explicacion_dos"
+        android:label="resta_explicacion_dos"
+        tools:layout="@layout/fragment_resta_explicacion_dos">
+        <action
+            android:id="@+id/action_resta_explicacion_dos2_to_resta_explicacion_tres"
+            app:destination="@id/resta_explicacion_tres" />
+    </fragment>
+    <fragment
+        android:id="@+id/resta_explicacion_tres"
+        android:name="com.example.pdmproyecto.resta_explicacion_tres"
+        android:label="resta_explicacion_tres"
+        tools:layout="@layout/fragment_resta_explicacion_tres">
+        <action
+            android:id="@+id/action_resta_explicacion_tres_to_resta_explicacion_cuatro"
+            app:destination="@id/resta_explicacion_cuatro" />
+    </fragment>
+    <fragment
+        android:id="@+id/resta_explicacion_cuatro"
+        android:name="com.example.pdmproyecto.resta_explicacion_cuatro"
+        android:label="resta_explicacion_cuatro"
+        tools:layout="@layout/fragment_resta_explicacion_cuatro"/>
+    <fragment
+        android:id="@+id/opcion_tablas_multiplicar"
+        android:name="com.example.pdmproyecto.opcion_tablas_multiplicar"
+        android:label="opcion_tablas_multiplicar"
+        tools:layout="@layout/fragment_opcion_tablas_multiplicar">
+        <action
+            android:id="@+id/action_opcion_tablas_multiplicar_to_elegir_tabla_de_multiplicar"
+            app:destination="@id/elegir_tabla_de_multiplicar" />
+    </fragment>
+    <fragment
+        android:id="@+id/elegir_tabla_de_multiplicar"
+        android:name="com.example.pdmproyecto.elegir_tabla_de_multiplicar"
+        android:label="fragment_elegir_tabla_de_multiplicar"
+        tools:layout="@layout/fragment_elegir_tabla_de_multiplicar" >
+        <action
+            android:id="@+id/action_elegir_tabla_de_multiplicar_to_login"
+            app:destination="@id/login" />
+        <action
+            android:id="@+id/action_elegir_tabla_de_multiplicar_to_tabla_dos"
+            app:destination="@id/tabla_dos" />
+        <action
+            android:id="@+id/action_elegir_tabla_de_multiplicar_to_tabla_tres"
+            app:destination="@id/tabla_tres" />
+        <action
+            android:id="@+id/action_elegir_tabla_de_multiplicar_to_tabla_cuatro"
+            app:destination="@id/tabla_cuatro" />
+        <action
+            android:id="@+id/action_elegir_tabla_de_multiplicar_to_tabla_cinco"
+            app:destination="@id/tabla_cinco" />
+        <action
+            android:id="@+id/action_elegir_tabla_de_multiplicar_to_tabla_seis"
+            app:destination="@id/tabla_seis" />
+        <action
+            android:id="@+id/action_elegir_tabla_de_multiplicar_to_tabla_siete"
+            app:destination="@id/tabla_siete" />
+        <action
+            android:id="@+id/action_elegir_tabla_de_multiplicar_to_tabla_ocho"
+            app:destination="@id/tabla_ocho" />
+        <action
+            android:id="@+id/action_elegir_tabla_de_multiplicar_to_tabla_nueve"
+            app:destination="@id/tabla_nueve" />
+    </fragment>
+    <fragment
+        android:id="@+id/login"
+        android:name="com.example.pdmproyecto.Login"
+        android:label="fragment_tabla_uno"
+        tools:layout="@layout/fragment_tabla_uno" />
+    <fragment
+        android:id="@+id/tabla_dos"
+        android:name="com.example.pdmproyecto.tabla_dos"
+        android:label="tabla_dos"
+        tools:layout="@layout/fragment_tabla_dos"/>
+    <fragment
+        android:id="@+id/tabla_tres"
+        android:name="com.example.pdmproyecto.tabla_tres"
+        android:label="tabla_tres"
+        tools:layout="@layout/fragment_tabla_tres"/>
+    <fragment
+        android:id="@+id/tabla_cuatro"
+        android:name="com.example.pdmproyecto.tabla_cuatro"
+        android:label="tabla_cuatro"
+        tools:layout="@layout/fragment_tabla_cuatro"/>
+    <fragment
+        android:id="@+id/tabla_cinco"
+        android:name="com.example.pdmproyecto.tabla_cinco"
+        android:label="tabla_cinco"
+        tools:layout="@layout/fragment_tabla_cinco"/>
+    <fragment
+        android:id="@+id/tabla_seis"
+        android:name="com.example.pdmproyecto.tabla_seis"
+        android:label="tabla_seis"
+        tools:layout="@layout/fragment_tabla_seis"/>
+    <fragment
+        android:id="@+id/tabla_siete"
+        android:name="com.example.pdmproyecto.tabla_siete"
+        android:label="tabla_siete"
+        tools:layout="@layout/fragment_tabla_siete"/>
+    <fragment
+        android:id="@+id/tabla_ocho"
+        android:name="com.example.pdmproyecto.tabla_ocho"
+        android:label="tabla_ocho"
+        tools:layout="@layout/fragment_tabla_ocho"/>
+    <fragment
+        android:id="@+id/tabla_nueve"
+        android:name="com.example.pdmproyecto.tabla_nueve"
+        android:label="tabla_nueve"
+        tools:layout="@layout/fragment_tabla_nueve"/>
+</navigation>

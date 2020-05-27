@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".elegir_tabla_de_multiplicar">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/constraint_layout"
+        android:background="@drawable/fondo_principal">
+
+
+        <ImageView
+            android:id="@+id/imageView24"
+            android:layout_width="161dp"
+            android:layout_height="129dp"
+            android:src="@drawable/signo_multiplicacion"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txt_multi_1"
+            style="@style/textIndicaciones"
+            android:layout_width="180dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="40dp"
+            android:text="@string/txt_elige_una"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView24" />
+
+        <TextView
+            android:id="@+id/txt_multi_tablas"
+            style="@style/textIndicaciones"
+            android:layout_width="376dp"
+            android:layout_height="70dp"
+            android:text="@string/txt_tablas_de_multiplicar"
+            android:textSize="@dimen/medium_3_35dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_multi_1" />
+
+        <ImageView
+            android:id="@+id/iview_numero_1"
+            android:layout_width="@dimen/size_number_multi_w"
+            android:layout_height="@dimen/size_number_multi_h"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="32dp"
+            android:src="@drawable/verde_num_uno"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_multi_tablas" />
+
+        <ImageView
+            android:id="@+id/iview_numero_2"
+            android:layout_width="@dimen/size_number_multi_w"
+            android:layout_height="@dimen/size_number_multi_h"
+            android:layout_marginTop="32dp"
+            android:src="@drawable/verde_num_dos"
+            app:layout_constraintStart_toEndOf="@+id/iview_numero_1"
+            app:layout_constraintTop_toBottomOf="@+id/txt_multi_tablas" />
+
+        <ImageView
+            android:id="@+id/iview_numero_3"
+            android:layout_width="@dimen/size_number_multi_w"
+            android:layout_height="@dimen/size_number_multi_h"
+            android:layout_marginTop="32dp"
+            android:src="@drawable/verde_num_tres"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/iview_numero_2"
+            app:layout_constraintTop_toBottomOf="@+id/txt_multi_tablas" />
+
+        <ImageView
+            android:id="@+id/iview_numero_4"
+            android:layout_width="@dimen/size_number_multi_w"
+            android:layout_height="@dimen/size_number_multi_h"
+            android:layout_marginStart="28dp"
+            android:src="@drawable/verde_num_cuatro"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iview_numero_1" />
+
+        <ImageView
+            android:id="@+id/iview_numero_5"
+            android:layout_width="@dimen/size_number_multi_w"
+            android:layout_height="@dimen/size_number_multi_h"
+            android:src="@drawable/verde_num_cinco"
+            app:layout_constraintStart_toEndOf="@+id/iview_numero_4"
+            app:layout_constraintTop_toBottomOf="@+id/iview_numero_2" />
+
+        <ImageView
+            android:id="@+id/iview_numero_6"
+            android:layout_width="@dimen/size_number_multi_w"
+            android:layout_height="@dimen/size_number_multi_h"
+            android:src="@drawable/verde_num_seis"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/iview_numero_5"
+            app:layout_constraintTop_toBottomOf="@+id/iview_numero_3" />
+
+        <ImageView
+            android:id="@+id/iview_numero_7"
+            android:layout_width="@dimen/size_number_multi_w"
+            android:layout_height="@dimen/size_number_multi_h"
+            android:layout_marginStart="28dp"
+            android:src="@drawable/verde_num_siete"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iview_numero_4"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/iview_numero_8"
+            android:layout_width="@dimen/size_number_multi_w"
+            android:layout_height="@dimen/size_number_multi_h"
+            android:src="@drawable/verde_num_ocho"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/iview_numero_7"
+            app:layout_constraintTop_toBottomOf="@+id/iview_numero_5"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/iview_numero_9"
+            android:layout_width="@dimen/size_number_multi_w"
+            android:layout_height="@dimen/size_number_multi_h"
+            android:src="@drawable/verde_num_nueve"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/iview_numero_8"
+            app:layout_constraintTop_toBottomOf="@+id/iview_numero_6"
+            app:layout_constraintVertical_bias="0.0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</layout>
