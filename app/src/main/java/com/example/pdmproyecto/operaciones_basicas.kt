@@ -32,6 +32,7 @@ class operaciones_basicas : Fragment() {
         binding.opcionDivision.setOnClickListener {
             it.findNavController().navigate(R.id.action_opciones_iniciales_to_registro_actividades)
         }
+
         return binding.root
     }
 
