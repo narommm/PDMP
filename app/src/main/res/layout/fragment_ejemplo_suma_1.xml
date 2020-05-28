@@ -15,11 +15,12 @@
             android:id="@+id/imview_icon_suma"
             android:layout_width="121dp"
             android:layout_height="96dp"
+            android:layout_marginBottom="312dp"
             android:src="@drawable/signo_suma"
+            app:layout_constraintBottom_toTopOf="@+id/indicacion_1"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="50dp" />
+            app:layout_constraintHorizontal_bias="0.52"
+            app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
             android:id="@+id/txt_contenido_suma"
@@ -65,7 +66,7 @@
             android:id="@+id/manzana_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="72dp"
+            android:layout_marginStart="76dp"
             android:layout_marginTop="40dp"
             android:src="@drawable/manzana"
             app:layout_constraintBottom_toTopOf="@+id/indicacion_1"
@@ -104,8 +105,7 @@
             app:layout_constraintEnd_toStartOf="@+id/manzana_1"
             app:layout_constraintHorizontal_bias="0.456"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txt_decenas"
-            app:layout_constraintVertical_bias="0.306" />
+            app:layout_constraintTop_toBottomOf="@+id/txt_decenas" />
 
         <TextView
             android:id="@+id/id_numero_entero2"
@@ -270,13 +270,13 @@
             style="@style/textIndicaciones"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginBottom="256dp"
             android:fontFamily="@font/baloo_bhai"
             android:text="@string/indicaciones_1"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.497"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/naranja_7" />
+            app:layout_constraintHorizontal_bias="0.918"
+            app:layout_constraintStart_toStartOf="parent" />
 
         <Button
             android:id="@+id/btn_next_suma"

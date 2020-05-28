@@ -15,11 +15,11 @@
             android:id="@+id/imview_icon_suma"
             android:layout_width="121dp"
             android:layout_height="96dp"
+            android:layout_marginBottom="584dp"
             android:src="@drawable/signo_suma"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="50dp" />
+            app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
             android:id="@+id/txt_contenido_suma"
@@ -31,10 +31,10 @@
             android:textSize="@dimen/medium_1_50dp"
             app:layout_constraintBottom_toTopOf="@+id/imview_icon_suma"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.59"
+            app:layout_constraintHorizontal_bias="0.594"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.608" />
+            app:layout_constraintVertical_bias="1.0" />
 
         <ImageView
             android:id="@+id/view_uno"
@@ -71,10 +71,11 @@
             android:id="@+id/view_cuatro"
             android:layout_width="158dp"
             android:layout_height="112dp"
-            android:layout_marginEnd="36dp"
             android:src="@drawable/verde_num_cuatro"
             app:layout_constraintBottom_toTopOf="@+id/linea_blanca"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/view_dos"
             app:layout_constraintTop_toBottomOf="@+id/view_nueve"
             app:layout_constraintVertical_bias="0.714" />
 
@@ -82,9 +83,12 @@
             android:id="@+id/imageView13"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
             android:src="@drawable/eje_suma_3"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/view_cuatro_answer"
-            tools:layout_editor_absoluteY="573dp" />
+            app:layout_constraintTop_toBottomOf="@+id/linea_blanca"
+            app:layout_constraintVertical_bias="0.0" />
 
         <ImageView
             android:id="@+id/imageView14"
@@ -144,8 +148,10 @@
             android:textSize="@dimen/medium_3_35dp"
             app:layout_constraintBottom_toTopOf="@+id/view_uno"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.281"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintHorizontal_bias="0.295"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imview_icon_suma"
+            app:layout_constraintVertical_bias="1.0" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
