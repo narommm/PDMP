@@ -107,6 +107,9 @@
         <action
             android:id="@+id/action_opcion_tablas_multiplicar_to_elegir_tabla_de_multiplicar"
             app:destination="@id/elegir_tabla_de_multiplicar" />
+        <action
+            android:id="@+id/action_opcion_tablas_multiplicar_to_fragments_ejemplo_multiplicacion_1"
+            app:destination="@id/fragments_ejemplo_multiplicacion_1" />
     </fragment>
     <fragment
         android:id="@+id/elegir_tabla_de_multiplicar"

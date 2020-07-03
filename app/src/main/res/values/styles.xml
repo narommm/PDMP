@@ -56,4 +56,26 @@
         <item name="android:textSize">@dimen/medium_3_35dp</item>
         <item name="android:background">@color/naranjaBotones</item>
     </style>
+    <style name="botonVerde">
+        <item name="android:textAlignment">center</item>
+        <item name="android:fontFamily">@font/nunito_sans_semibold</item>
+        <item name="android:textColor">@color/negro</item>
+        <item name="android:textSize">@dimen/medium_3_35dp</item>
+        <item name="android:background">@color/verdeBotones</item>
+
+    </style>
+    <style name="botonAmarillo">
+        <item name="android:textAlignment">center</item>
+        <item name="android:fontFamily">@font/nunito_sans_semibold</item>
+        <item name="android:textColor">@color/negro</item>
+        <item name="android:textSize">@dimen/medium_3_35dp</item>
+        <item name="android:background">@color/amarilloOscuro</item>
+    </style>
+    <style name="botonRojo">
+        <item name="android:textAlignment">center</item>
+        <item name="android:fontFamily">@font/nunito_sans_semibold</item>
+        <item name="android:textColor">@color/negro</item>
+        <item name="android:textSize">@dimen/medium_3_35dp</item>
+        <item name="android:background">@color/rojoRelleno</item>
+    </style>
 </resources>
