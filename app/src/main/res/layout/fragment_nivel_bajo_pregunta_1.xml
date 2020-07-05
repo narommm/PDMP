@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".nivel_bajo_pregunta_1">
+    tools:context=".nivelBajo.nivel_bajo_pregunta_1">
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -79,18 +79,18 @@
             app:layout_constraintTop_toBottomOf="@+id/imageView56" />
 
         <ImageView
-            android:id="@+id/imageView60"
+            android:id="@+id/respuesta_1"
             android:layout_width="205dp"
             android:layout_height="165dp"
             android:layout_marginStart="50dp"
             android:src="@drawable/anara_signo_interrogacion"
-            app:layout_constraintEnd_toStartOf="@+id/imageView61"
+            app:layout_constraintEnd_toStartOf="@+id/respuesta_2"
             app:layout_constraintHorizontal_bias="0.24"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView58" />
 
         <ImageView
-            android:id="@+id/imageView61"
+            android:id="@+id/respuesta_2"
             android:layout_width="205dp"
             android:layout_height="165dp"
             android:layout_marginEnd="4dp"
@@ -105,89 +105,89 @@
             android:src="@drawable/respuestas_cero"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/pregunta2_cinco" />
+            app:layout_constraintTop_toBottomOf="@+id/pregunta3_cinco" />
 
         <ImageView
-            android:id="@+id/pregunta2_uno"
+            android:id="@+id/pregunta3_uno"
             android:layout_width="78dp"
             android:layout_height="61dp"
             android:src="@drawable/respuestas_uno"
-            app:layout_constraintEnd_toStartOf="@+id/pregunta2_dos"
+            app:layout_constraintEnd_toStartOf="@+id/pregunta3_dos"
             app:layout_constraintHorizontal_bias="0.2"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView60" />
+            app:layout_constraintTop_toBottomOf="@+id/respuesta_1" />
 
         <ImageView
-            android:id="@+id/pregunta2_dos"
+            android:id="@+id/pregunta3_dos"
             android:layout_width="78dp"
             android:layout_height="61dp"
             android:src="@drawable/respuestas_dos"
-            app:layout_constraintEnd_toStartOf="@+id/pregunta2_tres"
-            app:layout_constraintTop_toBottomOf="@+id/imageView60" />
+            app:layout_constraintEnd_toStartOf="@+id/pregunta3_tres"
+            app:layout_constraintTop_toBottomOf="@+id/respuesta_1" />
 
         <ImageView
-            android:id="@+id/pregunta2_tres"
+            android:id="@+id/pregunta3_tres"
             android:layout_width="84dp"
             android:layout_height="61dp"
             android:src="@drawable/respuestas_tres"
-            app:layout_constraintEnd_toStartOf="@+id/pregunta2_cuatro"
-            app:layout_constraintTop_toBottomOf="@+id/imageView60" />
+            app:layout_constraintEnd_toStartOf="@+id/pregunta3_cuatro"
+            app:layout_constraintTop_toBottomOf="@+id/respuesta_1" />
 
         <ImageView
-            android:id="@+id/pregunta2_cuatro"
+            android:id="@+id/pregunta3_cuatro"
             android:layout_width="84dp"
             android:layout_height="61dp"
             android:src="@drawable/respuestas_cuatro"
-            app:layout_constraintEnd_toStartOf="@+id/pregunta2_cinco"
-            app:layout_constraintTop_toBottomOf="@+id/imageView61" />
+            app:layout_constraintEnd_toStartOf="@+id/pregunta3_cinco"
+            app:layout_constraintTop_toBottomOf="@+id/respuesta_2" />
 
         <ImageView
-            android:id="@+id/pregunta2_cinco"
+            android:id="@+id/pregunta3_cinco"
             android:layout_width="84dp"
             android:layout_height="61dp"
             android:src="@drawable/respuestas_cinco"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView61" />
+            app:layout_constraintTop_toBottomOf="@+id/respuesta_2" />
 
         <ImageView
-            android:id="@+id/pregunta2_seis"
+            android:id="@+id/pregunta3_seis"
             android:layout_width="84dp"
             android:layout_height="61dp"
             android:src="@drawable/respuestas_seis"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/pregunta2_siete"
+            app:layout_constraintEnd_toStartOf="@+id/pregunta3_siete"
             app:layout_constraintHorizontal_bias="0.2"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/pregunta2_uno" />
+            app:layout_constraintTop_toBottomOf="@+id/pregunta3_uno" />
 
         <ImageView
-            android:id="@+id/pregunta2_siete"
+            android:id="@+id/pregunta3_siete"
             android:layout_width="84dp"
             android:layout_height="61dp"
             android:src="@drawable/respuestas_siete"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/pregunta2_ocho"
-            app:layout_constraintTop_toBottomOf="@+id/pregunta2_dos" />
+            app:layout_constraintEnd_toStartOf="@+id/pregunta3_ocho"
+            app:layout_constraintTop_toBottomOf="@+id/pregunta3_dos" />
 
         <ImageView
-            android:id="@+id/pregunta2_ocho"
+            android:id="@+id/pregunta3_ocho"
             android:layout_width="84dp"
             android:layout_height="61dp"
             android:layout_marginBottom="4dp"
             android:src="@drawable/respuetas_ocho"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/pregunta2_nueve"
-            app:layout_constraintTop_toBottomOf="@+id/pregunta2_tres" />
+            app:layout_constraintEnd_toStartOf="@+id/pregunta3_nueve"
+            app:layout_constraintTop_toBottomOf="@+id/pregunta3_tres" />
 
         <ImageView
-            android:id="@+id/pregunta2_nueve"
+            android:id="@+id/pregunta3_nueve"
             android:layout_width="84dp"
             android:layout_height="61dp"
             android:layout_marginEnd="4dp"
             android:src="@drawable/respuestas_nueve"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/pregunta2_cero"
-            app:layout_constraintTop_toBottomOf="@+id/pregunta2_cuatro" />
+            app:layout_constraintTop_toBottomOf="@+id/pregunta3_cuatro" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

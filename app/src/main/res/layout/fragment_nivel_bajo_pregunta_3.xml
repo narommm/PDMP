@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".nivelBajo.nivel_bajo_pregunta_2">
+    tools:context=".nivelBajo.nivel_bajo_pregunta_3">
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -15,12 +15,13 @@
 
         <TextView
             android:id="@+id/txt_contenido_suma2"
-            android:layout_width="143dp"
+            android:layout_width="match_parent"
             android:layout_height="102dp"
             android:fontFamily="@font/pacifico"
-            android:text="@string/txt_suma"
+            android:text="@string/txt_resta"
             android:textColor="@color/negro"
             android:textSize="60dp"
+            android:gravity="center"
             app:layout_constraintBottom_toTopOf="@+id/imview_icon_suma"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -32,7 +33,7 @@
             android:layout_width="205dp"
             android:layout_height="165dp"
             android:layout_marginStart="50dp"
-            android:src="@drawable/verde_pregunta_tres"
+            android:src="@drawable/verde_pregunta_dos"
             app:layout_constraintEnd_toStartOf="@+id/imageView56"
             app:layout_constraintHorizontal_bias="0.245"
             app:layout_constraintStart_toStartOf="parent"
@@ -43,7 +44,7 @@
             android:layout_width="205dp"
             android:layout_height="165dp"
             android:layout_marginEnd="4dp"
-            android:src="@drawable/verde_pregunta_uno"
+            android:src="@drawable/verde_pregunta_dos"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/txt_contenido_suma2" />
 
@@ -51,7 +52,7 @@
             android:id="@+id/imageView57"
             android:layout_width="74dp"
             android:layout_height="88dp"
-            android:src="@drawable/anara_signo_suma"
+            android:src="@drawable/respuestas_signo_menos"
             app:layout_constraintBottom_toBottomOf="@+id/imageView58"
             app:layout_constraintEnd_toStartOf="@+id/imageView58"
             app:layout_constraintHorizontal_bias="0.033"
@@ -63,7 +64,7 @@
             android:layout_width="205dp"
             android:layout_height="165dp"
             android:layout_marginStart="50dp"
-            android:src="@drawable/ama_pregunta_seis"
+            android:src="@drawable/ama_pregunta_uno"
             app:layout_constraintEnd_toStartOf="@+id/imageView59"
             app:layout_constraintHorizontal_bias="0.24"
             app:layout_constraintStart_toStartOf="parent"
@@ -74,7 +75,7 @@
             android:layout_width="205dp"
             android:layout_height="165dp"
             android:layout_marginEnd="4dp"
-            android:src="@drawable/ama_pregunta_siete"
+            android:src="@drawable/ama_pregunta_uno"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView56" />
 

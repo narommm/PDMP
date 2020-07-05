@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".nivelBajo.nivel_bajo_pregunta_2">
+    tools:context=".nivel_intermedio.nivel_intermedio_pregunta_1">
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -32,7 +32,7 @@
             android:layout_width="205dp"
             android:layout_height="165dp"
             android:layout_marginStart="50dp"
-            android:src="@drawable/verde_pregunta_tres"
+            android:src="@drawable/verde_pregunta_siete"
             app:layout_constraintEnd_toStartOf="@+id/imageView56"
             app:layout_constraintHorizontal_bias="0.245"
             app:layout_constraintStart_toStartOf="parent"
@@ -43,7 +43,7 @@
             android:layout_width="205dp"
             android:layout_height="165dp"
             android:layout_marginEnd="4dp"
-            android:src="@drawable/verde_pregunta_uno"
+            android:src="@drawable/verde_pregunta_signo_interrogacion"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/txt_contenido_suma2" />
 
@@ -63,7 +63,7 @@
             android:layout_width="205dp"
             android:layout_height="165dp"
             android:layout_marginStart="50dp"
-            android:src="@drawable/ama_pregunta_seis"
+            android:src="@drawable/ama_signo_interrogacion"
             app:layout_constraintEnd_toStartOf="@+id/imageView59"
             app:layout_constraintHorizontal_bias="0.24"
             app:layout_constraintStart_toStartOf="parent"
@@ -74,7 +74,7 @@
             android:layout_width="205dp"
             android:layout_height="165dp"
             android:layout_marginEnd="4dp"
-            android:src="@drawable/ama_pregunta_siete"
+            android:src="@drawable/ama_pregunta_uno"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView56" />
 
@@ -83,7 +83,7 @@
             android:layout_width="205dp"
             android:layout_height="165dp"
             android:layout_marginStart="50dp"
-            android:src="@drawable/anara_signo_interrogacion"
+            android:src="@drawable/anara_pregunta_nueve"
             app:layout_constraintEnd_toStartOf="@+id/respuesta_2"
             app:layout_constraintHorizontal_bias="0.24"
             app:layout_constraintStart_toStartOf="parent"
@@ -94,7 +94,7 @@
             android:layout_width="205dp"
             android:layout_height="165dp"
             android:layout_marginEnd="4dp"
-            android:src="@drawable/anara_signo_interrogacion"
+            android:src="@drawable/anara_pregunta_tres"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView59" />
 

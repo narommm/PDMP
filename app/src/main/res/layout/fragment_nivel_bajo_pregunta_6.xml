@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".nivelBajo.nivel_bajo_pregunta_2">
+    tools:context=".nivelBajo.nivel_bajo_pregunta_6">
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -15,12 +15,13 @@
 
         <TextView
             android:id="@+id/txt_contenido_suma2"
-            android:layout_width="143dp"
+            android:layout_width="match_parent"
             android:layout_height="102dp"
             android:fontFamily="@font/pacifico"
-            android:text="@string/txt_suma"
+            android:text="@string/txt_resta"
             android:textColor="@color/negro"
             android:textSize="60dp"
+            android:gravity="center"
             app:layout_constraintBottom_toTopOf="@+id/imview_icon_suma"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -29,29 +30,38 @@
 
         <ImageView
             android:id="@+id/imageView55"
-            android:layout_width="205dp"
-            android:layout_height="165dp"
-            android:layout_marginStart="50dp"
-            android:src="@drawable/verde_pregunta_tres"
+            android:layout_width="166dp"
+            android:layout_height="148dp"
+            android:src="@drawable/verde_pregunta_uno"
             app:layout_constraintEnd_toStartOf="@+id/imageView56"
-            app:layout_constraintHorizontal_bias="0.245"
+            app:layout_constraintHorizontal_bias="0.2"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/txt_contenido_suma2" />
 
         <ImageView
             android:id="@+id/imageView56"
-            android:layout_width="205dp"
-            android:layout_height="165dp"
-            android:layout_marginEnd="4dp"
-            android:src="@drawable/verde_pregunta_uno"
+            android:layout_width="166dp"
+            android:layout_height="148dp"
+            android:layout_marginEnd="120dp"
+            android:src="@drawable/verde_pregunta_cero"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/txt_contenido_suma2" />
 
         <ImageView
+            android:id="@+id/imageView54"
+            android:layout_width="166dp"
+            android:layout_height="148dp"
+            android:src="@drawable/verde_pregunta_cero"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.76"
+            app:layout_constraintStart_toEndOf="@+id/imageView56"
+            app:layout_constraintTop_toBottomOf="@+id/txt_contenido_suma2" />
+
+        <ImageView
             android:id="@+id/imageView57"
-            android:layout_width="74dp"
-            android:layout_height="88dp"
-            android:src="@drawable/anara_signo_suma"
+            android:layout_width="20dp"
+            android:layout_height="55dp"
+            android:src="@drawable/respuestas_signo_menos"
             app:layout_constraintBottom_toBottomOf="@+id/imageView58"
             app:layout_constraintEnd_toStartOf="@+id/imageView58"
             app:layout_constraintHorizontal_bias="0.033"
@@ -60,43 +70,61 @@
 
         <ImageView
             android:id="@+id/imageView58"
-            android:layout_width="205dp"
-            android:layout_height="165dp"
-            android:layout_marginStart="50dp"
-            android:src="@drawable/ama_pregunta_seis"
+            android:layout_width="166dp"
+            android:layout_height="148dp"
+            android:src="@drawable/ama_pregunta_uno"
             app:layout_constraintEnd_toStartOf="@+id/imageView59"
-            app:layout_constraintHorizontal_bias="0.24"
+            app:layout_constraintHorizontal_bias="0.204"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView55" />
 
         <ImageView
             android:id="@+id/imageView59"
-            android:layout_width="205dp"
-            android:layout_height="165dp"
-            android:layout_marginEnd="4dp"
-            android:src="@drawable/ama_pregunta_siete"
+            android:layout_width="166dp"
+            android:layout_height="148dp"
+            android:src="@drawable/ama_pregunta_seis"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView56" />
 
         <ImageView
+            android:id="@+id/imageView60"
+            android:layout_width="166dp"
+            android:layout_height="148dp"
+            android:src="@drawable/ama_pregunta_cero"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.767"
+            app:layout_constraintStart_toEndOf="@+id/imageView59"
+            app:layout_constraintTop_toBottomOf="@+id/imageView54" />
+
+        <ImageView
             android:id="@+id/respuesta_1"
-            android:layout_width="205dp"
-            android:layout_height="165dp"
-            android:layout_marginStart="50dp"
+            android:layout_width="166dp"
+            android:layout_height="148dp"
             android:src="@drawable/anara_signo_interrogacion"
             app:layout_constraintEnd_toStartOf="@+id/respuesta_2"
-            app:layout_constraintHorizontal_bias="0.24"
+            app:layout_constraintHorizontal_bias="0.113"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView58" />
 
         <ImageView
             android:id="@+id/respuesta_2"
-            android:layout_width="205dp"
-            android:layout_height="165dp"
-            android:layout_marginEnd="4dp"
+            android:layout_width="166dp"
+            android:layout_height="148dp"
             android:src="@drawable/anara_signo_interrogacion"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView59" />
+
+        <ImageView
+            android:id="@+id/respuesta_3"
+            android:layout_width="166dp"
+            android:layout_height="148dp"
+            android:src="@drawable/anara_signo_interrogacion"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.76"
+            app:layout_constraintStart_toEndOf="@+id/respuesta_2"
+            app:layout_constraintTop_toBottomOf="@+id/imageView60" />
 
         <ImageView
             android:id="@+id/pregunta2_cero"

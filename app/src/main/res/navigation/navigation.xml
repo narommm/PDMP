@@ -36,7 +36,7 @@
     </fragment>
     <fragment
         android:id="@+id/ejemplo_suma_1"
-        android:name="com.example.pdmproyecto.ejemplo_suma_1"
+        android:name="com.example.pdmproyecto.ejemplosSuma.ejemplo_suma_1"
         android:label="ejemplo_suma_1"
         tools:layout="@layout/fragment_ejemplo_suma_1">
         <action
@@ -45,7 +45,7 @@
     </fragment>
     <fragment
         android:id="@+id/resta_explicacion_uno"
-        android:name="com.example.pdmproyecto.resta_explicacion_uno"
+        android:name="com.example.pdmproyecto.ejemplosResta.resta_explicacion_uno"
         android:label="resta_explicacion_uno"
         tools:layout="@layout/fragment_resta_explicacion_uno">
         <action
@@ -64,7 +64,7 @@
         tools:layout="@layout/fragment_registro_actividades" />
     <fragment
         android:id="@+id/ejemplo_suma_2"
-        android:name="com.example.pdmproyecto.ejemplo_suma_2"
+        android:name="com.example.pdmproyecto.ejemplosSuma.ejemplo_suma_2"
         android:label="ejemplo_suma_2"
         tools:layout="@layout/fragment_ejemplo_suma_2">
         <action
@@ -73,12 +73,12 @@
     </fragment>
     <fragment
         android:id="@+id/ejemplo_suma_3"
-        android:name="com.example.pdmproyecto.ejemplo_suma_3"
+        android:name="com.example.pdmproyecto.ejemplosSuma.ejemplo_suma_3"
         android:label="ejemplo_suma_3"
         tools:layout="@layout/fragment_ejemplo_suma_3"/>
     <fragment
         android:id="@+id/resta_explicacion_dos2"
-        android:name="com.example.pdmproyecto.resta_explicacion_dos"
+        android:name="com.example.pdmproyecto.ejemplosResta.resta_explicacion_dos"
         android:label="resta_explicacion_dos"
         tools:layout="@layout/fragment_resta_explicacion_dos">
         <action
@@ -87,7 +87,7 @@
     </fragment>
     <fragment
         android:id="@+id/resta_explicacion_tres"
-        android:name="com.example.pdmproyecto.resta_explicacion_tres"
+        android:name="com.example.pdmproyecto.ejemplosResta.resta_explicacion_tres"
         android:label="resta_explicacion_tres"
         tools:layout="@layout/fragment_resta_explicacion_tres">
         <action
@@ -96,7 +96,7 @@
     </fragment>
     <fragment
         android:id="@+id/resta_explicacion_cuatro"
-        android:name="com.example.pdmproyecto.resta_explicacion_cuatro"
+        android:name="com.example.pdmproyecto.ejemplosResta.resta_explicacion_cuatro"
         android:label="resta_explicacion_cuatro"
         tools:layout="@layout/fragment_resta_explicacion_cuatro"/>
     <fragment
@@ -151,42 +151,42 @@
         tools:layout="@layout/fragment_tabla_uno" />
     <fragment
         android:id="@+id/tabla_dos"
-        android:name="com.example.pdmproyecto.tabla_dos"
+        android:name="com.example.pdmproyecto.tablasMultiplicar.tabla_dos"
         android:label="tabla_dos"
         tools:layout="@layout/fragment_tabla_dos"/>
     <fragment
         android:id="@+id/tabla_tres"
-        android:name="com.example.pdmproyecto.tabla_tres"
+        android:name="com.example.pdmproyecto.tablasMultiplicar.tabla_tres"
         android:label="tabla_tres"
         tools:layout="@layout/fragment_tabla_tres"/>
     <fragment
         android:id="@+id/tabla_cuatro"
-        android:name="com.example.pdmproyecto.tabla_cuatro"
+        android:name="com.example.pdmproyecto.tablasMultiplicar.tabla_cuatro"
         android:label="tabla_cuatro"
         tools:layout="@layout/fragment_tabla_cuatro"/>
     <fragment
         android:id="@+id/tabla_cinco"
-        android:name="com.example.pdmproyecto.tabla_cinco"
+        android:name="com.example.pdmproyecto.tablasMultiplicar.tabla_cinco"
         android:label="tabla_cinco"
         tools:layout="@layout/fragment_tabla_cinco"/>
     <fragment
         android:id="@+id/tabla_seis"
-        android:name="com.example.pdmproyecto.tabla_seis"
+        android:name="com.example.pdmproyecto.tablasMultiplicar.tabla_seis"
         android:label="tabla_seis"
         tools:layout="@layout/fragment_tabla_seis"/>
     <fragment
         android:id="@+id/tabla_siete"
-        android:name="com.example.pdmproyecto.tabla_siete"
+        android:name="com.example.pdmproyecto.tablasMultiplicar.tabla_siete"
         android:label="tabla_siete"
         tools:layout="@layout/fragment_tabla_siete"/>
     <fragment
         android:id="@+id/tabla_ocho"
-        android:name="com.example.pdmproyecto.tabla_ocho"
+        android:name="com.example.pdmproyecto.tablasMultiplicar.tabla_ocho"
         android:label="tabla_ocho"
         tools:layout="@layout/fragment_tabla_ocho"/>
     <fragment
         android:id="@+id/tabla_nueve"
-        android:name="com.example.pdmproyecto.tabla_nueve"
+        android:name="com.example.pdmproyecto.tablasMultiplicar.tabla_nueve"
         android:label="tabla_nueve"
         tools:layout="@layout/fragment_tabla_nueve"/>
 </navigation>
