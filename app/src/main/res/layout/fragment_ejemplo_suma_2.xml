@@ -31,10 +31,10 @@
             android:textSize="@dimen/medium_1_50dp"
             app:layout_constraintBottom_toTopOf="@+id/imview_icon_suma"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.59"
+            app:layout_constraintHorizontal_bias="0.594"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.608" />
+            app:layout_constraintVertical_bias="1.0" />
 
         <ImageView
             android:id="@+id/naranja_12"
