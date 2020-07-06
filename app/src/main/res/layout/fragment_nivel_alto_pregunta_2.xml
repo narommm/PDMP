@@ -4,11 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/nivel_alto_pregunta2"
     tools:context=".nive_alto.nivel_alto_pregunta_2">
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraint_layout"
+        android:id="@+id/nivelAltoPregunta2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/fondo_preguntas">

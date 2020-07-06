@@ -33,6 +33,9 @@
         <action
             android:id="@+id/action_operaciones_basicas_to_opcion_tablas_multiplicar"
             app:destination="@id/opcion_tablas_multiplicar" />
+        <action
+            android:id="@+id/action_operaciones_basicas_to_ejemplo_division_1"
+            app:destination="@id/ejemplo_division_1" />
     </fragment>
     <fragment
         android:id="@+id/ejemplo_suma_1"
@@ -56,7 +59,11 @@
         android:id="@+id/misiones_menu"
         android:name="com.example.pdmproyecto.misiones_menu"
         android:label="fragment_misiones_menu"
-        tools:layout="@layout/fragment_misiones_menu" />
+        tools:layout="@layout/fragment_misiones_menu" >
+        <action
+            android:id="@+id/action_misiones_menu_to_nivel_alto_pregunta_1"
+            app:destination="@id/nivel_alto_pregunta_1" />
+    </fragment>
     <fragment
         android:id="@+id/registro_actividades"
         android:name="com.example.pdmproyecto.registro_actividades"
@@ -189,4 +196,53 @@
         android:name="com.example.pdmproyecto.tablasMultiplicar.tabla_nueve"
         android:label="tabla_nueve"
         tools:layout="@layout/fragment_tabla_nueve"/>
+    <fragment
+        android:id="@+id/ejemplo_division_1"
+        android:name="com.example.pdmproyecto.ejemploDivision.ejemplo_division_1"
+        android:label="fragment_ejemplo_division_1"
+        tools:layout="@layout/fragment_ejemplo_division_1" >
+        <action
+            android:id="@+id/action_ejemplo_division_1_to_ejemplo_division_2"
+            app:destination="@id/ejemplo_division_2" />
+    </fragment>
+    <fragment
+        android:id="@+id/ejemplo_division_2"
+        android:name="com.example.pdmproyecto.ejemploDivision.ejemplo_division_2"
+        android:label="fragment_ejemplo_division_2"
+        tools:layout="@layout/fragment_ejemplo_division_2" />
+    <fragment
+        android:id="@+id/fragments_ejemplo_multiplicacion_1"
+        android:name="com.example.pdmproyecto.ejemploMultiplicacion.fragments_ejemplo_multiplicacion_1"
+        android:label="fragments_ejemplo_multiplicacion_1" >
+        <action
+            android:id="@+id/action_fragments_ejemplo_multiplicacion_1_to_ejemplo_multiplicacion_2"
+            app:destination="@id/ejemplo_multiplicacion_2" />
+    </fragment>
+    <fragment
+        android:id="@+id/ejemplo_multiplicacion_2"
+        android:name="com.example.pdmproyecto.ejemploMultiplicacion.ejemplo_multiplicacion_2"
+        android:label="ejemplo_multiplicacion_2" >
+        <action
+            android:id="@+id/action_ejemplo_multiplicacion_2_to_ejemplo_multiplicacion_3"
+            app:destination="@id/ejemplo_multiplicacion_3" />
+    </fragment>
+    <fragment
+        android:id="@+id/ejemplo_multiplicacion_3"
+        android:name="com.example.pdmproyecto.ejemploMultiplicacion.ejemplo_multiplicacion_3"
+        android:label="fragment_ejemplo_multiplicacion_3"
+        tools:layout="@layout/fragment_ejemplo_multiplicacion_3" >
+        <action
+            android:id="@+id/action_ejemplo_multiplicacion_3_to_ejemplo_multiplicacion_4"
+            app:destination="@id/ejemplo_multiplicacion_4" />
+    </fragment>
+    <fragment
+        android:id="@+id/ejemplo_multiplicacion_4"
+        android:name="com.example.pdmproyecto.ejemploMultiplicacion.ejemplo_multiplicacion_4"
+        android:label="fragment_ejemplo_multiplicacion_4"
+        tools:layout="@layout/fragment_ejemplo_multiplicacion_4" />
+    <activity
+        android:id="@+id/nivel_alto_pregunta_1"
+        android:name="com.example.pdmproyecto.nivel_alto.nivel_alto_pregunta_1"
+        android:label="fragment_nivel_alto_pregunta_1"
+        tools:layout="@layout/fragment_nivel_alto_pregunta_1" />
 </navigation>
