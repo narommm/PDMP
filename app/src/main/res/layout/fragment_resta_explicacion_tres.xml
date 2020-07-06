@@ -13,6 +13,18 @@
 
 
         <ImageView
+            android:id="@+id/audio11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:src="@android:drawable/ic_lock_silent_mode_off"
+            app:layout_constraintBottom_toTopOf="@+id/imview_signo_mult"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.957"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
             android:id="@+id/imageView5"
             android:layout_width="137dp"
             android:layout_height="135dp"
