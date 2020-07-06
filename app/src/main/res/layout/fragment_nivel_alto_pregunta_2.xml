@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/nivel_alto_pregunta2"
-    tools:context=".nive_alto.nivel_alto_pregunta_2">
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
+<data>
+    <variable
+        name="nivelAltoPregunta2"
+        type="com.example.pdmproyecto.nivel_alto.nivel_alto_pregunta_2" />
+</data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/nivelAltoPregunta2"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:background="@drawable/fondo_preguntas">
 
         <TextView

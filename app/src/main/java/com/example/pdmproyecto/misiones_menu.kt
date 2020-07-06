@@ -5,6 +5,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.databinding.DataBindingUtil
+import androidx.navigation.findNavController
+import com.example.pdmproyecto.databinding.FragmentMisionesMenuBinding
 
 /**
  * A simple [Fragment] subclass.
@@ -16,7 +19,11 @@ class misiones_menu : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_misiones_menu, container, false)
+        var binding = DataBindingUtil.inflate<FragmentMisionesMenuBinding>(inflater, R.layout.fragment_misiones_menu, container,false)
+        binding.misionesNivel4.setOnClickListener{
+            it.findNavController().navigate(R.id.action_misiones_menu_to_nivel_alto_pregunta_1)
+        }
+        return binding.root
     }
 
 }

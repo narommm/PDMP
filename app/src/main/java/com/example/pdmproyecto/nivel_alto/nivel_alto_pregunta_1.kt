@@ -16,7 +16,7 @@ import kotlinx.android.synthetic.main.fragment_nivel_alto_pregunta_2.*
 /**
  * A simple [Fragment] subclass.
  */
-class nivel_alto_pregunta_1 : FragmentActivity() {
+class nivel_alto_pregunta_1 : Fragment() {
 
     lateinit var binding : FragmentNivelAltoPregunta1Binding
     override fun onCreateView(
@@ -24,6 +24,11 @@ class nivel_alto_pregunta_1 : FragmentActivity() {
         savedInstanceState: Bundle?
     ): View? {
         return inflater.inflate(R.layout.fragment_nivel_alto_pregunta_1, container, false)
+        //manejoTransacciones()
+    }
+
+
+    /*private fun manejoTransacciones(){
         val fragmentManager = supportFragmentManager
         val fragmentTransaction = fragmentManager.beginTransaction()
         val newFragment = nivel_alto_pregunta_2()
@@ -36,9 +41,6 @@ class nivel_alto_pregunta_1 : FragmentActivity() {
             }
             transaction.commit();
         }
-
-
-    }
-
+    }*/
 
 }
