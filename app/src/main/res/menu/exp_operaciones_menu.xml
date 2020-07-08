@@ -8,18 +8,18 @@
     <item
         android:id="@+id/ejemplo_suma_1"
         android:title="@string/txt_suma"
-        android:icon="@drawable/icon_signo_division_background"/>
+        android:icon="@drawable/signo_suma"/>
     <item
         android:id="@+id/resta_explicacion_uno"
         android:title="@string/resta_title"
-        android:icon="@drawable/icon_signo_resta_background"/>
+        android:icon="@drawable/signo_resta"/>
     <item
         android:id="@+id/opcion_tablas_multiplicar"
         android:title="Multiplicacion"
-        android:icon="@drawable/icon_signo_multiplicacion_background"/>
+        android:icon="@drawable/signo_multiplicacion"/>
     <item
         android:id="@+id/ejemplo_division_1"
         android:title="Division"
-        android:icon="@drawable/icon_signo_division_background"/>
+        android:icon="@drawable/signo_division"/>
 </group>
 </menu>

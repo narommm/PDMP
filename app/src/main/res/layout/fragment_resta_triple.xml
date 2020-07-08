@@ -2,7 +2,7 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".nivel_alto.resta_triple">
+    tools:context=".nivel_alto.RestaTriple">
 
 
     <androidx.constraintlayout.widget.ConstraintLayout

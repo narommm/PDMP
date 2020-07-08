@@ -2,12 +2,12 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".nivelbajo.resta_simple">
+    tools:context=".nivelbajo.RestaSimple">
 
 <data>
     <variable
         name="restaSimple"
-        type="com.example.pdmproyecto.nivelbajo.resta_simple" />
+        type="com.example.pdmproyecto.nivelbajo.RestaSimple" />
 </data>
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/nivelBajoPregunta3"
@@ -35,7 +35,7 @@
             android:layout_width="205dp"
             android:layout_height="165dp"
             android:layout_marginStart="50dp"
-            android:src="@={restaSimple.imagenes[0]}"
+            android:src="@drawable/ama_pregunta_tres"
             app:layout_constraintEnd_toStartOf="@+id/imageView56"
             app:layout_constraintHorizontal_bias="0.245"
             app:layout_constraintStart_toStartOf="parent"
@@ -46,7 +46,7 @@
             android:layout_width="205dp"
             android:layout_height="165dp"
             android:layout_marginEnd="4dp"
-            android:src="@={restaSimple.imagenes[1]}"
+            android:src="@drawable/verde_pregunta_cinco"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/txt_contenido_suma2" />
 
@@ -66,7 +66,7 @@
             android:layout_width="205dp"
             android:layout_height="165dp"
             android:layout_marginStart="50dp"
-            android:src="@={restaSimple.imagenes[2]}"
+            android:src="@drawable/ama_pregunta_cero"
             app:layout_constraintEnd_toStartOf="@+id/imageView59"
             app:layout_constraintHorizontal_bias="0.24"
             app:layout_constraintStart_toStartOf="parent"
@@ -77,7 +77,7 @@
             android:layout_width="205dp"
             android:layout_height="165dp"
             android:layout_marginEnd="4dp"
-            android:src="@={restaSimple.imagenes[3]}"
+            android:src="@drawable/ama_pregunta_tres"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView56" />
 
