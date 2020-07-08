@@ -21,7 +21,7 @@ class opcion_tablas_multiplicar : Fragment() {
     ): View? {
         var binding = DataBindingUtil.inflate<FragmentOpcionTablasMultiplicarBinding>(inflater, R.layout.fragment_opcion_tablas_multiplicar, container,false)
         binding.btnMultEjemplos2.setOnClickListener {
-            it.findNavController().navigate(R.id.action_operaciones_basicas_to_ejemplo_suma_1)
+            it.findNavController().navigate(R.id.action_opcion_tablas_multiplicar_to_fragments_ejemplo_multiplicacion_1)
         }
         binding.btnMultTablas.setOnClickListener {
             it.findNavController().navigate(R.id.action_opcion_tablas_multiplicar_to_elegir_tabla_de_multiplicar)

@@ -2,7 +2,7 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".ejemplosResta.resta_explicacion_uno">
+    tools:context=".ejemplosresta.resta_explicacion_uno">
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -52,7 +52,7 @@
             android:id="@+id/textView2"
             style="@style/textMedidas2"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="29dp"
             android:layout_marginTop="44dp"
             android:text="@string/txt_decenas"
             app:layout_constraintEnd_toStartOf="@+id/textView3"
@@ -89,9 +89,10 @@
             android:layout_width="105dp"
             android:layout_height="92dp"
             android:layout_marginStart="32dp"
-            android:layout_marginBottom="60dp"
+            android:layout_marginBottom="4dp"
             android:src="@drawable/personaje_secundario"
             app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btn_next_resta"
             app:layout_constraintStart_toStartOf="parent" />
 
         <ImageView
@@ -117,11 +118,12 @@
 
         <ImageView
             android:id="@+id/imageView9"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
             android:layout_marginStart="104dp"
             android:layout_marginTop="28dp"
             android:src="@drawable/manzana"
+            app:layout_constraintBottom_toTopOf="@+id/imageView7"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView8" />
 
@@ -141,27 +143,31 @@
             android:id="@+id/imageView14"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="20dp"
             android:layout_marginEnd="24dp"
             android:src="@drawable/naranja"
+            app:layout_constraintBottom_toTopOf="@+id/btn_next_resta"
             app:layout_constraintEnd_toStartOf="@+id/imageView15"
-            app:layout_constraintTop_toBottomOf="@+id/imageView16" />
+            app:layout_constraintTop_toBottomOf="@+id/imageView16"
+            app:layout_constraintVertical_bias="0.0" />
 
         <ImageView
             android:id="@+id/imageView15"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
-            android:layout_marginEnd="36dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="40dp"
             android:src="@drawable/naranja"
+            app:layout_constraintBottom_toTopOf="@+id/btn_next_resta"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView17" />
+            app:layout_constraintTop_toBottomOf="@+id/imageView17"
+            app:layout_constraintVertical_bias="0.0" />
 
         <ImageView
             android:id="@+id/imageView16"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="20dp"
             android:layout_marginEnd="24dp"
             android:src="@drawable/naranja"
             app:layout_constraintEnd_toStartOf="@+id/imageView17"
@@ -169,10 +175,10 @@
 
         <ImageView
             android:id="@+id/imageView17"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
-            android:layout_marginEnd="36dp"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="40dp"
             android:src="@drawable/naranja"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView11" />
@@ -181,8 +187,8 @@
             android:id="@+id/imageView11"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
-            android:layout_marginEnd="36dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="40dp"
             android:src="@drawable/naranja"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView13" />
@@ -191,7 +197,7 @@
             android:id="@+id/imageView12"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="20dp"
             android:layout_marginEnd="24dp"
             android:src="@drawable/naranja"
             app:layout_constraintEnd_toStartOf="@+id/imageView11"

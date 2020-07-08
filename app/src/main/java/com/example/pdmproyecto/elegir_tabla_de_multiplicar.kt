@@ -15,37 +15,15 @@ import com.example.pdmproyecto.databinding.FragmentOpcionTablasMultiplicarBindin
  */
 class elegir_tabla_de_multiplicar : Fragment() {
 
+    lateinit var binding: FragmentElegirTablaDeMultiplicarBinding
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        var binding = DataBindingUtil.inflate<FragmentElegirTablaDeMultiplicarBinding>(inflater, R.layout.fragment_elegir_tabla_de_multiplicar, container,false)
+        var binding = DataBindingUtil.inflate<com.example.pdmproyecto.databinding.FragmentElegirTablaDeMultiplicarBinding>(inflater, R.layout.fragment_elegir_tabla_de_multiplicar, container,false)
+
         binding.iviewNumero1.setOnClickListener {
-            it.findNavController().navigate(R.id.action_elegir_tabla_de_multiplicar_to_login)
-        }
-        binding.iviewNumero2.setOnClickListener {
-            it.findNavController().navigate(R.id.action_elegir_tabla_de_multiplicar_to_tabla_dos)
-        }
-        binding.iviewNumero3.setOnClickListener {
-            it.findNavController().navigate(R.id.action_elegir_tabla_de_multiplicar_to_tabla_tres)
-        }
-        binding.iviewNumero4.setOnClickListener {
-            it.findNavController().navigate(R.id.action_elegir_tabla_de_multiplicar_to_tabla_cuatro)
-        }
-        binding.iviewNumero5.setOnClickListener {
-            it.findNavController().navigate(R.id.action_elegir_tabla_de_multiplicar_to_tabla_cinco)
-        }
-        binding.iviewNumero6.setOnClickListener {
-            it.findNavController().navigate(R.id.action_elegir_tabla_de_multiplicar_to_tabla_seis)
-        }
-        binding.iviewNumero7.setOnClickListener {
-            it.findNavController().navigate(R.id.action_elegir_tabla_de_multiplicar_to_tabla_siete)
-        }
-        binding.iviewNumero8.setOnClickListener {
-            it.findNavController().navigate(R.id.action_elegir_tabla_de_multiplicar_to_tabla_ocho)
-        }
-        binding.iviewNumero9.setOnClickListener {
-            it.findNavController().navigate(R.id.action_elegir_tabla_de_multiplicar_to_tabla_nueve)
+            it.findNavController().navigate(R.id.action_elegir_tabla_de_multiplicar_to_tablas)
         }
         return binding.root
     }

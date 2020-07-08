@@ -20,8 +20,8 @@ class misiones_menu : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         var binding = DataBindingUtil.inflate<FragmentMisionesMenuBinding>(inflater, R.layout.fragment_misiones_menu, container,false)
-        binding.misionesNivel4.setOnClickListener{
-            it.findNavController().navigate(R.id.action_misiones_menu_to_nivel_alto_pregunta_1)
+        binding.misionesNivel1.setOnClickListener{
+            it.findNavController().navigate(R.id.action_misiones_menu_to_nivel_bajo_pregunta_3)
         }
         return binding.root
     }

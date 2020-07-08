@@ -24,24 +24,13 @@ class opciones_iniciales : Fragment() {
         binding.btMisiones.setOnClickListener {
             it.findNavController().navigate(R.id.action_opciones_iniciales_to_misiones_menu)
         }
-        binding.btRegistroActividad.setOnClickListener {
+        binding.btRegistro.setOnClickListener {
             it.findNavController().navigate(R.id.action_opciones_iniciales_to_registro_actividades)
         }
         //(activity as AppCompatActivity).supportActionBar?.title = "Quiz Application"
 
-        //para mostrar barra de menu
-        setHasOptionsMenu(true)
 
         return binding.root
-    }
-
-    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
-        super.onCreateOptionsMenu(menu, inflater)
-        inflater?.inflate(R.menu.options_menu,menu)
-    }
-
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        return NavigationUI.onNavDestinationSelected(item!!,view!!.findNavController()) || super.onOptionsItemSelected(item)
     }
 
 }
