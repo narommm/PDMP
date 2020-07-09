@@ -29,21 +29,22 @@
             android:id="@+id/imageView55"
             android:layout_width="205dp"
             android:layout_height="165dp"
-            android:layout_marginStart="50dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="84dp"
             android:src="@drawable/verde_pregunta_dos"
             app:layout_constraintEnd_toStartOf="@+id/imageView56"
             app:layout_constraintHorizontal_bias="0.245"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txt_contenido_suma2" />
+            app:layout_constraintTop_toTopOf="@+id/txt_contenido_suma2" />
 
         <ImageView
             android:id="@+id/imageView56"
             android:layout_width="205dp"
             android:layout_height="165dp"
-            android:layout_marginEnd="4dp"
+            android:layout_marginTop="84dp"
             android:src="@drawable/verde_pregunta_siete"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txt_contenido_suma2" />
+            app:layout_constraintTop_toTopOf="@+id/txt_contenido_suma2" />
 
         <ImageView
             android:id="@+id/imageView57"
@@ -60,7 +61,7 @@
             android:id="@+id/imageView58"
             android:layout_width="205dp"
             android:layout_height="165dp"
-            android:layout_marginStart="50dp"
+            android:layout_marginStart="30dp"
             android:src="@drawable/ama_pregunta_uno"
             app:layout_constraintEnd_toStartOf="@+id/imageView59"
             app:layout_constraintHorizontal_bias="0.24"
@@ -80,10 +81,10 @@
             android:id="@+id/respuesta_1"
             android:layout_width="205dp"
             android:layout_height="165dp"
-            android:layout_marginStart="50dp"
+            android:layout_marginStart="30dp"
             android:src="@drawable/anara_signo_interrogacion"
             app:layout_constraintEnd_toStartOf="@+id/respuesta_2"
-            app:layout_constraintHorizontal_bias="0.24"
+            app:layout_constraintHorizontal_bias="0.244"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView58" />
 
@@ -91,7 +92,6 @@
             android:id="@+id/respuesta_2"
             android:layout_width="205dp"
             android:layout_height="165dp"
-            android:layout_marginEnd="4dp"
             android:src="@drawable/anara_signo_interrogacion"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView59" />

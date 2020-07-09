@@ -23,6 +23,15 @@ class misiones_menu : Fragment() {
         binding.misionesNivel1.setOnClickListener{
             it.findNavController().navigate(R.id.action_misiones_menu_to_nivel_bajo_pregunta_3)
         }
+        binding.misionesNivel2.setOnClickListener{
+            it.findNavController().navigate(R.id.action_misiones_menu_to_multiplicacionSimple)
+        }
+        binding.misionesNivel3.setOnClickListener{
+            it.findNavController().navigate(R.id.action_misiones_menu_to_restaTriple)
+        }
+        binding.misionesNivel4.setOnClickListener{
+            it.findNavController().navigate(R.id.action_misiones_menu_to_divisionDoble)
+        }
         return binding.root
     }
 

@@ -25,7 +25,7 @@ class opciones_iniciales : Fragment() {
             it.findNavController().navigate(R.id.action_opciones_iniciales_to_misiones_menu)
         }
         binding.btRegistro.setOnClickListener {
-            it.findNavController().navigate(R.id.action_opciones_iniciales_to_registro_actividades)
+            it.findNavController().navigate(R.id.action_opciones_iniciales_to_registro_actividades2)
         }
         //(activity as AppCompatActivity).supportActionBar?.title = "Quiz Application"
 

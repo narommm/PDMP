@@ -18,6 +18,9 @@
         <action
             android:id="@+id/action_opciones_iniciales_to_registro_actividades"
             app:destination="@id/registro_actividades" />
+        <action
+            android:id="@+id/action_opciones_iniciales_to_registro_actividades2"
+            app:destination="@id/registro_actividades2" />
     </fragment>
     <fragment
         android:id="@+id/operaciones_basicas"
@@ -64,12 +67,26 @@
             android:id="@+id/action_misiones_menu_to_nivel_bajo_pregunta_3"
             app:destination="@id/nivel_bajo_pregunta_3"
             app:popUpTo="@id/misiones_menu" />
+        <action
+            android:id="@+id/action_misiones_menu_to_multiplicacionSimple"
+            app:destination="@id/multiplicacionSimple"
+            app:popUpTo="@id/misiones_menu" />
+        <action
+            android:id="@+id/action_misiones_menu_to_restaTriple"
+            app:destination="@id/restaTriple"
+            app:popUpTo="@id/misiones_menu" />
+        <action
+            android:id="@+id/action_misiones_menu_to_divisionDoble"
+            app:destination="@id/divisionDoble"
+            app:popUpTo="@id/misiones_menu" />
+        <action
+            android:id="@+id/action_misiones_menu_self"
+            app:destination="@id/misiones_menu" />
+        <action
+            android:id="@+id/action_misiones_menu_to_sumaTriple"
+            app:destination="@id/sumaTriple"
+            app:popUpTo="@id/misiones_menu" />
     </fragment>
-    <fragment
-        android:id="@+id/registro_actividades"
-        android:name="com.example.pdmproyecto.registro_actividades"
-        android:label="fragment_registro_actividades"
-        tools:layout="@layout/fragment_registro_actividades" />
     <fragment
         android:id="@+id/ejemplo_suma_2"
         android:name="com.example.pdmproyecto.ejemplossuma.EjemploSuma2"
@@ -186,9 +203,110 @@
         android:id="@+id/suma_simple"
         android:name="com.example.pdmproyecto.nivelbajo.SumaSimple"
         android:label="fragment_suma_simple"
-        tools:layout="@layout/fragment_suma_simple" />
+        tools:layout="@layout/fragment_suma_simple" >
+        <action
+            android:id="@+id/action_suma_simple_to_registro_Pregunta1"
+            app:destination="@id/registro_Pregunta1"
+            app:popUpTo="@id/misiones_menu" />
+    </fragment>
     <fragment
         android:id="@+id/tablas"
         android:name="com.example.pdmproyecto.tablasmultiplicar.TablasContainer"
         android:label="tablas" />
+    <fragment
+        android:id="@+id/registro_Pregunta1"
+        android:name="com.example.pdmproyecto.registro.Registro_Pregunta1"
+        android:label="fragment_registro__pregunta1"
+        tools:layout="@layout/fragment_registro__pregunta1" />
+    <fragment
+        android:id="@+id/registro_actividades2"
+        android:name="com.example.pdmproyecto.registro.registro_actividades"
+        android:label="fragment_registro_actividades"
+        tools:layout="@layout/fragment_registro_actividades" >
+        <action
+            android:id="@+id/action_registro_actividades2_to_registro_Pregunta1"
+            app:destination="@id/registro_Pregunta1" />
+        <action
+            android:id="@+id/action_registro_actividades2_to_registro_pregunta2"
+            app:destination="@id/registro_pregunta2" />
+        <action
+            android:id="@+id/action_registro_actividades2_to_registro_pregunta3"
+            app:destination="@id/registro_pregunta3" />
+        <action
+            android:id="@+id/action_registro_actividades2_to_registro_pregunta4"
+            app:destination="@id/registro_pregunta4" />
+    </fragment>
+    <fragment
+        android:id="@+id/multiplicacionSimple"
+        android:name="com.example.pdmproyecto.nivelmedio.MultiplicacionSimple"
+        android:label="fragment_multiplicacion_simple"
+        tools:layout="@layout/fragment_multiplicacion_simple" >
+        <action
+            android:id="@+id/action_multiplicacionSimple_to_sumaAlta"
+            app:destination="@id/sumaAlta"
+            app:popUpTo="@id/misiones_menu" />
+    </fragment>
+    <fragment
+        android:id="@+id/divisionDoble"
+        android:name="com.example.pdmproyecto.nivel_alto.DivisionDoble"
+        android:label="fragment_division_doble"
+        tools:layout="@layout/fragment_division_doble" >
+        <action
+            android:id="@+id/action_divisionDoble_to_multiplicacionDoble"
+            app:destination="@id/multiplicacionDoble"
+            app:popUpTo="@id/misiones_menu" />
+    </fragment>
+    <fragment
+        android:id="@+id/divisionSimple"
+        android:name="com.example.pdmproyecto.nivelmedio.DivisionSimple"
+        android:label="fragment_division_simple"
+        tools:layout="@layout/fragment_division_simple" >
+        <action
+            android:id="@+id/action_divisionSimple_to_registro_pregunta3"
+            app:destination="@id/registro_pregunta3"
+            app:popUpTo="@id/misiones_menu" />
+    </fragment>
+    <fragment
+        android:id="@+id/multiplicacionDoble"
+        android:name="com.example.pdmproyecto.nivel_alto.MultiplicacionDoble"
+        android:label="MultiplicacionDoble" >
+        <action
+            android:id="@+id/action_multiplicacionDoble_to_registro_pregunta4"
+            app:destination="@id/registro_pregunta4"
+            app:popUpTo="@id/misiones_menu" />
+    </fragment>
+    <fragment
+        android:id="@+id/sumaAlta"
+        android:name="com.example.pdmproyecto.nivel_alto.SumaAlta"
+        android:label="SumaAlta" >
+        <action
+            android:id="@+id/action_sumaAlta_to_registro_pregunta2"
+            app:destination="@id/registro_pregunta2"
+            app:popUpTo="@id/misiones_menu" />
+    </fragment>
+    <fragment
+        android:id="@+id/registro_pregunta2"
+        android:name="com.example.pdmproyecto.registro.registro_pregunta2"
+        android:label="fragment_registro_pregunta2"
+        tools:layout="@layout/fragment_registro_pregunta2" />
+    <fragment
+        android:id="@+id/registro_pregunta3"
+        android:name="com.example.pdmproyecto.registro.registro_pregunta3"
+        android:label="fragment_registro_pregunta3"
+        tools:layout="@layout/fragment_registro_pregunta3" />
+    <fragment
+        android:id="@+id/registro_pregunta4"
+        android:name="com.example.pdmproyecto.registro.registro_pregunta4"
+        android:label="fragment_registro_pregunta4"
+        tools:layout="@layout/fragment_registro_pregunta4" />
+    <fragment
+        android:id="@+id/sumaTriple"
+        android:name="com.example.pdmproyecto.nivel_alto.SumaTriple"
+        android:label="fragment_suma_triple"
+        tools:layout="@layout/fragment_suma_triple" >
+        <action
+            android:id="@+id/action_sumaTriple_to_divisionSimple"
+            app:destination="@id/divisionSimple"
+            app:popUpTo="@id/misiones_menu" />
+    </fragment>
 </navigation>

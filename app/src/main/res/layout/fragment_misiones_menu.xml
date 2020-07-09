@@ -8,7 +8,7 @@
         android:id="@+id/misionesMenu"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/misiones_menu">
+        android:background="@color/colorAccent">
 
         <Button
             android:id="@+id/misiones_nivel_1"
