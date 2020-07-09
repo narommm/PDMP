@@ -21,6 +21,9 @@
         <action
             android:id="@+id/action_opciones_iniciales_to_registro_actividades2"
             app:destination="@id/registro_actividades2" />
+        <action
+            android:id="@+id/action_opciones_iniciales_to_login2"
+            app:destination="@id/login2" />
     </fragment>
     <fragment
         android:id="@+id/operaciones_basicas"
@@ -222,24 +225,6 @@
         android:label="fragment_registro__pregunta1"
         tools:layout="@layout/fragment_registro__pregunta1" />
     <fragment
-        android:id="@+id/registro_actividades2"
-        android:name="com.example.pdmproyecto.registro.registro_actividades"
-        android:label="fragment_registro_actividades"
-        tools:layout="@layout/fragment_registro_actividades" >
-        <action
-            android:id="@+id/action_registro_actividades2_to_registro_Pregunta1"
-            app:destination="@id/registro_Pregunta1" />
-        <action
-            android:id="@+id/action_registro_actividades2_to_registro_pregunta2"
-            app:destination="@id/registro_pregunta2" />
-        <action
-            android:id="@+id/action_registro_actividades2_to_registro_pregunta3"
-            app:destination="@id/registro_pregunta3" />
-        <action
-            android:id="@+id/action_registro_actividades2_to_registro_pregunta4"
-            app:destination="@id/registro_pregunta4" />
-    </fragment>
-    <fragment
         android:id="@+id/divisionDoble"
         android:name="com.example.pdmproyecto.nivel_alto.DivisionDoble"
         android:label="fragment_division_doble"
@@ -266,15 +251,6 @@
         <action
             android:id="@+id/action_multiplicacionDoble_to_registro_pregunta4"
             app:destination="@id/registro_pregunta4"
-            app:popUpTo="@id/misiones_menu" />
-    </fragment>
-    <fragment
-        android:id="@+id/sumaAlta"
-        android:name="com.example.pdmproyecto.nivel_alto.SumaAlta"
-        android:label="SumaAlta" >
-        <action
-            android:id="@+id/action_sumaAlta_to_registro_pregunta2"
-            app:destination="@id/registro_pregunta2"
             app:popUpTo="@id/misiones_menu" />
     </fragment>
     <fragment
@@ -308,7 +284,36 @@
         android:label="fragment_multiplicacion_media"
         tools:layout="@layout/fragment_multiplicacion_media" >
         <action
-            android:id="@+id/action_multiplicacionMedia_to_sumaAlta"
-            app:destination="@id/sumaAlta" />
+            android:id="@+id/action_multiplicacionMedia_to_restaTriple"
+            app:destination="@id/restaTriple"
+            app:popUpTo="@id/misiones_menu" />
+    </fragment>
+    <fragment
+        android:id="@+id/restaTriple"
+        android:name="com.example.pdmproyecto.nivelmedio.RestaTriple"
+        android:label="fragment_resta_triple"
+        tools:layout="@layout/fragment_resta_triple" >
+        <action
+            android:id="@+id/action_restaTriple_to_registro_pregunta2"
+            app:destination="@id/registro_pregunta2"
+            app:popUpTo="@id/misiones_menu" />
+    </fragment>
+    <fragment
+        android:id="@+id/login2"
+        android:name="com.example.pdmproyecto.Login"
+        android:label="fragment_registro"
+        tools:layout="@layout/fragment_registro" >
+        <action
+            android:id="@+id/action_login2_to_registro_pregunta4"
+            app:destination="@id/registro_pregunta4" />
+        <action
+            android:id="@+id/action_login2_to_registro_pregunta3"
+            app:destination="@id/registro_pregunta3" />
+        <action
+            android:id="@+id/action_login2_to_registro_pregunta2"
+            app:destination="@id/registro_pregunta2" />
+        <action
+            android:id="@+id/action_login2_to_registro_Pregunta1"
+            app:destination="@id/registro_Pregunta1" />
     </fragment>
 </navigation>

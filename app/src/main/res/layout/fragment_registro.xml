@@ -8,117 +8,57 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/registro"
-        android:background="@drawable/fondo_principal">
-
-        <EditText
-            android:id="@+id/etxt_apellido3"
-            style="@style/textGame"
-            android:layout_width="252dp"
-            android:layout_height="45dp"
-            android:layout_marginTop="24dp"
-            android:background="@color/moradoRelleno"
-            android:hint="Apellido"
-            android:textColor="@color/blanco"
-            android:textSize="@dimen/medium_35_sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.471"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/etxt_nickname" />
+        android:background="@drawable/fondo_registro">
 
         <ImageView
-            android:id="@+id/personaje_principal_view"
-            android:layout_width="290dp"
-            android:layout_height="160dp"
-            android:layout_marginTop="88dp"
-            android:src="@drawable/personaje_principal"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/text_name_aplication"
-            style="@style/textGame"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/nunito_sans_extrabold"
-            android:text="@string/name_game"
-            android:textColor="@android:color/background_light"
-            android:textSize="@dimen/medium_35_sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/personaje_principal_view" />
-
-        <EditText
-            android:id="@+id/etxt_name"
-            style="@style/textGame"
-            android:layout_width="259dp"
-            android:layout_height="52dp"
-            android:layout_marginTop="32dp"
-            android:background="@color/moradoRelleno"
-            android:hint="Nombre"
-            android:textColor="@color/blanco"
-            android:textSize="@dimen/medium_35_sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.496"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/text_name_aplication" />
-
-        <EditText
-            android:id="@+id/etxt_apellido"
-            style="@style/textGame"
-            android:layout_width="259dp"
-            android:layout_height="52dp"
-            android:layout_marginTop="20dp"
-            android:background="@color/moradoRelleno"
-            android:hint="Apellido"
-            android:textColor="@color/blanco"
-            android:textSize="@dimen/medium_35_sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.496"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/etxt_name" />
-
-        <EditText
-            android:id="@+id/etxt_nickname"
-            style="@style/textGame"
-            android:layout_width="259dp"
-            android:layout_height="52dp"
-            android:layout_marginTop="20dp"
-            android:background="@color/moradoRelleno"
-            android:hint="Nickname"
-            android:textColor="@color/blanco"
-            android:textSize="@dimen/medium_35_sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.496"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/etxt_apellido" />
-
-        <Button
-            android:id="@+id/btn_registrarse_action"
-            style="@style/textGame"
-            android:layout_width="237dp"
-            android:layout_height="54dp"
-            android:text="@string/txt_registrarse"
-            android:background="@color/verdeBotones"
+            android:id="@+id/nBajo"
+            android:layout_width="187dp"
+            android:layout_height="167dp"
+            android:src="@drawable/registro_nivel_bajo"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintHorizontal_bias="0.11"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/etxt_apellido3"
-            app:layout_constraintVertical_bias="0.577" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.292" />
 
         <ImageView
-            android:id="@+id/imagePlanet1"
-            android:layout_width="79dp"
-            android:layout_height="69dp"
-            android:layout_marginStart="40dp"
-            android:src="@drawable/planeta_tierra_boton"
-            app:layout_constraintBottom_toBottomOf="@+id/btn_registrarse_action"
+            android:id="@+id/nMedio"
+            android:layout_width="187dp"
+            android:layout_height="167dp"
+            android:src="@drawable/registro_nivel_medio"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.92"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/btn_registrarse_action"
-            app:layout_constraintVertical_bias="0.533" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.292" />
 
+        <ImageView
+            android:id="@+id/nIntermedio"
+            android:layout_width="187dp"
+            android:layout_height="167dp"
+            android:src="@drawable/registro_nivel_intermedio"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.111"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nBajo"
+            app:layout_constraintVertical_bias="0.452" />
+
+        <ImageView
+            android:id="@+id/nAlto"
+            android:layout_width="187dp"
+            android:layout_height="167dp"
+            android:src="@drawable/registro_nivel_alto"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.92"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nMedio"
+            app:layout_constraintVertical_bias="0.452" />
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 
 

@@ -27,7 +27,7 @@
             app:layout_constraintVertical_bias="0.608" />
 
         <ImageView
-            android:id="@+id/imageView55"
+            android:id="@+id/respuesta1"
             android:layout_width="162dp"
             android:layout_height="132dp"
             android:layout_marginTop="20dp"
@@ -47,7 +47,7 @@
             app:layout_constraintTop_toBottomOf="@+id/txt_contenido_suma2" />
 
         <ImageView
-            android:id="@+id/imageView59"
+            android:id="@+id/respuesta2"
             android:layout_width="162dp"
             android:layout_height="132dp"
             android:src="@drawable/ama_pregunta_ocho"
@@ -57,19 +57,19 @@
             app:layout_constraintVertical_bias="0.115" />
 
         <ImageView
-            android:id="@+id/respuesta_1"
+            android:id="@+id/solucion1"
             android:layout_width="162dp"
             android:layout_height="132dp"
             android:src="@drawable/anara_signo_interrogacion"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/respuesta_2"
+            app:layout_constraintEnd_toStartOf="@+id/solucion2"
             app:layout_constraintHorizontal_bias="0.081"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView64"
             app:layout_constraintVertical_bias="0.18" />
 
         <ImageView
-            android:id="@+id/respuesta_2"
+            android:id="@+id/solucion2"
             android:layout_width="162dp"
             android:layout_height="132dp"
             android:src="@drawable/anara_signo_interrogacion"
@@ -81,13 +81,13 @@
             app:layout_constraintVertical_bias="0.18" />
 
         <ImageView
-            android:id="@+id/respuesta_3"
+            android:id="@+id/respuesta3"
             android:layout_width="162dp"
             android:layout_height="132dp"
             android:src="@drawable/anara_signo_interrogacion"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/respuesta_2"
+            app:layout_constraintStart_toEndOf="@+id/solucion2"
             app:layout_constraintTop_toBottomOf="@+id/imageView64"
             app:layout_constraintVertical_bias="0.18" />
 
@@ -108,7 +108,7 @@
             app:layout_constraintEnd_toStartOf="@+id/pregunta3_dos"
             app:layout_constraintHorizontal_bias="0.2"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/respuesta_1" />
+            app:layout_constraintTop_toBottomOf="@+id/solucion1" />
 
         <ImageView
             android:id="@+id/pregunta3_dos"
@@ -117,7 +117,7 @@
             android:src="@drawable/respuestas_dos"
             app:layout_constraintBottom_toTopOf="@+id/pregunta3_siete"
             app:layout_constraintEnd_toStartOf="@+id/pregunta3_tres"
-            app:layout_constraintTop_toBottomOf="@+id/respuesta_1" />
+            app:layout_constraintTop_toBottomOf="@+id/solucion1" />
 
         <ImageView
             android:id="@+id/pregunta3_tres"
@@ -126,7 +126,7 @@
             android:src="@drawable/respuestas_tres"
             app:layout_constraintBottom_toTopOf="@+id/pregunta3_ocho"
             app:layout_constraintEnd_toStartOf="@+id/pregunta3_cuatro"
-            app:layout_constraintTop_toBottomOf="@+id/respuesta_1" />
+            app:layout_constraintTop_toBottomOf="@+id/solucion1" />
 
         <ImageView
             android:id="@+id/pregunta3_cuatro"
@@ -135,7 +135,7 @@
             android:src="@drawable/respuestas_cuatro"
             app:layout_constraintBottom_toTopOf="@+id/pregunta3_nueve"
             app:layout_constraintEnd_toStartOf="@+id/pregunta3_cinco"
-            app:layout_constraintTop_toBottomOf="@+id/respuesta_2" />
+            app:layout_constraintTop_toBottomOf="@+id/solucion2" />
 
         <ImageView
             android:id="@+id/pregunta3_cinco"
@@ -144,7 +144,7 @@
             android:src="@drawable/respuestas_cinco"
             app:layout_constraintBottom_toTopOf="@+id/pregunta2_cero"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/respuesta_2" />
+            app:layout_constraintTop_toBottomOf="@+id/solucion2" />
 
         <ImageView
             android:id="@+id/pregunta3_seis"

@@ -8,7 +8,6 @@ import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.findNavController
 import com.example.pdmproyecto.R
-import com.example.pdmproyecto.databinding.FragmentRestaSimpleBinding
 import com.example.pdmproyecto.databinding.FragmentRestaTripleBinding
 import kotlinx.android.synthetic.main.fragment_resta_triple.*
 
@@ -31,20 +30,23 @@ class RestaTriple : Fragment() {
             if (imagenesIndex < 5) {
                 when(contadorClick){
                     0->{
-                        binding.respuesta1.setImageResource(R.drawable.anara_pregunta_cero)
+                        binding.respuesta1.setImageResource(R.drawable.verde_pregunta_cero)
                         contadorClick += 1
                     }
                     1->{
-                        binding.respuesta2.setImageResource(R.drawable.anara_pregunta_cero)
+                        binding.respuesta2.setImageResource(R.drawable.ama_pregunta_cero)
                         contadorClick += 1
                     }
                     2->{
+                        binding.respuesta3.setImageResource(R.drawable.anara_pregunta_cero)
+                    }
+                    3->{
                         cambioPregunta(imagenesIndex)
                         imagenesIndex += 1
                     }
                 }
             } else {
-                it.findNavController().navigate(R.id.action_nivel_bajo_pregunta_3_to_suma_simple)
+                it.findNavController().navigate(R.id.action_restaTriple_to_registro_pregunta2)
             }
         }
         binding.pregunta3Uno.setOnClickListener {
@@ -59,12 +61,15 @@ class RestaTriple : Fragment() {
                         contadorClick += 1
                     }
                     2->{
+                        binding.respuesta3.setImageResource(R.drawable.anara_pregunta_uno)
+                    }
+                    3->{
                         cambioPregunta(imagenesIndex)
-                        imagenesIndex +=1
+                        imagenesIndex += 1
                     }
                 }
             } else {
-                it.findNavController().navigate(R.id.action_nivel_bajo_pregunta_3_to_suma_simple)
+                it.findNavController().navigate(R.id.action_restaTriple_to_registro_pregunta2)
             }
         }
         binding.pregunta3Dos.setOnClickListener {
@@ -79,32 +84,15 @@ class RestaTriple : Fragment() {
                         contadorClick += 1
                     }
                     2->{
+                        binding.respuesta3.setImageResource(R.drawable.anara_pregunta_dos)
+                    }
+                    3->{
                         cambioPregunta(imagenesIndex)
-                        imagenesIndex +=1
+                        imagenesIndex += 1
                     }
                 }
             } else {
-                it.findNavController().navigate(R.id.action_nivel_bajo_pregunta_3_to_suma_simple)
-            }
-        }
-        binding.pregunta3Dos.setOnClickListener {
-            if (imagenesIndex < 5) {
-                when(contadorClick){
-                    0->{
-                        binding.respuesta1.setImageResource(R.drawable.anara_pregunta_dos)
-                        contadorClick += 1
-                    }
-                    1->{
-                        binding.respuesta2.setImageResource(R.drawable.anara_pregunta_dos)
-                        contadorClick += 1
-                    }
-                    2->{
-                        cambioPregunta(imagenesIndex)
-                        imagenesIndex +=1
-                    }
-                }
-            } else {
-                it.findNavController().navigate(R.id.action_nivel_bajo_pregunta_3_to_suma_simple)
+                it.findNavController().navigate(R.id.action_restaTriple_to_registro_pregunta2)
             }
         }
         binding.pregunta3Tres.setOnClickListener {
@@ -119,12 +107,15 @@ class RestaTriple : Fragment() {
                         contadorClick += 1
                     }
                     2->{
+                        binding.respuesta3.setImageResource(R.drawable.anara_pregunta_tres)
+                    }
+                    3->{
                         cambioPregunta(imagenesIndex)
-                        imagenesIndex +=1
+                        imagenesIndex += 1
                     }
                 }
             } else {
-                it.findNavController().navigate(R.id.action_nivel_bajo_pregunta_3_to_suma_simple)
+                it.findNavController().navigate(R.id.action_restaTriple_to_registro_pregunta2)
             }
         }
         binding.pregunta3Cuatro.setOnClickListener {
@@ -139,12 +130,15 @@ class RestaTriple : Fragment() {
                         contadorClick += 1
                     }
                     2->{
+                        binding.respuesta3.setImageResource(R.drawable.anara_pregunta_cuatro)
+                    }
+                    3->{
                         cambioPregunta(imagenesIndex)
-                        imagenesIndex +=1
+                        imagenesIndex += 1
                     }
                 }
             } else {
-                it.findNavController().navigate(R.id.action_nivel_bajo_pregunta_3_to_suma_simple)
+                it.findNavController().navigate(R.id.action_restaTriple_to_registro_pregunta2)
             }
         }
         binding.pregunta3Cinco.setOnClickListener {
@@ -159,12 +153,15 @@ class RestaTriple : Fragment() {
                         contadorClick += 1
                     }
                     2->{
+                        binding.respuesta3.setImageResource(R.drawable.anara_pregunta_cinco)
+                    }
+                    3->{
                         cambioPregunta(imagenesIndex)
-                        imagenesIndex +=1
+                        imagenesIndex += 1
                     }
                 }
             } else {
-                it.findNavController().navigate(R.id.action_nivel_bajo_pregunta_3_to_suma_simple)
+                it.findNavController().navigate(R.id.action_restaTriple_to_registro_pregunta2)
             }
         }
         binding.pregunta3Seis.setOnClickListener {
@@ -179,12 +176,15 @@ class RestaTriple : Fragment() {
                         contadorClick += 1
                     }
                     2->{
+                        binding.respuesta3.setImageResource(R.drawable.anara_pregunta_seis)
+                    }
+                    3->{
                         cambioPregunta(imagenesIndex)
-                        imagenesIndex +=1
+                        imagenesIndex += 1
                     }
                 }
             } else {
-                it.findNavController().navigate(R.id.action_nivel_bajo_pregunta_3_to_suma_simple)
+                it.findNavController().navigate(R.id.action_restaTriple_to_registro_pregunta2)
             }
         }
         binding.pregunta3Siete.setOnClickListener {
@@ -199,12 +199,15 @@ class RestaTriple : Fragment() {
                         contadorClick += 1
                     }
                     2->{
+                        binding.respuesta3.setImageResource(R.drawable.anara_pregunta_siete)
+                    }
+                    3->{
                         cambioPregunta(imagenesIndex)
-                        imagenesIndex +=1
+                        imagenesIndex += 1
                     }
                 }
             } else {
-                it.findNavController().navigate(R.id.action_nivel_bajo_pregunta_3_to_suma_simple)
+                it.findNavController().navigate(R.id.action_restaTriple_to_registro_pregunta2)
             }
         }
         binding.pregunta3Ocho.setOnClickListener {
@@ -219,12 +222,15 @@ class RestaTriple : Fragment() {
                         contadorClick += 1
                     }
                     2->{
+                        binding.respuesta3.setImageResource(R.drawable.anara_pregunta_ocho)
+                    }
+                    3->{
                         cambioPregunta(imagenesIndex)
-                        imagenesIndex +=1
+                        imagenesIndex += 1
                     }
                 }
             } else {
-                it.findNavController().navigate(R.id.action_nivel_bajo_pregunta_3_to_suma_simple)
+                it.findNavController().navigate(R.id.action_restaTriple_to_registro_pregunta2)
             }
         }
         binding.pregunta3Nueve.setOnClickListener {
@@ -239,13 +245,15 @@ class RestaTriple : Fragment() {
                         contadorClick += 1
                     }
                     2->{
-                        binding.imageView55.setImageResource(R.drawable.verde_pregunta_siete)
+                        binding.respuesta3.setImageResource(R.drawable.anara_pregunta_nueve)
+                    }
+                    3->{
                         cambioPregunta(imagenesIndex)
-                        imagenesIndex +=1
+                        imagenesIndex += 1
                     }
                 }
             } else {
-                it.findNavController().navigate(R.id.action_nivel_bajo_pregunta_3_to_suma_simple)
+                it.findNavController().navigate(R.id.action_restaTriple_to_registro_pregunta2)
             }
         }
         return binding.root
@@ -263,54 +271,58 @@ class RestaTriple : Fragment() {
 
     private fun pregunta1() {
         //contadorClick = 0
-        respuesta_1.setImageResource(R.drawable.anara_signo_interrogacion)
-        respuesta_2.setImageResource(R.drawable.anara_signo_interrogacion)
-        respuesta_3.setImageResource(R.drawable.anara_signo_interrogacion)
-        imageView55.setImageResource(R.drawable.verde_pregunta_tres)
-        imageView56.setImageResource(R.drawable.verde_pregunta_cero)
-        imageView54.setImageResource(R.drawable.verde_pregunta_cinco)
-        imageView58.setImageResource(R.drawable.ama_pregunta_uno)
-        imageView59.setImageResource(R.drawable.ama_pregunta_seis)
-        imageView60.setImageResource(R.drawable.ama_pregunta_dos)
+        respuesta1.setImageResource(R.drawable.verde_pregunta_signo_interrogacion)
+        respuesta2.setImageResource(R.drawable.ama_signo_interrogacion)
+        respuesta3.setImageResource(R.drawable.anara_signo_interrogacion)
+
+        imageView56.setImageResource(R.drawable.verde_pregunta_cinco)
+        imageView54.setImageResource(R.drawable.verde_pregunta_cero)
+        imageView58.setImageResource(R.drawable.ama_pregunta_cuatro)
+        imageView60.setImageResource(R.drawable.ama_pregunta_cero)
+        solucion1.setImageResource(R.drawable.anara_pregunta_dos)
+        solucion2.setImageResource(R.drawable.anara_pregunta_cinco)
     }
 
     private fun pregunta2() {
         //contadorClick = 0
-        respuesta_1.setImageResource(R.drawable.anara_signo_interrogacion)
-        respuesta_2.setImageResource(R.drawable.anara_signo_interrogacion)
-        respuesta_3.setImageResource(R.drawable.anara_signo_interrogacion)
-        imageView55.setImageResource(R.drawable.verde_pregunta_tres)
-        imageView56.setImageResource(R.drawable.verde_pregunta_cero)
-        imageView54.setImageResource(R.drawable.verde_pregunta_cinco)
-        imageView58.setImageResource(R.drawable.ama_pregunta_uno)
-        imageView59.setImageResource(R.drawable.ama_pregunta_seis)
-        imageView60.setImageResource(R.drawable.ama_pregunta_dos)
+        respuesta1.setImageResource(R.drawable.verde_pregunta_signo_interrogacion)
+        respuesta2.setImageResource(R.drawable.ama_signo_interrogacion)
+        respuesta3.setImageResource(R.drawable.anara_signo_interrogacion)
+
+        imageView56.setImageResource(R.drawable.verde_pregunta_ocho)
+        imageView54.setImageResource(R.drawable.verde_pregunta_uno)
+        imageView58.setImageResource(R.drawable.ama_pregunta_dos)
+        imageView60.setImageResource(R.drawable.ama_pregunta_cinco)
+        solucion1.setImageResource(R.drawable.anara_pregunta_dos)
+        solucion2.setImageResource(R.drawable.anara_pregunta_cero)
     }
 
     private fun pregunta3() {
         //contadorClick = 0
-        respuesta_1.setImageResource(R.drawable.anara_signo_interrogacion)
-        respuesta_2.setImageResource(R.drawable.anara_signo_interrogacion)
-        respuesta_3.setImageResource(R.drawable.anara_signo_interrogacion)
-        imageView55.setImageResource(R.drawable.verde_pregunta_tres)
-        imageView56.setImageResource(R.drawable.verde_pregunta_cero)
+        respuesta1.setImageResource(R.drawable.verde_pregunta_signo_interrogacion)
+        respuesta2.setImageResource(R.drawable.ama_signo_interrogacion)
+        respuesta3.setImageResource(R.drawable.anara_signo_interrogacion)
+
+        imageView56.setImageResource(R.drawable.verde_pregunta_cinco)
         imageView54.setImageResource(R.drawable.verde_pregunta_cinco)
-        imageView58.setImageResource(R.drawable.ama_pregunta_uno)
-        imageView59.setImageResource(R.drawable.ama_pregunta_seis)
-        imageView60.setImageResource(R.drawable.ama_pregunta_dos)
+        imageView58.setImageResource(R.drawable.ama_pregunta_seis)
+        imageView60.setImageResource(R.drawable.ama_pregunta_ocho)
+        solucion1.setImageResource(R.drawable.anara_pregunta_cero)
+        solucion2.setImageResource(R.drawable.anara_pregunta_cinco)
     }
 
     private fun pregunta4() {
         //contadorClick = 0
-        respuesta_1.setImageResource(R.drawable.anara_signo_interrogacion)
-        respuesta_2.setImageResource(R.drawable.anara_signo_interrogacion)
-        respuesta_3.setImageResource(R.drawable.anara_signo_interrogacion)
-        imageView55.setImageResource(R.drawable.verde_pregunta_tres)
-        imageView56.setImageResource(R.drawable.verde_pregunta_cero)
-        imageView54.setImageResource(R.drawable.verde_pregunta_cinco)
-        imageView58.setImageResource(R.drawable.ama_pregunta_uno)
-        imageView59.setImageResource(R.drawable.ama_pregunta_seis)
-        imageView60.setImageResource(R.drawable.ama_pregunta_dos)
+        respuesta1.setImageResource(R.drawable.verde_pregunta_signo_interrogacion)
+        respuesta2.setImageResource(R.drawable.ama_signo_interrogacion)
+        respuesta3.setImageResource(R.drawable.anara_signo_interrogacion)
+
+        imageView56.setImageResource(R.drawable.verde_pregunta_dos)
+        imageView54.setImageResource(R.drawable.verde_pregunta_dos)
+        imageView58.setImageResource(R.drawable.ama_pregunta_dos)
+        imageView60.setImageResource(R.drawable.ama_pregunta_tres)
+        solucion1.setImageResource(R.drawable.anara_pregunta_uno)
+        solucion2.setImageResource(R.drawable.anara_pregunta_cero)
     }
 
 }

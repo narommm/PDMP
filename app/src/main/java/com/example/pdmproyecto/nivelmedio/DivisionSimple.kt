@@ -9,10 +9,6 @@ import androidx.databinding.DataBindingUtil
 import androidx.navigation.findNavController
 import com.example.pdmproyecto.R
 import com.example.pdmproyecto.databinding.FragmentDivisionSimpleBinding
-import kotlinx.android.synthetic.main.fragment_division_media.*
-import kotlinx.android.synthetic.main.fragment_division_media.imageView55
-import kotlinx.android.synthetic.main.fragment_division_media.imageView56
-import kotlinx.android.synthetic.main.fragment_division_media.respuesta_2
 import kotlinx.android.synthetic.main.fragment_division_simple.*
 
 /**
@@ -32,7 +28,7 @@ class DivisionSimple : Fragment() {
             if (imagenesIndex < 5) {
                 when(contadorClick){
                     0->{
-                        binding.respuesta2.setImageResource(R.drawable.anara_pregunta_cero)
+                        binding.solucion2.setImageResource(R.drawable.anara_pregunta_cero)
                         contadorClick += 1
                     }
                     1->{
@@ -48,7 +44,7 @@ class DivisionSimple : Fragment() {
             if (imagenesIndex < 5) {
                 when(contadorClick){
                     0->{
-                        binding.respuesta2.setImageResource(R.drawable.anara_pregunta_uno)
+                        binding.solucion2.setImageResource(R.drawable.anara_pregunta_uno)
                         contadorClick += 1
                     }
                     1->{
@@ -64,7 +60,7 @@ class DivisionSimple : Fragment() {
             if (imagenesIndex < 5) {
                 when(contadorClick){
                     0->{
-                        binding.respuesta2.setImageResource(R.drawable.anara_pregunta_dos)
+                        binding.solucion2.setImageResource(R.drawable.anara_pregunta_dos)
                         contadorClick += 1
                     }
                     1->{
@@ -80,7 +76,7 @@ class DivisionSimple : Fragment() {
             if (imagenesIndex < 5) {
                 when(contadorClick){
                     0->{
-                        binding.respuesta2.setImageResource(R.drawable.anara_pregunta_dos)
+                        binding.solucion2.setImageResource(R.drawable.anara_pregunta_dos)
                         contadorClick += 1
                     }
                     1->{
@@ -96,7 +92,7 @@ class DivisionSimple : Fragment() {
             if (imagenesIndex < 5) {
                 when(contadorClick){
                     0->{
-                        binding.respuesta2.setImageResource(R.drawable.anara_pregunta_tres)
+                        binding.solucion2.setImageResource(R.drawable.anara_pregunta_tres)
                         contadorClick += 1
                     }
                     1->{
@@ -112,7 +108,7 @@ class DivisionSimple : Fragment() {
             if (imagenesIndex < 5) {
                 when(contadorClick){
                     0->{
-                        binding.respuesta2.setImageResource(R.drawable.anara_pregunta_cuatro)
+                        binding.solucion2.setImageResource(R.drawable.anara_pregunta_cuatro)
                         contadorClick += 1
                     }
                     1->{
@@ -128,7 +124,7 @@ class DivisionSimple : Fragment() {
             if (imagenesIndex < 5) {
                 when(contadorClick){
                     0->{
-                        binding.respuesta2.setImageResource(R.drawable.anara_pregunta_cinco)
+                        binding.solucion2.setImageResource(R.drawable.anara_pregunta_cinco)
                         contadorClick += 1
                     }
                     1->{
@@ -144,7 +140,7 @@ class DivisionSimple : Fragment() {
             if (imagenesIndex < 5) {
                 when(contadorClick){
                     0->{
-                        binding.respuesta2.setImageResource(R.drawable.anara_pregunta_seis)
+                        binding.solucion2.setImageResource(R.drawable.anara_pregunta_seis)
                         contadorClick += 1
                     }
                     1->{
@@ -160,7 +156,7 @@ class DivisionSimple : Fragment() {
             if (imagenesIndex < 5) {
                 when(contadorClick){
                     0->{
-                        binding.respuesta2.setImageResource(R.drawable.anara_pregunta_siete)
+                        binding.solucion2.setImageResource(R.drawable.anara_pregunta_siete)
                         contadorClick += 1
                     }
                     1->{
@@ -176,7 +172,7 @@ class DivisionSimple : Fragment() {
             if (imagenesIndex < 5) {
                 when(contadorClick){
                     0->{
-                        binding.respuesta2.setImageResource(R.drawable.anara_pregunta_ocho)
+                        binding.solucion2.setImageResource(R.drawable.anara_pregunta_ocho)
                         contadorClick += 1
                     }
                     1->{
@@ -192,7 +188,6 @@ class DivisionSimple : Fragment() {
             if (imagenesIndex < 5) {
                 when(contadorClick){
                     0->{
-                        binding.respuesta2.setImageResource(R.drawable.anara_pregunta_nueve)
                         contadorClick += 1
                     }
                     1->{
@@ -218,27 +213,27 @@ class DivisionSimple : Fragment() {
 
     private fun pregunta1() {
         //contadorClick = 0
-        respuesta_2.setImageResource(R.drawable.anara_signo_interrogacion)
-        imageView55.setImageResource(R.drawable.verde_pregunta_seis)
+        solucion2.setImageResource(R.drawable.anara_signo_interrogacion)
+        respuesta1.setImageResource(R.drawable.verde_pregunta_seis)
         imageView56.setImageResource(R.drawable.verde_pregunta_dos)
     }
 
     private fun pregunta2() {
         //contadorClick = 0
-        respuesta_2.setImageResource(R.drawable.anara_signo_interrogacion)
-        imageView55.setImageResource(R.drawable.verde_pregunta_ocho)
-        imageView56.setImageResource(R.drawable.verde_pregunta_cuatro)
+        solucion2.setImageResource(R.drawable.anara_signo_interrogacion)
+        respuesta1.setImageResource(R.drawable.verde_pregunta_ocho)
+        imageView56.setImageResource(R.drawable.ama_pregunta_cuatro)
     }
 
     private fun pregunta3() {
-        respuesta_2.setImageResource(R.drawable.anara_signo_interrogacion)
-        imageView55.setImageResource(R.drawable.verde_pregunta_nueve)
+        solucion2.setImageResource(R.drawable.anara_signo_interrogacion)
+        respuesta1.setImageResource(R.drawable.verde_pregunta_nueve)
         imageView56.setImageResource(R.drawable.verde_pregunta_tres)
     }
 
     private fun pregunta4() {
-        respuesta_2.setImageResource(R.drawable.anara_signo_interrogacion)
-        imageView55.setImageResource(R.drawable.verde_pregunta_cinco)
+        solucion2.setImageResource(R.drawable.anara_signo_interrogacion)
+        respuesta1.setImageResource(R.drawable.verde_pregunta_cinco)
         imageView56.setImageResource(R.drawable.verde_pregunta_cinco)
     }
 }

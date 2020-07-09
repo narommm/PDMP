@@ -6,7 +6,6 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
-import androidx.navigation.findNavController
 import com.example.pdmproyecto.R
 import com.example.pdmproyecto.databinding.FragmentSumaTripleBinding
 import kotlinx.android.synthetic.main.fragment_suma_triple.*
@@ -257,40 +256,40 @@ class SumaTriple : Fragment(){
 
     private fun pregunta1() {
         //contadorClick = 0
-        respuesta_1.setImageResource(R.drawable.anara_signo_interrogacion)
-        respuesta_2.setImageResource(R.drawable.anara_signo_interrogacion)
-        respuesta_3.setImageResource(R.drawable.anara_signo_interrogacion)
-        imageView55.setImageResource(R.drawable.verde_pregunta_tres)
+        solucion1.setImageResource(R.drawable.anara_signo_interrogacion)
+        solucion2.setImageResource(R.drawable.anara_signo_interrogacion)
+        respuesta3.setImageResource(R.drawable.anara_signo_interrogacion)
+        respuesta1.setImageResource(R.drawable.verde_pregunta_tres)
         imageView56.setImageResource(R.drawable.verde_pregunta_cero)
         imageView54.setImageResource(R.drawable.verde_pregunta_cinco)
         imageView58.setImageResource(R.drawable.ama_pregunta_uno)
-        imageView59.setImageResource(R.drawable.ama_pregunta_seis)
+        respuesta2.setImageResource(R.drawable.ama_pregunta_seis)
         imageView60.setImageResource(R.drawable.ama_pregunta_dos)
     }
 
     private fun pregunta2() {
         //contadorClick = 0
-        respuesta_1.setImageResource(R.drawable.anara_signo_interrogacion)
-        respuesta_2.setImageResource(R.drawable.anara_signo_interrogacion)
-        respuesta_3.setImageResource(R.drawable.anara_signo_interrogacion)
-        imageView55.setImageResource(R.drawable.verde_pregunta_cinco)
+        solucion1.setImageResource(R.drawable.anara_signo_interrogacion)
+        solucion2.setImageResource(R.drawable.anara_signo_interrogacion)
+        respuesta3.setImageResource(R.drawable.anara_signo_interrogacion)
+        respuesta1.setImageResource(R.drawable.verde_pregunta_cinco)
         imageView56.setImageResource(R.drawable.verde_pregunta_seis)
         imageView54.setImageResource(R.drawable.verde_pregunta_cero)
         imageView58.setImageResource(R.drawable.ama_pregunta_uno)
-        imageView59.setImageResource(R.drawable.ama_pregunta_siete)
+        respuesta2.setImageResource(R.drawable.ama_pregunta_siete)
         imageView60.setImageResource(R.drawable.ama_pregunta_siete)
     }
 
     private fun pregunta3() {
         //contadorClick = 0
-        respuesta_1.setImageResource(R.drawable.anara_signo_interrogacion)
-        respuesta_2.setImageResource(R.drawable.anara_signo_interrogacion)
-        respuesta_3.setImageResource(R.drawable.anara_signo_interrogacion)
-        imageView55.setImageResource(R.drawable.verde_pregunta_dos)
+        solucion1.setImageResource(R.drawable.anara_signo_interrogacion)
+        solucion2.setImageResource(R.drawable.anara_signo_interrogacion)
+        respuesta3.setImageResource(R.drawable.anara_signo_interrogacion)
+        respuesta1.setImageResource(R.drawable.verde_pregunta_dos)
         imageView56.setImageResource(R.drawable.verde_pregunta_tres)
         imageView54.setImageResource(R.drawable.verde_pregunta_uno)
         imageView58.setImageResource(R.drawable.ama_pregunta_siete)
-        imageView59.setImageResource(R.drawable.ama_pregunta_uno)
+        respuesta2.setImageResource(R.drawable.ama_pregunta_uno)
         imageView60.setImageResource(R.drawable.ama_pregunta_nueve)
     }
 

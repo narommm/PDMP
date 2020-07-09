@@ -83,26 +83,6 @@ class SumaSimple : Fragment() {
                 it.findNavController().navigate(R.id.action_suma_simple_to_registro_Pregunta1)
             }
         }
-        binding.pregunta3Dos.setOnClickListener {
-            if (imagenesIndex < 2) {
-                when(contadorClick){
-                    0->{
-                        binding.respuesta1.setImageResource(R.drawable.anara_pregunta_dos)
-                        contadorClick += 1
-                    }
-                    1->{
-                        binding.respuesta2.setImageResource(R.drawable.anara_pregunta_dos)
-                        contadorClick += 1
-                    }
-                    2->{
-                        cambioPregunta(imagenesIndex)
-                        imagenesIndex +=1
-                    }
-                }
-            } else {
-                it.findNavController().navigate(R.id.action_suma_simple_to_registro_Pregunta1)
-            }
-        }
         binding.pregunta3Tres.setOnClickListener {
             if (imagenesIndex < 2) {
                 when(contadorClick){
@@ -235,7 +215,6 @@ class SumaSimple : Fragment() {
                         contadorClick += 1
                     }
                     2->{
-                        binding.imageView55.setImageResource(R.drawable.verde_pregunta_siete)
                         cambioPregunta(imagenesIndex)
                         imagenesIndex +=1
                     }
@@ -257,23 +236,23 @@ class SumaSimple : Fragment() {
 
     private fun pregunta1() {
         //contadorClick = 0
-        respuesta_1.setImageResource(R.drawable.anara_signo_interrogacion)
-        respuesta_2.setImageResource(R.drawable.anara_signo_interrogacion)
-        imageView55.setImageResource(R.drawable.verde_pregunta_tres)
+        solucion1.setImageResource(R.drawable.anara_signo_interrogacion)
+        solucion2.setImageResource(R.drawable.anara_signo_interrogacion)
+        respuesta1.setImageResource(R.drawable.verde_pregunta_tres)
         imageView56.setImageResource(R.drawable.verde_pregunta_uno)
         imageView58.setImageResource(R.drawable.ama_pregunta_seis)
-        imageView59.setImageResource(R.drawable.ama_pregunta_siete)
+        respuesta2.setImageResource(R.drawable.ama_pregunta_siete)
     }
 
     private fun pregunta2() {
         //contadorClick = 0
 
-        respuesta_1.setImageResource(R.drawable.anara_signo_interrogacion)
-        respuesta_2.setImageResource(R.drawable.anara_signo_interrogacion)
-        imageView55.setImageResource(R.drawable.verde_pregunta_cuatro)
+        solucion1.setImageResource(R.drawable.anara_signo_interrogacion)
+        solucion2.setImageResource(R.drawable.anara_signo_interrogacion)
+        respuesta1.setImageResource(R.drawable.verde_pregunta_cuatro)
         imageView56.setImageResource(R.drawable.verde_pregunta_nueve)
         imageView58.setImageResource(R.drawable.ama_pregunta_tres)
-        imageView59.setImageResource(R.drawable.ama_pregunta_cero)
+        respuesta2.setImageResource(R.drawable.ama_pregunta_cero)
     }
         //return inflater.inflate(R.layout.fragment_suma_simple, container, false)
 
