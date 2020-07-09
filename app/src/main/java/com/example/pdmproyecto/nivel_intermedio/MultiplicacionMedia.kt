@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
+import androidx.navigation.findNavController
 import com.example.pdmproyecto.R
 import com.example.pdmproyecto.databinding.FragmentMultiplicacionMediaBinding
 import kotlinx.android.synthetic.main.fragment_multiplicacion_media.*
@@ -234,7 +235,6 @@ class MultiplicacionMedia : Fragment() {
                         contadorClick += 1
                     }
                     2->{
-                        binding.imageView55.setImageResource(R.drawable.verde_pregunta_siete)
                         cambioPregunta(imagenesIndex)
                         imagenesIndex +=1
                     }

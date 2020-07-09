@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
+import androidx.navigation.findNavController
 import com.example.pdmproyecto.R
 import com.example.pdmproyecto.databinding.FragmentSumaTripleBinding
 import kotlinx.android.synthetic.main.fragment_suma_triple.*
@@ -20,7 +21,6 @@ class SumaTriple : Fragment(){
         // Inflate the layout for this fragment
        val binding = DataBindingUtil.inflate<FragmentSumaTripleBinding>(inflater,R.layout.fragment_suma_simple,container,false)
 
-
         binding.pregunta2Cero.setOnClickListener {
             if (imagenesIndex < 3) {
                 when(contadorClick){
@@ -33,8 +33,12 @@ class SumaTriple : Fragment(){
                         contadorClick += 1
                     }
                     2->{
+                        binding.respuesta3.setImageResource(R.drawable.anara_pregunta_cero)
+                        contadorClick +=1
+                    }
+                    3->{
                         cambioPregunta(imagenesIndex)
-                        imagenesIndex += 1
+                        imagenesIndex +=1
                     }
                 }
             } else {
@@ -53,6 +57,10 @@ class SumaTriple : Fragment(){
                         contadorClick += 1
                     }
                     2->{
+                       binding.respuesta3.setImageResource(R.drawable.anara_pregunta_uno)
+                        contadorClick += 1
+                    }
+                    3->{
                         cambioPregunta(imagenesIndex)
                         imagenesIndex +=1
                     }
@@ -73,26 +81,10 @@ class SumaTriple : Fragment(){
                         contadorClick += 1
                     }
                     2->{
-                        cambioPregunta(imagenesIndex)
-                        imagenesIndex +=1
-                    }
-                }
-            } else {
-                it.findNavController().navigate(R.id.action_sumaTriple_to_divisionSimple)
-            }
-        }
-        binding.pregunta3Dos.setOnClickListener {
-            if (imagenesIndex < 3) {
-                when(contadorClick){
-                    0->{
-                        binding.respuesta1.setImageResource(R.drawable.anara_pregunta_dos)
+                        binding.respuesta3.setImageResource(R.drawable.anara_pregunta_dos)
                         contadorClick += 1
                     }
-                    1->{
-                        binding.respuesta2.setImageResource(R.drawable.anara_pregunta_dos)
-                        contadorClick += 1
-                    }
-                    2->{
+                    3->{
                         cambioPregunta(imagenesIndex)
                         imagenesIndex +=1
                     }
@@ -113,6 +105,10 @@ class SumaTriple : Fragment(){
                         contadorClick += 1
                     }
                     2->{
+                        binding.respuesta3.setImageResource(R.drawable.anara_pregunta_tres)
+                        contadorClick += 1
+                    }
+                    3->{
                         cambioPregunta(imagenesIndex)
                         imagenesIndex +=1
                     }
@@ -133,6 +129,10 @@ class SumaTriple : Fragment(){
                         contadorClick += 1
                     }
                     2->{
+                        binding.respuesta3.setImageResource(R.drawable.anara_pregunta_cuatro)
+                        contadorClick += 1
+                    }
+                    3->{
                         cambioPregunta(imagenesIndex)
                         imagenesIndex +=1
                     }
@@ -153,6 +153,10 @@ class SumaTriple : Fragment(){
                         contadorClick += 1
                     }
                     2->{
+                        binding.respuesta3.setImageResource(R.drawable.anara_pregunta_cinco)
+                        contadorClick += 1
+                    }
+                    3->{
                         cambioPregunta(imagenesIndex)
                         imagenesIndex +=1
                     }
@@ -173,6 +177,10 @@ class SumaTriple : Fragment(){
                         contadorClick += 1
                     }
                     2->{
+                        binding.respuesta3.setImageResource(R.drawable.anara_pregunta_seis)
+                        contadorClick += 1
+                    }
+                    3->{
                         cambioPregunta(imagenesIndex)
                         imagenesIndex +=1
                     }
@@ -193,6 +201,10 @@ class SumaTriple : Fragment(){
                         contadorClick += 1
                     }
                     2->{
+                        binding.respuesta3.setImageResource(R.drawable.anara_pregunta_siete)
+                        contadorClick += 1
+                    }
+                    3->{
                         cambioPregunta(imagenesIndex)
                         imagenesIndex +=1
                     }
@@ -213,6 +225,10 @@ class SumaTriple : Fragment(){
                         contadorClick += 1
                     }
                     2->{
+                        binding.respuesta3.setImageResource(R.drawable.anara_pregunta_ocho)
+                        contadorClick += 1
+                    }
+                    3->{
                         cambioPregunta(imagenesIndex)
                         imagenesIndex +=1
                     }
@@ -233,7 +249,10 @@ class SumaTriple : Fragment(){
                         contadorClick += 1
                     }
                     2->{
-                        binding.imageView55.setImageResource(R.drawable.verde_pregunta_siete)
+                        binding.respuesta3.setImageResource(R.drawable.anara_pregunta_nueve)
+                        contadorClick += 1
+                    }
+                    3->{
                         cambioPregunta(imagenesIndex)
                         imagenesIndex +=1
                     }
@@ -259,6 +278,7 @@ class SumaTriple : Fragment(){
         solucion1.setImageResource(R.drawable.anara_signo_interrogacion)
         solucion2.setImageResource(R.drawable.anara_signo_interrogacion)
         respuesta3.setImageResource(R.drawable.anara_signo_interrogacion)
+
         respuesta1.setImageResource(R.drawable.verde_pregunta_tres)
         imageView56.setImageResource(R.drawable.verde_pregunta_cero)
         imageView54.setImageResource(R.drawable.verde_pregunta_cinco)

@@ -27,20 +27,28 @@ class MultiplicacionDoble : Fragment() {
             if (imagenesIndex < 2) {
                 when(contadorClick){
                     0->{
-                        binding.respuesta1.setImageResource(R.drawable.anara_pregunta_cero)
+                        binding.solucion1.setImageResource(R.drawable.anara_pregunta_cero)
                         contadorClick += 1
                     }
                     1->{
-                        binding.respuesta2.setImageResource(R.drawable.anara_pregunta_cero)
+                        binding.solucion2.setImageResource(R.drawable.anara_pregunta_cero)
                         contadorClick += 1
                     }
                     2->{
+                        binding.respuesta3.setImageResource(R.drawable.anara_pregunta_cero)
+                        contadorClick += 1
+                    }
+                    3->{
+                        binding.respuesta4.setImageResource(R.drawable.anara_pregunta_cero)
+                        contadorClick += 1
+                    }
+                    4->{
                         cambioPregunta(imagenesIndex)
                         imagenesIndex += 1
                     }
                 }
             } else {
-                it.findNavController().navigate(R.id.action_suma_simple_to_registro_Pregunta1)
+                it.findNavController().navigate(R.id.action_multiplicacionDoble_to_registro_pregunta4)
             }
         }
         binding.pregunta3Uno.setOnClickListener {
@@ -55,12 +63,20 @@ class MultiplicacionDoble : Fragment() {
                         contadorClick += 1
                     }
                     2->{
+                        binding.respuesta3.setImageResource(R.drawable.anara_pregunta_uno)
+                        contadorClick += 1
+                    }
+                    3->{
+                        binding.respuesta4.setImageResource(R.drawable.anara_pregunta_uno)
+                        contadorClick += 1
+                    }
+                    4->{
                         cambioPregunta(imagenesIndex)
-                        imagenesIndex +=1
+                        imagenesIndex += 1
                     }
                 }
             } else {
-                it.findNavController().navigate(R.id.action_suma_simple_to_registro_Pregunta1)
+                it.findNavController().navigate(R.id.action_multiplicacionDoble_to_registro_pregunta4)
             }
         }
         binding.pregunta3Dos.setOnClickListener {
@@ -75,12 +91,20 @@ class MultiplicacionDoble : Fragment() {
                         contadorClick += 1
                     }
                     2->{
+                        binding.respuesta3.setImageResource(R.drawable.anara_pregunta_dos)
+                        contadorClick += 1
+                    }
+                    3->{
+                        binding.respuesta4.setImageResource(R.drawable.anara_pregunta_dos)
+                        contadorClick += 1
+                    }
+                    4->{
                         cambioPregunta(imagenesIndex)
-                        imagenesIndex +=1
+                        imagenesIndex += 1
                     }
                 }
             } else {
-                it.findNavController().navigate(R.id.action_suma_simple_to_registro_Pregunta1)
+                it.findNavController().navigate(R.id.action_multiplicacionDoble_to_registro_pregunta4)
             }
         }
         binding.pregunta3Tres.setOnClickListener {
@@ -95,12 +119,20 @@ class MultiplicacionDoble : Fragment() {
                         contadorClick += 1
                     }
                     2->{
+                        binding.respuesta3.setImageResource(R.drawable.anara_pregunta_tres)
+                        contadorClick += 1
+                    }
+                    3->{
+                        binding.respuesta4.setImageResource(R.drawable.anara_pregunta_tres)
+                        contadorClick += 1
+                    }
+                    4->{
                         cambioPregunta(imagenesIndex)
-                        imagenesIndex +=1
+                        imagenesIndex += 1
                     }
                 }
             } else {
-                it.findNavController().navigate(R.id.action_suma_simple_to_registro_Pregunta1)
+                it.findNavController().navigate(R.id.action_multiplicacionDoble_to_registro_pregunta4)
             }
         }
         binding.pregunta3Cuatro.setOnClickListener {
@@ -115,12 +147,20 @@ class MultiplicacionDoble : Fragment() {
                         contadorClick += 1
                     }
                     2->{
+                        binding.respuesta3.setImageResource(R.drawable.anara_pregunta_cuatro)
+                        contadorClick += 1
+                    }
+                    3->{
+                        binding.respuesta4.setImageResource(R.drawable.anara_pregunta_cuatro)
+                        contadorClick += 1
+                    }
+                    4->{
                         cambioPregunta(imagenesIndex)
-                        imagenesIndex +=1
+                        imagenesIndex += 1
                     }
                 }
             } else {
-                it.findNavController().navigate(R.id.action_suma_simple_to_registro_Pregunta1)
+                it.findNavController().navigate(R.id.action_multiplicacionDoble_to_registro_pregunta4)
             }
         }
         binding.pregunta3Cinco.setOnClickListener {
@@ -135,12 +175,20 @@ class MultiplicacionDoble : Fragment() {
                         contadorClick += 1
                     }
                     2->{
+                        binding.respuesta3.setImageResource(R.drawable.anara_pregunta_cinco)
+                        contadorClick += 1
+                    }
+                    3->{
+                        binding.respuesta4.setImageResource(R.drawable.anara_pregunta_cinco)
+                        contadorClick += 1
+                    }
+                    4->{
                         cambioPregunta(imagenesIndex)
-                        imagenesIndex +=1
+                        imagenesIndex += 1
                     }
                 }
             } else {
-                it.findNavController().navigate(R.id.action_suma_simple_to_registro_Pregunta1)
+                it.findNavController().navigate(R.id.action_multiplicacionDoble_to_registro_pregunta4)
             }
         }
         binding.pregunta3Seis.setOnClickListener {
@@ -155,12 +203,20 @@ class MultiplicacionDoble : Fragment() {
                         contadorClick += 1
                     }
                     2->{
+                        binding.respuesta3.setImageResource(R.drawable.anara_pregunta_seis)
+                        contadorClick += 1
+                    }
+                    3->{
+                        binding.respuesta4.setImageResource(R.drawable.anara_pregunta_seis)
+                        contadorClick += 1
+                    }
+                    4->{
                         cambioPregunta(imagenesIndex)
-                        imagenesIndex +=1
+                        imagenesIndex += 1
                     }
                 }
             } else {
-                it.findNavController().navigate(R.id.action_suma_simple_to_registro_Pregunta1)
+                it.findNavController().navigate(R.id.action_multiplicacionDoble_to_registro_pregunta4)
             }
         }
         binding.pregunta3Siete.setOnClickListener {
@@ -175,12 +231,20 @@ class MultiplicacionDoble : Fragment() {
                         contadorClick += 1
                     }
                     2->{
+                        binding.respuesta3.setImageResource(R.drawable.anara_pregunta_siete)
+                        contadorClick += 1
+                    }
+                    3->{
+                        binding.respuesta4.setImageResource(R.drawable.anara_pregunta_siete)
+                        contadorClick += 1
+                    }
+                    4->{
                         cambioPregunta(imagenesIndex)
-                        imagenesIndex +=1
+                        imagenesIndex += 1
                     }
                 }
             } else {
-                it.findNavController().navigate(R.id.action_suma_simple_to_registro_Pregunta1)
+                it.findNavController().navigate(R.id.action_multiplicacionDoble_to_registro_pregunta4)
             }
         }
         binding.pregunta3Ocho.setOnClickListener {
@@ -195,12 +259,20 @@ class MultiplicacionDoble : Fragment() {
                         contadorClick += 1
                     }
                     2->{
+                        binding.respuesta3.setImageResource(R.drawable.anara_pregunta_ocho)
+                        contadorClick += 1
+                    }
+                    3->{
+                        binding.respuesta4.setImageResource(R.drawable.anara_pregunta_ocho)
+                        contadorClick += 1
+                    }
+                    4->{
                         cambioPregunta(imagenesIndex)
-                        imagenesIndex +=1
+                        imagenesIndex += 1
                     }
                 }
             } else {
-                it.findNavController().navigate(R.id.action_suma_simple_to_registro_Pregunta1)
+                it.findNavController().navigate(R.id.action_multiplicacionDoble_to_registro_pregunta4)
             }
         }
         binding.pregunta3Nueve.setOnClickListener {
@@ -215,12 +287,20 @@ class MultiplicacionDoble : Fragment() {
                         contadorClick += 1
                     }
                     2->{
+                        binding.respuesta3.setImageResource(R.drawable.anara_pregunta_nueve)
+                        contadorClick += 1
+                    }
+                    3->{
+                        binding.respuesta4.setImageResource(R.drawable.anara_pregunta_nueve)
+                        contadorClick += 1
+                    }
+                    4->{
                         cambioPregunta(imagenesIndex)
-                        imagenesIndex +=1
+                        imagenesIndex += 1
                     }
                 }
             } else {
-                it.findNavController().navigate(R.id.action_suma_simple_to_registro_Pregunta1)
+                it.findNavController().navigate(R.id.action_multiplicacionDoble_to_registro_pregunta4)
             }
         }
         return binding.root

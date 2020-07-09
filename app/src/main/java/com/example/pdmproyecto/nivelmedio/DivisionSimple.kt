@@ -188,6 +188,7 @@ class DivisionSimple : Fragment() {
             if (imagenesIndex < 5) {
                 when(contadorClick){
                     0->{
+                        binding.solucion2.setImageResource(R.drawable.anara_pregunta_nueve)
                         contadorClick += 1
                     }
                     1->{

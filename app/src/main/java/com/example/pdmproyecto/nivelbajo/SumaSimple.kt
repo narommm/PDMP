@@ -27,11 +27,11 @@ class SumaSimple : Fragment() {
             if (imagenesIndex < 2) {
                 when(contadorClick){
                     0->{
-                        binding.respuesta1.setImageResource(R.drawable.anara_pregunta_cero)
+                        binding.solucion1.setImageResource(R.drawable.anara_pregunta_cero)
                         contadorClick += 1
                     }
                     1->{
-                        binding.respuesta2.setImageResource(R.drawable.anara_pregunta_cero)
+                        binding.solucion2.setImageResource(R.drawable.anara_pregunta_cero)
                         contadorClick += 1
                     }
                     2->{
@@ -47,11 +47,11 @@ class SumaSimple : Fragment() {
             if (imagenesIndex < 2) {
                 when(contadorClick){
                     0->{
-                        binding.respuesta1.setImageResource(R.drawable.anara_pregunta_uno)
+                        binding.solucion1.setImageResource(R.drawable.anara_pregunta_uno)
                         contadorClick += 1
                     }
                     1->{
-                        binding.respuesta2.setImageResource(R.drawable.anara_pregunta_uno)
+                        binding.solucion2.setImageResource(R.drawable.anara_pregunta_uno)
                         contadorClick += 1
                     }
                     2->{
@@ -67,11 +67,11 @@ class SumaSimple : Fragment() {
             if (imagenesIndex < 2) {
                 when(contadorClick){
                     0->{
-                        binding.respuesta1.setImageResource(R.drawable.anara_pregunta_dos)
+                        binding.solucion1.setImageResource(R.drawable.anara_pregunta_dos)
                         contadorClick += 1
                     }
                     1->{
-                        binding.respuesta2.setImageResource(R.drawable.anara_pregunta_dos)
+                        binding.solucion2.setImageResource(R.drawable.anara_pregunta_dos)
                         contadorClick += 1
                     }
                     2->{
@@ -87,11 +87,11 @@ class SumaSimple : Fragment() {
             if (imagenesIndex < 2) {
                 when(contadorClick){
                     0->{
-                        binding.respuesta1.setImageResource(R.drawable.anara_pregunta_tres)
+                        binding.solucion1.setImageResource(R.drawable.anara_pregunta_tres)
                         contadorClick += 1
                     }
                     1->{
-                        binding.respuesta2.setImageResource(R.drawable.anara_pregunta_tres)
+                        binding.solucion2.setImageResource(R.drawable.anara_pregunta_tres)
                         contadorClick += 1
                     }
                     2->{
@@ -107,11 +107,11 @@ class SumaSimple : Fragment() {
             if (imagenesIndex < 2) {
                 when(contadorClick){
                     0->{
-                        binding.respuesta1.setImageResource(R.drawable.anara_pregunta_cuatro)
+                        binding.solucion1.setImageResource(R.drawable.anara_pregunta_cuatro)
                         contadorClick += 1
                     }
                     1->{
-                        binding.respuesta2.setImageResource(R.drawable.anara_pregunta_cuatro)
+                        binding.solucion2.setImageResource(R.drawable.anara_pregunta_cuatro)
                         contadorClick += 1
                     }
                     2->{
@@ -127,11 +127,11 @@ class SumaSimple : Fragment() {
             if (imagenesIndex < 2) {
                 when(contadorClick){
                     0->{
-                        binding.respuesta1.setImageResource(R.drawable.anara_pregunta_cinco)
+                        binding.solucion1.setImageResource(R.drawable.anara_pregunta_cinco)
                         contadorClick += 1
                     }
                     1->{
-                        binding.respuesta2.setImageResource(R.drawable.anara_pregunta_cinco)
+                        binding.solucion2.setImageResource(R.drawable.anara_pregunta_cinco)
                         contadorClick += 1
                     }
                     2->{
@@ -147,11 +147,11 @@ class SumaSimple : Fragment() {
             if (imagenesIndex < 2) {
                 when(contadorClick){
                     0->{
-                        binding.respuesta1.setImageResource(R.drawable.anara_pregunta_seis)
+                        binding.solucion1.setImageResource(R.drawable.anara_pregunta_seis)
                         contadorClick += 1
                     }
                     1->{
-                        binding.respuesta2.setImageResource(R.drawable.anara_pregunta_seis)
+                        binding.solucion2.setImageResource(R.drawable.anara_pregunta_seis)
                         contadorClick += 1
                     }
                     2->{
@@ -167,11 +167,11 @@ class SumaSimple : Fragment() {
             if (imagenesIndex < 2) {
                 when(contadorClick){
                     0->{
-                        binding.respuesta1.setImageResource(R.drawable.anara_pregunta_siete)
+                        binding.solucion1.setImageResource(R.drawable.anara_pregunta_siete)
                         contadorClick += 1
                     }
                     1->{
-                        binding.respuesta2.setImageResource(R.drawable.anara_pregunta_siete)
+                        binding.solucion2.setImageResource(R.drawable.anara_pregunta_siete)
                         contadorClick += 1
                     }
                     2->{
@@ -187,11 +187,11 @@ class SumaSimple : Fragment() {
             if (imagenesIndex < 2) {
                 when(contadorClick){
                     0->{
-                        binding.respuesta1.setImageResource(R.drawable.anara_pregunta_ocho)
+                        binding.solucion1.setImageResource(R.drawable.anara_pregunta_ocho)
                         contadorClick += 1
                     }
                     1->{
-                        binding.respuesta2.setImageResource(R.drawable.anara_pregunta_ocho)
+                        binding.solucion2.setImageResource(R.drawable.anara_pregunta_ocho)
                         contadorClick += 1
                     }
                     2->{
@@ -207,11 +207,11 @@ class SumaSimple : Fragment() {
             if (imagenesIndex < 2) {
                 when(contadorClick){
                     0->{
-                        binding.respuesta1.setImageResource(R.drawable.anara_pregunta_nueve)
+                        binding.solucion1.setImageResource(R.drawable.anara_pregunta_nueve)
                         contadorClick += 1
                     }
                     1->{
-                        binding.respuesta2.setImageResource(R.drawable.anara_pregunta_nueve)
+                        binding.solucion2.setImageResource(R.drawable.anara_pregunta_nueve)
                         contadorClick += 1
                     }
                     2->{

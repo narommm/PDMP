@@ -17,10 +17,7 @@
             app:destination="@id/misiones_menu" />
         <action
             android:id="@+id/action_opciones_iniciales_to_registro_actividades"
-            app:destination="@id/registro_actividades" />
-        <action
-            android:id="@+id/action_opciones_iniciales_to_registro_actividades2"
-            app:destination="@id/registro_actividades2" />
+            app:destination="@id/registro" />
         <action
             android:id="@+id/action_opciones_iniciales_to_login2"
             app:destination="@id/login2" />
