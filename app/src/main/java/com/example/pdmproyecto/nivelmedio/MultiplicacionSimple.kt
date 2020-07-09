@@ -19,13 +19,10 @@ class MultiplicacionSimple : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        //return inflater.inflate(R.layout.fragment_multiplicacion_simple, container, false)
-        val binding = DataBindingUtil.inflate<FragmentMuliplicacionSimpleBinding>(inflater,R.layout.fragment_multiplicacion_simple,container,false)
+        return inflater.inflate(R.layout.fragment_multiplicacion_simple, container, false)
+        //val binding = DataBindingUtil.inflate<MuliplicacionSimpleBinding>(inflater,R.layout.fragment_multiplicacion_simple,container,false)
 
-        binding.pregunta2_cero
-        binding.imageView55
 
-        return binding.root
     }
 
 }
