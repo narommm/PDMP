@@ -2,22 +2,23 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".operaciones_basicas">
+    tools:context="aplication.funmathhelper.pdmproyecto.operaciones_basicas">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/operacionesBasicas"
-        android:background="@drawable/fondo_pantalla_principal">
+        android:background="@drawable/fondoprincipal">
 
 
         <ImageView
             android:id="@+id/opcion_suma"
             android:layout_width="@dimen/size_signo_w"
             android:layout_height="@dimen/size_signo_h"
-            android:layout_marginStart="36dp"
             android:layout_marginTop="320dp"
             android:src="@drawable/signo_suma"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -28,7 +29,7 @@
             android:layout_marginTop="308dp"
             android:src="@drawable/signo_resta"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.24"
             app:layout_constraintStart_toEndOf="@+id/opcion_suma"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -36,9 +37,10 @@
             android:id="@+id/opcion_multiplicacion"
             android:layout_width="@dimen/size_signo_w"
             android:layout_height="@dimen/size_signo_w"
-            android:layout_marginStart="36dp"
             android:src="@drawable/signo_multiplicacion"
             app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/opcion_suma"
             app:layout_constraintVertical_bias="0.298" />
@@ -50,7 +52,7 @@
             android:src="@drawable/signo_division"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.24"
             app:layout_constraintStart_toEndOf="@+id/opcion_multiplicacion"
             app:layout_constraintTop_toBottomOf="@+id/opcion_resta"
             app:layout_constraintVertical_bias="0.252" />

@@ -2,13 +2,13 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".misiones_menu">
+    tools:context="aplication.funmathhelper.pdmproyecto.misiones_menu">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/misionesMenu"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/fondo_misiones_menu">
+        android:background="@drawable/fondoprincipal">
 
         <Button
             android:id="@+id/misiones_nivel_1"
@@ -19,16 +19,17 @@
             android:textAllCaps="false"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.583" />
+            app:layout_constraintVertical_bias="0.512" />
 
         <Button
             android:id="@+id/misiones_nivel_2"
             style="@style/botonAmarillo"
             android:layout_width="290dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="30dp"
             android:text="Nivel Medio"
             android:textAllCaps="false"
             app:layout_constraintEnd_toEndOf="parent"
@@ -41,7 +42,7 @@
             style="@style/botonAnaranjado"
             android:layout_width="290dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="30dp"
             android:text="Nivel Intermedio"
             android:textAllCaps="false"
             app:layout_constraintEnd_toEndOf="parent"
@@ -54,7 +55,7 @@
             style="@style/botonRojo"
             android:layout_width="290dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="30dp"
             android:layout_marginBottom="43dp"
             android:text="Nivel Alto"
             android:textAllCaps="false"
@@ -109,6 +110,34 @@
             app:layout_constraintHorizontal_bias="0.089"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/misiones_nivel_4" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="284dp"
+            android:layout_height="83dp"
+            android:fontFamily="@font/baloo_bhai"
+            android:text="@string/txt_misiones"
+            android:textColor="@color/blanco"
+            android:textSize="60dp"
+            app:layout_constraintBottom_toTopOf="@+id/misiones_nivel_1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.527"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.795" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="226dp"
+            android:layout_height="251dp"
+            android:src="@drawable/misiones"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </layout>

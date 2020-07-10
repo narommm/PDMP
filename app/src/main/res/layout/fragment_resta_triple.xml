@@ -2,7 +2,7 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".nivelmedio.RestaTriple">
+    tools:context="aplication.funmathhelper.pdmproyecto.nivelmedio.RestaTriple">
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -16,15 +16,13 @@
             android:layout_width="match_parent"
             android:layout_height="102dp"
             android:fontFamily="@font/pacifico"
+            android:gravity="center"
             android:text="@string/txt_resta"
             android:textColor="@color/negro"
             android:textSize="60dp"
-            android:gravity="center"
-            app:layout_constraintBottom_toTopOf="@+id/imview_icon_suma"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.608" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
             android:id="@+id/respuesta1"

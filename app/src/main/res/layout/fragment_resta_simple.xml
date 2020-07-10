@@ -2,12 +2,12 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".nivelbajo.RestaSimple">
+    tools:context="aplication.funmathhelper.pdmproyecto.nivelbajo.RestaSimple">
 
 <data>
     <variable
         name="restaSimple"
-        type="com.example.pdmproyecto.nivelbajo.RestaSimple" />
+        type="aplication.funmathhelper.pdmproyecto.nivelbajo.RestaSimple" />
 </data>
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/nivelBajoPregunta3"
@@ -25,7 +25,6 @@
             android:text="@string/txt_resta"
             android:textColor="@color/negro"
             android:textSize="@dimen/medium_1_50dp"
-            app:layout_constraintBottom_toTopOf="@+id/imview_icon_suma"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.514"
             app:layout_constraintStart_toStartOf="parent"

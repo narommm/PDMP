@@ -2,27 +2,15 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".ejemplosresta.EjemploResta1">
+    tools:context="aplication.funmathhelper.pdmproyecto.ejemplosresta.EjemploResta1">
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/ejemploResta1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/fondo_pantalla_principal">
+        android:background="@drawable/fondoprincipal">
 
-
-        <ImageView
-            android:id="@+id/audio12"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="48dp"
-            android:src="@android:drawable/ic_lock_silent_mode_off"
-            app:layout_constraintBottom_toTopOf="@+id/imview_signo_mult"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.952"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
             android:id="@+id/imageView5"
@@ -32,6 +20,7 @@
             android:paddingTop="-244dp"
             android:src="@drawable/signo_resta"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView" />
 
@@ -51,8 +40,8 @@
         <TextView
             android:id="@+id/textView2"
             style="@style/textMedidas2"
-            android:layout_width="wrap_content"
-            android:layout_height="29dp"
+            android:layout_width="139dp"
+            android:layout_height="40dp"
             android:layout_marginTop="44dp"
             android:text="@string/txt_decenas"
             app:layout_constraintEnd_toStartOf="@+id/textView3"

@@ -2,20 +2,19 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".opciones_iniciales">
-
+    tools:context="aplication.funmathhelper.pdmproyecto.opciones_iniciales">
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/opcionesIniciales"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/opcionesIniciales"
-        android:background="@drawable/fondo_pantalla_principal">
+        android:background="@drawable/fondoprincipal">
 
         <ImageView
             android:id="@+id/personaje_principal_view"
-            android:layout_width="290dp"
-            android:layout_height="160dp"
+            android:layout_width="313dp"
+            android:layout_height="175dp"
             android:layout_marginTop="148dp"
             android:src="@drawable/personaje_principal"
             app:layout_constraintEnd_toEndOf="parent"

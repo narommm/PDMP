@@ -2,27 +2,15 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".ejemplosresta.EjemploResta1">
+    tools:context="aplication.funmathhelper.pdmproyecto.ejemplosresta.EjemploResta1">
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/ejemploResta3"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/fondo_pantalla_principal">
+        android:background="@drawable/fondoprincipal">
 
-
-        <ImageView
-            android:id="@+id/audio11"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="48dp"
-            android:src="@android:drawable/ic_lock_silent_mode_off"
-            app:layout_constraintBottom_toTopOf="@+id/imview_signo_mult"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.957"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
             android:id="@+id/imageView5"

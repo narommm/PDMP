@@ -2,25 +2,13 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".ejemplomultiplicacion.EjemploMultiplicacion3">
+    tools:context="aplication.funmathhelper.pdmproyecto.ejemplomultiplicacion.EjemploMultiplicacion3">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/ejemploMultiplicacion3"
-        android:background="@drawable/fondo_pantalla_principal">
-
-        <ImageView
-            android:id="@+id/audio3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@android:drawable/ic_lock_silent_mode_off"
-            app:layout_constraintBottom_toTopOf="@+id/imview_signo_mult"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.952"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.831" />
+        android:background="@drawable/fondoprincipal">
 
         <ImageView
             android:id="@+id/imageView70"

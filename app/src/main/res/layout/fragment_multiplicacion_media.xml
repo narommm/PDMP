@@ -2,7 +2,7 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".nivel_intermedio.MultiplicacionMedia">
+    tools:context="aplication.funmathhelper.pdmproyecto.nivel_intermedio.MultiplicacionMedia">
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -18,9 +18,8 @@
             android:fontFamily="@font/pacifico"
             android:text="Multiplicación"
             android:textColor="@color/negro"
-            android:textSize="60dp"
+            android:textSize="50dp"
             android:gravity="center"
-            app:layout_constraintBottom_toTopOf="@+id/imview_icon_suma"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"

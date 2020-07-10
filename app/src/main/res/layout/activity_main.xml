@@ -6,14 +6,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/drawer_layout"
-    tools:context=".MainActivity"
+    tools:context="aplication.funmathhelper.pdmproyecto.MainActivity"
     android:fitsSystemWindows="true"
     tools:openDrawer="start">
 
     <androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-        android:background="@drawable/fondo_principal">
+    android:layout_height="match_parent">
 
     <fragment
         android:id="@+id/myNaviHostFragment"

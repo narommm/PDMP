@@ -2,13 +2,13 @@
     <layout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         xmlns:app="http://schemas.android.com/apk/res-auto"
-        tools:context=".ejemplodivision.EjemploDivision1">
+        tools:context="aplication.funmathhelper.pdmproyecto.ejemplodivision.EjemploDivision1">
 
         <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ejemploDivision1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/ejemploDivision1"
-            android:background="@drawable/fondo_pantalla_principal">
+            android:background="@drawable/fondoprincipal">
 
 
             <ImageView
@@ -190,17 +190,6 @@
                 app:layout_constraintHorizontal_bias="0.854"
                 app:layout_constraintStart_toStartOf="@+id/imageView89"
                 app:layout_constraintTop_toBottomOf="@+id/imageView87" />
-
-            <ImageView
-                android:id="@+id/audio"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@android:drawable/ic_lock_silent_mode_off"
-                app:layout_constraintBottom_toTopOf="@+id/imview_signo_mult"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.952"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </layout>

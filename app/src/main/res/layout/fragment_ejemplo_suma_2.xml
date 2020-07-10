@@ -8,20 +8,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/ejemploSuma2"
-        android:background="@drawable/fondo_pantalla_principal">
+        android:background="@drawable/fondoprincipal">
 
-
-        <ImageView
-            android:id="@+id/audio7"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="28dp"
-            android:src="@android:drawable/ic_lock_silent_mode_off"
-            app:layout_constraintBottom_toTopOf="@+id/imview_signo_mult"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.957"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
             android:id="@+id/imview_icon_suma"
@@ -289,11 +277,12 @@
             android:id="@+id/imageView10"
             android:layout_width="125dp"
             android:layout_height="81dp"
+            android:layout_marginEnd="164dp"
             android:src="@drawable/flecha"
             app:layout_constraintBottom_toTopOf="@+id/imageView7"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.419"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/imageView11"
+            app:layout_constraintHorizontal_bias="0.238"
+            app:layout_constraintStart_toStartOf="@+id/manzana_5"
             app:layout_constraintTop_toBottomOf="@+id/imview_icon_suma"
             app:layout_constraintVertical_bias="1.0" />
 
@@ -304,7 +293,7 @@
             android:src="@drawable/caja_tralucida"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.961"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/txt_unidad"
             app:layout_constraintVertical_bias="0.065" />
