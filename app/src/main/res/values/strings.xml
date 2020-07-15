@@ -26,6 +26,9 @@
     <string name="tablas_de_multiplicar">TABLAS DE MULTIPLICAR</string>
     <string name="ejemplos">EJEMPLOS</string>
     <string name="sigue">Sigue!!</string>
+    <string name="txt_division">División</string>
+    <string name="txt_resta">Resta</string>
+    <string name="txt_multi">Multiplicación</string>
 
 
 </resources>

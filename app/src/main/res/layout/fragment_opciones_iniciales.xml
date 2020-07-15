@@ -2,20 +2,19 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".opciones_iniciales">
-
+    tools:context="aplication.funmathhelper.pdmproyecto.opciones_iniciales">
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/opcionesIniciales"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/constraint_layout"
-        android:background="@drawable/fondo_principal">
+        android:background="@drawable/fondoprincipal">
 
         <ImageView
             android:id="@+id/personaje_principal_view"
-            android:layout_width="290dp"
-            android:layout_height="160dp"
+            android:layout_width="313dp"
+            android:layout_height="175dp"
             android:layout_marginTop="148dp"
             android:src="@drawable/personaje_principal"
             app:layout_constraintEnd_toEndOf="parent"
@@ -34,82 +33,37 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/personaje_principal_view" />
 
-        <Button
-            android:id="@+id/bt_misiones"
-            style="@style/textGame"
-            android:layout_width="230dp"
-            android:layout_height="47dp"
-            android:layout_marginTop="32dp"
-            android:background="@color/naranjaBotones"
-            android:fontFamily="@font/nunito_sans_extrabold"
-            android:text="@string/txt_misiones"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.64"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/bt_operaciones" />
-
-        <Button
+        <ImageView
             android:id="@+id/bt_operaciones"
-            style="@style/textGame"
-            android:layout_width="230dp"
-            android:layout_height="47dp"
-            android:layout_marginTop="88dp"
-            android:background="@color/naranjaBotones"
-            android:fontFamily="@font/nunito_sans_extrabold"
-            android:text="@string/txt_operaciones"
+            android:layout_width="354dp"
+            android:layout_height="92dp"
+            android:layout_marginTop="56dp"
+            android:src="@drawable/btn_operaciones"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.64"
+            app:layout_constraintHorizontal_bias="0.491"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/text_name_aplication" />
 
-        <Button
-            android:id="@+id/bt_registro_actividad"
-            android:layout_width="230dp"
-            android:layout_height="47dp"
-            android:layout_marginTop="16dp"
-            android:background="@color/naranjaBotones"
-            android:fontFamily="@font/nunito_sans_extrabold"
-            android:text="@string/btn_txt_registro"
+        <ImageView
+            android:id="@+id/bt_misiones"
+            android:layout_width="354dp"
+            android:layout_height="92dp"
+            android:src="@drawable/btn_misiones"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bt_operaciones" />
+
+        <ImageView
+            android:id="@+id/bt_registro"
+            android:layout_width="354dp"
+            android:layout_height="92dp"
+            android:src="@drawable/btn_registro"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.64"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/bt_misiones"
-            app:layout_constraintVertical_bias="0.194" />
-
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="63dp"
-            android:layout_height="58dp"
-            android:src="@drawable/planeta_marte"
-            app:layout_constraintBottom_toBottomOf="@+id/bt_operaciones"
-            app:layout_constraintEnd_toStartOf="@+id/bt_operaciones"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/bt_operaciones"
-            app:layout_constraintVertical_bias="1.0" />
-
-        <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="63dp"
-            android:layout_height="58dp"
-            android:src="@drawable/planeta_marte"
-            app:layout_constraintBottom_toBottomOf="@+id/bt_misiones"
-            app:layout_constraintEnd_toStartOf="@+id/bt_misiones"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/bt_misiones" />
-
-        <ImageView
-            android:id="@+id/imageView4"
-            android:layout_width="63dp"
-            android:layout_height="58dp"
-            android:src="@drawable/planeta_marte"
-            app:layout_constraintBottom_toBottomOf="@+id/bt_registro_actividad"
-            app:layout_constraintEnd_toStartOf="@+id/bt_registro_actividad"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/bt_registro_actividad" />
+            app:layout_constraintVertical_bias="0.0" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

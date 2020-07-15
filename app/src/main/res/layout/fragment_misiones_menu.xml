@@ -1,15 +1,143 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".misiones_menu"
-    android:background="@mipmap/fondo_misiones_1">
+    tools:context="aplication.funmathhelper.pdmproyecto.misiones_menu">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/misionesMenu"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:background="@drawable/fondoprincipal">
 
-</FrameLayout>
+        <Button
+            android:id="@+id/misiones_nivel_1"
+            style="@style/botonVerde"
+            android:layout_width="290dp"
+            android:layout_height="54dp"
+            android:text="Nivel Bajo"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.512" />
+
+        <Button
+            android:id="@+id/misiones_nivel_2"
+            style="@style/botonAmarillo"
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Nivel Medio"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/misiones_nivel_1" />
+
+        <Button
+            android:id="@+id/misiones_nivel_3"
+            style="@style/botonAnaranjado"
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Nivel Intermedio"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/misiones_nivel_2" />
+
+        <Button
+            android:id="@+id/misiones_nivel_4"
+            style="@style/botonRojo"
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="43dp"
+            android:text="Nivel Alto"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/misiones_nivel_3"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/imageView29"
+            android:layout_width="82dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="24dp"
+            android:src="@drawable/planeta_marte"
+            app:layout_constraintBottom_toBottomOf="@+id/misiones_nivel_1"
+            app:layout_constraintEnd_toEndOf="@+id/misiones_nivel_1"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/misiones_nivel_1" />
+
+        <ImageView
+            android:id="@+id/imageView35"
+            android:layout_width="82dp"
+            android:layout_height="100dp"
+            android:src="@drawable/planeta_tierra_boton"
+            app:layout_constraintBottom_toBottomOf="@+id/misiones_nivel_2"
+            app:layout_constraintEnd_toEndOf="@+id/misiones_nivel_2"
+            app:layout_constraintHorizontal_bias="0.089"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/misiones_nivel_2" />
+
+        <ImageView
+            android:id="@+id/imageView52"
+            android:layout_width="97dp"
+            android:layout_height="92dp"
+            android:src="@drawable/planeta_mercurio"
+            app:layout_constraintBottom_toBottomOf="@+id/misiones_nivel_3"
+            app:layout_constraintEnd_toEndOf="@+id/misiones_nivel_3"
+            app:layout_constraintHorizontal_bias="0.063"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/misiones_nivel_3" />
+
+        <ImageView
+            android:id="@+id/imageView53"
+            android:layout_width="82dp"
+            android:layout_height="100dp"
+            android:src="@drawable/plante_venus"
+            app:layout_constraintBottom_toBottomOf="@+id/misiones_nivel_4"
+            app:layout_constraintEnd_toEndOf="@+id/misiones_nivel_4"
+            app:layout_constraintHorizontal_bias="0.089"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/misiones_nivel_4" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="284dp"
+            android:layout_height="83dp"
+            android:fontFamily="@font/baloo_bhai"
+            android:text="@string/txt_misiones"
+            android:textColor="@color/blanco"
+            android:textSize="60dp"
+            app:layout_constraintBottom_toTopOf="@+id/misiones_nivel_1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.527"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.795" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="226dp"
+            android:layout_height="251dp"
+            android:src="@drawable/misiones"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

@@ -2,19 +2,20 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".elegir_tabla_de_multiplicar">
+    tools:context="aplication.funmathhelper.pdmproyecto.elegir_tabla_de_multiplicar">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/constraint_layout"
-        android:background="@drawable/fondo_principal">
+        android:id="@+id/eleccionTablasMultiplicar"
+        android:background="@drawable/fondoprincipal">
 
 
         <ImageView
             android:id="@+id/imageView24"
             android:layout_width="161dp"
             android:layout_height="129dp"
+            android:layout_marginTop="28dp"
             android:src="@drawable/signo_multiplicacion"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

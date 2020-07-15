@@ -7,19 +7,19 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/constraint_layout"
-        android:background="@drawable/fondo_principal">
+        android:id="@+id/ejemploSuma2"
+        android:background="@drawable/fondoprincipal">
 
 
         <ImageView
             android:id="@+id/imview_icon_suma"
             android:layout_width="121dp"
             android:layout_height="96dp"
-            android:layout_marginBottom="28dp"
+            android:layout_marginTop="52dp"
             android:src="@drawable/signo_suma"
-            app:layout_constraintBottom_toTopOf="@+id/txt_decenas"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/txt_contenido_suma"
@@ -31,10 +31,10 @@
             android:textSize="@dimen/medium_1_50dp"
             app:layout_constraintBottom_toTopOf="@+id/imview_icon_suma"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.59"
+            app:layout_constraintHorizontal_bias="0.594"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.608" />
+            app:layout_constraintVertical_bias="0.571" />
 
         <ImageView
             android:id="@+id/naranja_12"
@@ -62,13 +62,14 @@
             android:id="@+id/txt_decenas"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="72dp"
-            android:layout_marginTop="176dp"
+            android:layout_marginTop="28dp"
             android:fontFamily="@font/bungee_inline"
             android:text="@string/txt_decenas"
             android:textColor="@color/naranjaBotones"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.19"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toBottomOf="@+id/imview_icon_suma" />
 
         <TextView
             android:id="@+id/txt_unidad"
@@ -276,11 +277,12 @@
             android:id="@+id/imageView10"
             android:layout_width="125dp"
             android:layout_height="81dp"
+            android:layout_marginEnd="164dp"
             android:src="@drawable/flecha"
             app:layout_constraintBottom_toTopOf="@+id/imageView7"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.419"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/imageView11"
+            app:layout_constraintHorizontal_bias="0.238"
+            app:layout_constraintStart_toStartOf="@+id/manzana_5"
             app:layout_constraintTop_toBottomOf="@+id/imview_icon_suma"
             app:layout_constraintVertical_bias="1.0" />
 
@@ -291,10 +293,10 @@
             android:src="@drawable/caja_tralucida"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.911"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.443" />
+            app:layout_constraintTop_toTopOf="@+id/txt_unidad"
+            app:layout_constraintVertical_bias="0.065" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

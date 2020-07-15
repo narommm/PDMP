@@ -7,133 +7,154 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/constraint_layout"
-        android:background="@drawable/fondo_principal">
+        android:id="@+id/ejemploMultiplicacion1"
+        android:background="@drawable/fondoprincipal">
 
         <ImageView
             android:id="@+id/manzana_1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="20dp"
             android:src="@drawable/manzana"
-            tools:layout_editor_absoluteX="216dp"
-            tools:layout_editor_absoluteY="419dp" />
+            app:layout_constraintEnd_toStartOf="@+id/manzana_12"
+            app:layout_constraintTop_toBottomOf="@+id/manzana_2" />
 
         <ImageView
             android:id="@+id/manzana_2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="216dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="20dp"
             android:src="@drawable/manzana"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="323dp" />
+            app:layout_constraintEnd_toStartOf="@+id/manzana_10"
+            app:layout_constraintTop_toBottomOf="@+id/txt_ejemplo" />
 
         <ImageView
             android:id="@+id/manzana_3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="48dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="50dp"
             android:src="@drawable/manzana"
+            app:layout_constraintEnd_toStartOf="@+id/manzana_4"
+            app:layout_constraintHorizontal_bias="0.2"
             app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="323dp" />
+            app:layout_constraintTop_toBottomOf="@+id/txt_ejemplo" />
 
         <ImageView
             android:id="@+id/manzana_4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="128dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="20dp"
             android:src="@drawable/manzana"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="323dp" />
+            app:layout_constraintEnd_toStartOf="@+id/manzana_2"
+            app:layout_constraintTop_toBottomOf="@+id/txt_ejemplo" />
 
         <ImageView
             android:id="@+id/manzana_5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="148dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="20dp"
             android:src="@drawable/manzana"
-            app:layout_constraintTop_toBottomOf="@+id/manzana_2"
-            tools:layout_editor_absoluteX="216dp" />
+            app:layout_constraintEnd_toStartOf="@+id/manzana_11"
+            app:layout_constraintTop_toBottomOf="@+id/manzana_1" />
 
         <ImageView
             android:id="@+id/manzana_6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="20dp"
             android:src="@drawable/manzana"
-            tools:layout_editor_absoluteX="128dp"
-            tools:layout_editor_absoluteY="419dp" />
+            app:layout_constraintEnd_toStartOf="@+id/manzana_1"
+            app:layout_constraintTop_toBottomOf="@+id/manzana_4" />
 
         <ImageView
             android:id="@+id/manzana_7"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="144dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="20dp"
             android:src="@drawable/manzana"
-            app:layout_constraintTop_toBottomOf="@+id/manzana_2"
-            tools:layout_editor_absoluteX="128dp" />
+            app:layout_constraintEnd_toStartOf="@+id/manzana_5"
+            app:layout_constraintTop_toBottomOf="@+id/manzana_6" />
 
         <ImageView
             android:id="@+id/manzana_8"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="48dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="50dp"
             android:src="@drawable/manzana"
-            app:layout_constraintTop_toBottomOf="@+id/manzana_2"
-            tools:layout_editor_absoluteX="50dp" />
+            app:layout_constraintEnd_toStartOf="@+id/manzana_6"
+            app:layout_constraintHorizontal_bias="0.2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/manzana_3" />
 
         <ImageView
             android:id="@+id/imview_signo_mult"
             android:layout_width="121dp"
             android:layout_height="96dp"
+            android:layout_marginTop="10dp"
             android:src="@drawable/signo_multiplicacion"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="129dp" />
+            app:layout_constraintTop_toBottomOf="@+id/txt_contenido_multiplicacion" />
 
         <TextView
             android:id="@+id/txt_contenido_multiplicacion"
             android:layout_width="311dp"
             android:layout_height="100dp"
             android:fontFamily="@font/pacifico"
-            android:text="Multiplicacion"
+            android:text="@string/txt_multi"
             android:textColor="@color/blanco"
             android:textSize="@dimen/medium_1_50dp"
-            app:layout_constraintBottom_toTopOf="@+id/imview_signo_mult"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.457" />
+            app:layout_constraintVertical_bias="0.025" />
 
         <ImageView
             android:id="@+id/manzana_9"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="50dp"
             android:src="@drawable/manzana"
-            tools:layout_editor_absoluteX="48dp"
-            tools:layout_editor_absoluteY="515dp" />
+            app:layout_constraintEnd_toStartOf="@+id/manzana_7"
+            app:layout_constraintHorizontal_bias="0.2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/manzana_8" />
 
         <ImageView
             android:id="@+id/manzana_10"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="50dp"
             android:src="@drawable/manzana"
-            tools:layout_editor_absoluteX="308dp"
-            tools:layout_editor_absoluteY="323dp" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_ejemplo" />
 
         <ImageView
             android:id="@+id/manzana_11"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="50dp"
             android:src="@drawable/manzana"
-            tools:layout_editor_absoluteX="308dp"
-            tools:layout_editor_absoluteY="515dp" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/manzana_12" />
 
         <ImageView
             android:id="@+id/manzana_12"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="50dp"
             android:src="@drawable/manzana"
-            tools:layout_editor_absoluteX="308dp"
-            tools:layout_editor_absoluteY="419dp" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/manzana_10" />
 
         <Button
             android:id="@+id/btn_next_suma"
@@ -149,14 +170,24 @@
 
         <TextView
             android:id="@+id/txt_ejemplo"
-            android:layout_width="152dp"
+            android:layout_width="wrap_content"
             android:layout_height="69dp"
-            android:layout_marginTop="12dp"
-            android:text="3x4"
+            android:text="4x3"
             android:textColor="@color/blanco"
             android:textSize="@dimen/medium_1_50dp"
-            app:layout_constraintTop_toBottomOf="@+id/imview_signo_mult"
-            tools:layout_editor_absoluteX="156dp" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imview_signo_mult" />
+
+        <ImageView
+            android:id="@+id/imageView68"
+            android:layout_width="125dp"
+            android:layout_height="126dp"
+            android:src="@drawable/personaje_dialogo_3"
+            app:layout_constraintBottom_toTopOf="@+id/btn_next_suma"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/manzana_7" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

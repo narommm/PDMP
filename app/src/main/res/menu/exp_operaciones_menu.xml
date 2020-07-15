@@ -1,15 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
 
+<group android:checkableBehavior="single">
     <item
         android:id="@+id/ejemplo_suma_1"
-        android:title="@string/txt_suma" />
+        android:title="@string/txt_suma"
+        android:icon="@drawable/signo_suma"/>
     <item
         android:id="@+id/resta_explicacion_uno"
-        android:title="@string/resta_title" />
+        android:title="@string/resta_title"
+        android:icon="@drawable/signo_resta"/>
     <item
         android:id="@+id/opcion_tablas_multiplicar"
-        android:title="Multiplicacion" />
-    <item android:title="Division" />
+        android:title="Multiplicacion"
+        android:icon="@drawable/signo_multiplicacion"/>
+    <item
+        android:id="@+id/ejemplo_division_1"
+        android:title="Division"
+        android:icon="@drawable/signo_division"/>
+</group>
 </menu>
