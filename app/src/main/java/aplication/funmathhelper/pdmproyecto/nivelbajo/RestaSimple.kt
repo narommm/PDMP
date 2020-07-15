@@ -7,6 +7,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.findNavController
+import aplication.funmathhelper.pdmproyecto.registro.Correctas
+import aplication.funmathhelper.pdmproyecto.registro.Incorrectas
 import com.example.pdmproyecto.R
 import com.example.pdmproyecto.databinding.FragmentRestaSimpleBinding
 import kotlinx.android.synthetic.main.fragment_resta_simple.*
@@ -17,6 +19,8 @@ import kotlinx.android.synthetic.main.fragment_resta_simple.*
 class RestaSimple : Fragment() {
     private var imagenesIndex = 0
     private var contadorClick = 0
+    private var respuestacorrecta1 = 0
+    private var respuestacorrecta2 = 0
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -33,10 +37,12 @@ class RestaSimple : Fragment() {
             if (imagenesIndex < 5) {
                 when(contadorClick){
                     0->{
+                        respuestacorrecta1=0
                         binding.solucion1.setImageResource(R.drawable.anara_pregunta_cero)
                         contadorClick += 1
                     }
                     1->{
+                        respuestacorrecta2=0
                         binding.solucion2.setImageResource(R.drawable.anara_pregunta_cero)
                         contadorClick += 1
                     }
@@ -53,10 +59,12 @@ class RestaSimple : Fragment() {
             if (imagenesIndex < 5) {
                 when(contadorClick){
                     0->{
+                        respuestacorrecta1=1
                         binding.solucion1.setImageResource(R.drawable.anara_pregunta_uno)
                         contadorClick += 1
                     }
                     1->{
+                        respuestacorrecta2=1
                         binding.solucion2.setImageResource(R.drawable.anara_pregunta_uno)
                         contadorClick += 1
                     }
@@ -73,30 +81,12 @@ class RestaSimple : Fragment() {
             if (imagenesIndex < 5) {
                 when(contadorClick){
                     0->{
+                        respuestacorrecta1=2
                         binding.solucion1.setImageResource(R.drawable.anara_pregunta_dos)
                         contadorClick += 1
                     }
                     1->{
-                        binding.solucion2.setImageResource(R.drawable.anara_pregunta_dos)
-                        contadorClick += 1
-                    }
-                    2->{
-                        cambioPregunta(imagenesIndex)
-                        imagenesIndex +=1
-                    }
-                }
-            } else {
-                it.findNavController().navigate(R.id.action_nivel_bajo_pregunta_3_to_suma_simple)
-            }
-        }
-        binding.pregunta3Dos.setOnClickListener {
-            if (imagenesIndex < 5) {
-                when(contadorClick){
-                    0->{
-                        binding.solucion1.setImageResource(R.drawable.anara_pregunta_dos)
-                        contadorClick += 1
-                    }
-                    1->{
+                        respuestacorrecta2=2
                         binding.solucion2.setImageResource(R.drawable.anara_pregunta_dos)
                         contadorClick += 1
                     }
@@ -113,10 +103,12 @@ class RestaSimple : Fragment() {
             if (imagenesIndex < 5) {
                 when(contadorClick){
                     0->{
+                        respuestacorrecta1=3
                         binding.solucion1.setImageResource(R.drawable.anara_pregunta_tres)
                         contadorClick += 1
                     }
                     1->{
+                        respuestacorrecta2=3
                         binding.solucion2.setImageResource(R.drawable.anara_pregunta_tres)
                         contadorClick += 1
                     }
@@ -133,10 +125,12 @@ class RestaSimple : Fragment() {
             if (imagenesIndex < 5) {
                 when(contadorClick){
                     0->{
+                        respuestacorrecta1=4
                         binding.solucion1.setImageResource(R.drawable.anara_pregunta_cuatro)
                         contadorClick += 1
                     }
                     1->{
+                        respuestacorrecta2=4
                         binding.solucion2.setImageResource(R.drawable.anara_pregunta_cuatro)
                         contadorClick += 1
                     }
@@ -153,10 +147,12 @@ class RestaSimple : Fragment() {
             if (imagenesIndex < 5) {
                 when(contadorClick){
                     0->{
+                        respuestacorrecta1=5
                         binding.solucion1.setImageResource(R.drawable.anara_pregunta_cinco)
                         contadorClick += 1
                     }
                     1->{
+                        respuestacorrecta2=5
                         binding.solucion2.setImageResource(R.drawable.anara_pregunta_cinco)
                         contadorClick += 1
                     }
@@ -173,10 +169,12 @@ class RestaSimple : Fragment() {
             if (imagenesIndex < 5) {
                 when(contadorClick){
                     0->{
+                        respuestacorrecta1=6
                         binding.solucion1.setImageResource(R.drawable.anara_pregunta_seis)
                         contadorClick += 1
                     }
                     1->{
+                        respuestacorrecta2=6
                         binding.solucion2.setImageResource(R.drawable.anara_pregunta_seis)
                         contadorClick += 1
                     }
@@ -193,10 +191,12 @@ class RestaSimple : Fragment() {
             if (imagenesIndex < 5) {
                 when(contadorClick){
                     0->{
+                        respuestacorrecta1=7
                         binding.solucion1.setImageResource(R.drawable.anara_pregunta_siete)
                         contadorClick += 1
                     }
                     1->{
+                        respuestacorrecta2=7
                         binding.solucion2.setImageResource(R.drawable.anara_pregunta_siete)
                         contadorClick += 1
                     }
@@ -213,10 +213,12 @@ class RestaSimple : Fragment() {
             if (imagenesIndex < 5) {
                 when(contadorClick){
                     0->{
+                        respuestacorrecta1=8
                         binding.solucion1.setImageResource(R.drawable.anara_pregunta_ocho)
                         contadorClick += 1
                     }
                     1->{
+                        respuestacorrecta2=8
                         binding.solucion2.setImageResource(R.drawable.anara_pregunta_ocho)
                         contadorClick += 1
                     }
@@ -233,10 +235,12 @@ class RestaSimple : Fragment() {
             if (imagenesIndex < 5) {
                 when(contadorClick){
                     0->{
+                        respuestacorrecta1=9
                         binding.solucion1.setImageResource(R.drawable.anara_pregunta_nueve)
                         contadorClick += 1
                     }
                     1->{
+                        respuestacorrecta2=9
                         binding.solucion2.setImageResource(R.drawable.anara_pregunta_nueve)
                         contadorClick += 1
                     }
@@ -248,6 +252,12 @@ class RestaSimple : Fragment() {
             } else {
                 it.findNavController().navigate(R.id.action_nivel_bajo_pregunta_3_to_suma_simple)
             }
+        }
+        //última pregunta
+        if(respuestacorrecta1==7 && respuestacorrecta2==4){
+            Correctas.numeroCorrectasNivelBajo+=1
+        }else{
+            Incorrectas.numeroIncorrectasNivelBajo+=1
         }
         return binding.root
     }
@@ -270,6 +280,12 @@ class RestaSimple : Fragment() {
         imageView56.setImageResource(R.drawable.verde_pregunta_dos)
         imageView58.setImageResource(R.drawable.ama_pregunta_uno)
         respuesta2.setImageResource(R.drawable.ama_pregunta_uno)
+        //Respuestas guardadas de la pregunta anterior
+        if(respuestacorrecta1==2 && respuestacorrecta2==2){
+            Correctas.numeroCorrectasNivelBajo +=1
+        }else{
+            Incorrectas.numeroIncorrectasNivelBajo +=1
+        }
     }
 
     private fun pregunta2() {
@@ -281,6 +297,11 @@ class RestaSimple : Fragment() {
         imageView56.setImageResource(R.drawable.verde_pregunta_tres)
         imageView58.setImageResource(R.drawable.ama_pregunta_uno)
         respuesta2.setImageResource(R.drawable.ama_pregunta_cinco)
+        if(respuestacorrecta1==1 && respuestacorrecta2==1){
+            Correctas.numeroCorrectasNivelBajo +=1
+        }else{
+            Incorrectas.numeroIncorrectasNivelBajo +=1
+        }
     }
 
     private fun pregunta3() {
@@ -291,6 +312,11 @@ class RestaSimple : Fragment() {
         imageView56.setImageResource(R.drawable.verde_pregunta_siete)
         imageView58.setImageResource(R.drawable.ama_pregunta_uno)
         respuesta2.setImageResource(R.drawable.ama_pregunta_seis)
+        if(respuestacorrecta1==5 && respuestacorrecta2==8){
+            Correctas.numeroCorrectasNivelBajo +=1
+        }else{
+            Incorrectas.numeroIncorrectasNivelBajo +=1
+        }
     }
 
     private fun pregunta4() {
@@ -301,6 +327,11 @@ class RestaSimple : Fragment() {
         imageView56.setImageResource(R.drawable.verde_pregunta_cero)
         imageView58.setImageResource(R.drawable.ama_pregunta_cero)
         respuesta2.setImageResource(R.drawable.ama_pregunta_seis)
+        if(respuestacorrecta1==1 && respuestacorrecta2==1){
+            Correctas.numeroCorrectasNivelBajo +=1
+        }else{
+            Incorrectas.numeroIncorrectasNivelBajo +=1
+        }
     }
 }
 

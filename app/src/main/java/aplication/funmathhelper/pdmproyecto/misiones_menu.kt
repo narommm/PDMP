@@ -26,7 +26,7 @@ class misiones_menu : Fragment() {
             it.findNavController().navigate(R.id.action_misiones_menu_to_nivel_bajo_pregunta_3)
         }
         binding.misionesNivel2.setOnClickListener{
-            it.findNavController().navigate(R.id.action_misiones_menu_to_multiplicacionSimple)
+            it.findNavController().navigate(R.id.action_misiones_menu_to_multiplicacionMedia)
         }
         binding.misionesNivel3.setOnClickListener{
             it.findNavController().navigate(R.id.action_misiones_menu_to_divisionSimple)

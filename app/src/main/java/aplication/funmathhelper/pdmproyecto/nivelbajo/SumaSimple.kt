@@ -7,6 +7,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.findNavController
+import aplication.funmathhelper.pdmproyecto.registro.Correctas
+import aplication.funmathhelper.pdmproyecto.registro.Incorrectas
 import com.example.pdmproyecto.R
 import com.example.pdmproyecto.databinding.FragmentSumaSimpleBinding
 import kotlinx.android.synthetic.main.fragment_suma_simple.*
@@ -17,6 +19,8 @@ import kotlinx.android.synthetic.main.fragment_suma_simple.*
 class SumaSimple : Fragment() {
     private var imagenesIndex = 0
     private var contadorClick = 0
+    private var respuestacorrecta1 = 0
+    private var respuestacorrecta2 = 0
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -27,10 +31,12 @@ class SumaSimple : Fragment() {
             if (imagenesIndex < 2) {
                 when(contadorClick){
                     0->{
+                        respuestacorrecta1=0
                         binding.solucion1.setImageResource(R.drawable.anara_pregunta_cero)
                         contadorClick += 1
                     }
                     1->{
+                        respuestacorrecta2=0
                         binding.solucion2.setImageResource(R.drawable.anara_pregunta_cero)
                         contadorClick += 1
                     }
@@ -47,10 +53,12 @@ class SumaSimple : Fragment() {
             if (imagenesIndex < 2) {
                 when(contadorClick){
                     0->{
+                        respuestacorrecta1=1
                         binding.solucion1.setImageResource(R.drawable.anara_pregunta_uno)
                         contadorClick += 1
                     }
                     1->{
+                        respuestacorrecta2=1
                         binding.solucion2.setImageResource(R.drawable.anara_pregunta_uno)
                         contadorClick += 1
                     }
@@ -67,10 +75,12 @@ class SumaSimple : Fragment() {
             if (imagenesIndex < 2) {
                 when(contadorClick){
                     0->{
+                        respuestacorrecta1=2
                         binding.solucion1.setImageResource(R.drawable.anara_pregunta_dos)
                         contadorClick += 1
                     }
                     1->{
+                        respuestacorrecta2=2
                         binding.solucion2.setImageResource(R.drawable.anara_pregunta_dos)
                         contadorClick += 1
                     }
@@ -87,10 +97,12 @@ class SumaSimple : Fragment() {
             if (imagenesIndex < 2) {
                 when(contadorClick){
                     0->{
+                        respuestacorrecta1=3
                         binding.solucion1.setImageResource(R.drawable.anara_pregunta_tres)
                         contadorClick += 1
                     }
                     1->{
+                        respuestacorrecta2=3
                         binding.solucion2.setImageResource(R.drawable.anara_pregunta_tres)
                         contadorClick += 1
                     }
@@ -107,10 +119,12 @@ class SumaSimple : Fragment() {
             if (imagenesIndex < 2) {
                 when(contadorClick){
                     0->{
+                        respuestacorrecta1=4
                         binding.solucion1.setImageResource(R.drawable.anara_pregunta_cuatro)
                         contadorClick += 1
                     }
                     1->{
+                        respuestacorrecta2=4
                         binding.solucion2.setImageResource(R.drawable.anara_pregunta_cuatro)
                         contadorClick += 1
                     }
@@ -127,10 +141,12 @@ class SumaSimple : Fragment() {
             if (imagenesIndex < 2) {
                 when(contadorClick){
                     0->{
+                        respuestacorrecta1=5
                         binding.solucion1.setImageResource(R.drawable.anara_pregunta_cinco)
                         contadorClick += 1
                     }
                     1->{
+                        respuestacorrecta2=5
                         binding.solucion2.setImageResource(R.drawable.anara_pregunta_cinco)
                         contadorClick += 1
                     }
@@ -147,10 +163,12 @@ class SumaSimple : Fragment() {
             if (imagenesIndex < 2) {
                 when(contadorClick){
                     0->{
+                        respuestacorrecta1=6
                         binding.solucion1.setImageResource(R.drawable.anara_pregunta_seis)
                         contadorClick += 1
                     }
                     1->{
+                        respuestacorrecta2=6
                         binding.solucion2.setImageResource(R.drawable.anara_pregunta_seis)
                         contadorClick += 1
                     }
@@ -167,10 +185,12 @@ class SumaSimple : Fragment() {
             if (imagenesIndex < 2) {
                 when(contadorClick){
                     0->{
+                        respuestacorrecta1=7
                         binding.solucion1.setImageResource(R.drawable.anara_pregunta_siete)
                         contadorClick += 1
                     }
                     1->{
+                        respuestacorrecta2=7
                         binding.solucion2.setImageResource(R.drawable.anara_pregunta_siete)
                         contadorClick += 1
                     }
@@ -187,10 +207,12 @@ class SumaSimple : Fragment() {
             if (imagenesIndex < 2) {
                 when(contadorClick){
                     0->{
+                        respuestacorrecta1=8
                         binding.solucion1.setImageResource(R.drawable.anara_pregunta_ocho)
                         contadorClick += 1
                     }
                     1->{
+                        respuestacorrecta2=8
                         binding.solucion2.setImageResource(R.drawable.anara_pregunta_ocho)
                         contadorClick += 1
                     }
@@ -207,10 +229,12 @@ class SumaSimple : Fragment() {
             if (imagenesIndex < 2) {
                 when(contadorClick){
                     0->{
+                        respuestacorrecta1=9
                         binding.solucion1.setImageResource(R.drawable.anara_pregunta_nueve)
                         contadorClick += 1
                     }
                     1->{
+                        respuestacorrecta2=9
                         binding.solucion2.setImageResource(R.drawable.anara_pregunta_nueve)
                         contadorClick += 1
                     }
@@ -222,6 +246,11 @@ class SumaSimple : Fragment() {
             } else {
                 it.findNavController().navigate(R.id.action_suma_simple_to_registro_Pregunta1)
             }
+        }
+        if(respuestacorrecta1==7 && respuestacorrecta2==9){
+            Correctas.numeroCorrectasNivelBajo+=1
+        }else{
+            Incorrectas.numeroIncorrectasNivelBajo+=1
         }
         return binding.root
     }
@@ -242,6 +271,12 @@ class SumaSimple : Fragment() {
         imageView56.setImageResource(R.drawable.verde_pregunta_uno)
         imageView58.setImageResource(R.drawable.ama_pregunta_seis)
         respuesta2.setImageResource(R.drawable.ama_pregunta_siete)
+        //última pregunta
+        if(respuestacorrecta1==4 && respuestacorrecta2==3){
+            Correctas.numeroCorrectasNivelBajo+=1
+        }else{
+            Incorrectas.numeroIncorrectasNivelBajo+=1
+        }
     }
 
     private fun pregunta2() {
@@ -253,6 +288,11 @@ class SumaSimple : Fragment() {
         imageView56.setImageResource(R.drawable.verde_pregunta_nueve)
         imageView58.setImageResource(R.drawable.ama_pregunta_tres)
         respuesta2.setImageResource(R.drawable.ama_pregunta_cero)
+        if(respuestacorrecta1==9 && respuestacorrecta2==8){
+            Correctas.numeroCorrectasNivelBajo+=1
+        }else{
+            Incorrectas.numeroIncorrectasNivelBajo+=1
+        }
     }
         //return inflater.inflate(R.layout.fragment_suma_simple, container, false)
 

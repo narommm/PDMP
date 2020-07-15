@@ -212,7 +212,7 @@
         tools:layout="@layout/fragment_registro__pregunta1" />
     <fragment
         android:id="@+id/divisionDoble"
-        android:name="aplication.funmathhelper.pdmproyecto.nivel_alto.DivisionDoble"
+        android:name="aplication.funmathhelper.pdmproyecto.nivelalto.DivisionDoble"
         android:label="fragment_division_doble"
         tools:layout="@layout/fragment_division_doble" >
         <action
@@ -232,7 +232,7 @@
     </fragment>
     <fragment
         android:id="@+id/multiplicacionDoble"
-        android:name="aplication.funmathhelper.pdmproyecto.nivel_alto.MultiplicacionDoble"
+        android:name="aplication.funmathhelper.pdmproyecto.nivelalto.MultiplicacionDoble"
         android:label="MultiplicacionDoble" >
         <action
             android:id="@+id/action_multiplicacionDoble_to_registro_pregunta4"
@@ -241,17 +241,17 @@
     </fragment>
     <fragment
         android:id="@+id/registro_pregunta2"
-        android:name="aplication.funmathhelper.pdmproyecto.registro.registro_pregunta2"
+        android:name="aplication.funmathhelper.pdmproyecto.registro.Registro_Pregunta2"
         android:label="fragment_registro_pregunta2"
         tools:layout="@layout/fragment_registro_pregunta2" />
     <fragment
         android:id="@+id/registro_pregunta3"
-        android:name="aplication.funmathhelper.pdmproyecto.registro.registro_pregunta3"
+        android:name="aplication.funmathhelper.pdmproyecto.registro.Registro_Pregunta3"
         android:label="fragment_registro_pregunta3"
         tools:layout="@layout/fragment_registro_pregunta3" />
     <fragment
         android:id="@+id/registro_pregunta4"
-        android:name="aplication.funmathhelper.pdmproyecto.registro.registro_pregunta4"
+        android:name="aplication.funmathhelper.pdmproyecto.registro.Registro_Pregunta4"
         android:label="fragment_registro_pregunta4"
         tools:layout="@layout/fragment_registro_pregunta4" />
     <fragment
